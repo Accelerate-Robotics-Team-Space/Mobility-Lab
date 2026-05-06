@@ -1,0 +1,48 @@
+# Xcode
+# Build, test, and archive an Xcode workspace on macOS.
+# Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+
+variables:
+  - ${{ if eq(variables['Build.SourceBranchName'], 'develop') }}:
+      - group: SensorSuiteUMMTest
+  - ${{ elseif eq(variables['Build.SourceBranchName'], 'master') }}:
+      - group: SensorSuiteUMMProd
+  - ${{ else }}:
+      - group: SensorSuiteUMMQa
+
+trigger:
+  branches:
+    include:
+      - sprint
+      - develop
+      - master
+  paths:
+    exclude:
+      - SensorSuite/*
+      - SensorSuiteTests/*
+      - SensorSuite\ WatchKit\ App/*
+      - Info.plist
+      - Mocks/*
+      - ExportOptions/BMM*
+      - azure-pipelines.yml
+      - SensorSuite.xcodeproj/project.pbxproj
+
+jobs:
+  - job: BuildAndDeploy
+    displayName: "Build & Deploy"
+    pool:
+      vmImage: "macos-15"
+    workspace:
+      clean: all
+    timeoutInMinutes: 90
+    variables:
+      xcodeVersion: "26.2"
+      plistPath: "/SensorSuiteUMM/Info.plist"
+      testScheme: "SensorSuiteUMM-Dev"
+      testPlatform: "iOS Simulator,name=iPad (A16)"
+      productType: "UMM"
+    steps:
+     - template: "prepare-build-umm.yml"
+     - template: "check-profile-expiry.yml"
+     - template: "build-template.yml"

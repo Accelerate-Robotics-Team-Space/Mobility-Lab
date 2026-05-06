@@ -1,0 +1,8 @@
+//
+//  Copyright © 2024 Atlas LiftTech. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+SENTRY_DSN = https:/$(SLASH)33a22a3df4f8521ecd6aa54d3875738b@o4509307097186304.ingest.us.sentry.io/4509307178778624
+SENTRY_PROJECT = sensorsuite-app

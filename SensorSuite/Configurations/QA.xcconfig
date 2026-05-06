@@ -1,0 +1,7 @@
+//
+//  Copyright © 2024 Atlas LiftTech. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+SENTRY_ENVIRONMENT = qa

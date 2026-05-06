@@ -1,0 +1,137 @@
+included:
+  - SensorSuite
+  - SensorSuiteTests
+  - SensorSuite WatchKit/SensorSuite WatchKit Extension
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+opt_in_rules:
+  - array_init
+  # - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - discouraged_object_literal
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - enum_case_associated_values_count
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  - file_name
+  - first_where
+  - flatmap_over_map_reduce
+  - identical_operands
+  - joined_default_parameter
+  - legacy_random
+  # - let_var_whitespace
+  - last_where
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - modifier_order
+  - nimble_operator
+  - nslocalizedstring_key
+  - number_separator
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - private_action
+  - private_outlet
+  - prohibited_interface_builder
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - reduce_into
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - strong_iboutlet
+  - toggle_bool
+  - trailing_comma
+  # - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - unowned_variable_capture
+  - untyped_error_in_catch
+  - vertical_parameter_alignment_on_call
+  # - vertical_whitespace_closing_braces
+  # - vertical_whitespace_opening_braces
+  - xct_specific_matcher
+  - yoda_condition
+
+excluded:
+  - R.generated.swift
+  - SensorSuite WatchKit/SensorSuite WatchKit Extension/R.generated.swift
+
+disabled_rules:
+  - file_header # This rule gives too many warnings for not enough pay off
+  - multiple_closures_with_trailing_closure # Conflicts with SwiftUI's new declarative style
+  - no_space_in_method_call # Conflicts with SwiftUI's new declarative style
+  - number_separator # This rule is unnecessary
+  - object_literal # Allows the uses of the UIImage with name initializer without a warning MAY REMOVE AT A LATER DATE
+  - optional_data_string_conversion
+  - orphaned_doc_comment # The rule is unnecessary
+  - pattern_matching_keywords # This rule makes working with enum's associated values unnecessarily harder
+  - trailing_whitespace # Warning occures when using ^i (ctrl + i) to reformat text
+
+identifier_name:
+  min_length:
+    warning: 3
+    error: 1
+  excluded: [id, no, x, y, z, r, g, b, a, i, j, k, cx, cy, dx, dy, db, to]
+  allowed_symbols: ["_"]
+
+type_name:
+  excluded: [ID]
+  allowed_symbols: ["_"]
+
+modifier_order:
+  preferred_modifier_order:
+    - acl
+    - override
+
+force_cast: warning # Change this after fixing all warnings
+force_try: warning # Change this after fixing all warnings
+
+line_length:
+  ignores_comments: true
+  ignores_function_declarations: true
+  warning: 160
+  error: 1000 # Change this after fixing all warnings
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 20
+
+type_body_length:
+  warning: 450
+  error: 600
+
+function_body_length:
+  warning: 100
+  error: 200
+
+file_length:
+  warning: 600
+  error: 1000
+
+nesting:
+  type_level: 3
+
+trailing_comma:
+  mandatory_comma: true
+
+# trailing_comma:
+#   mandatory_comma: true

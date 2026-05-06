@@ -1,0 +1,8 @@
+//
+//  Copyright © 2024 Atlas LiftTech. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+SENTRY_DSN = https:/$(SLASH)74f8b033c8121314ef0d31720e07fc83@o4509307097186304.ingest.us.sentry.io/4509362281644032
+SENTRY_PROJECT = sensor-suite-watch

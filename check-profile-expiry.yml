@@ -1,0 +1,43 @@
+steps:
+  - task: Bash@3
+    displayName: "🔍📆 Check Provisioning Profile Expiry"
+    inputs:
+      targetType: "inline"
+      script: |
+        PROFILE_DIR="$HOME/Library/MobileDevice/Provisioning Profiles"
+        TODAY=$(date +%s)
+        WARN_DAYS=30
+        FAIL_DAYS=7
+        CRITICAL=0
+
+        for profile in "$PROFILE_DIR"/*.mobileprovision; do
+          [ -f "$profile" ] || continue
+
+          plist=$(security cms -D -i "$profile" 2>/dev/null)
+
+          name=$(echo "$plist" | grep -A1 "<key>Name</key>" | grep "<string>" | sed 's/.*<string>\(.*\)<\/string>.*/\1/')
+          expiry_str=$(echo "$plist" | grep -A1 "<key>ExpirationDate</key>" | grep "<date>" | sed 's/.*<date>\(.*\)<\/date>.*/\1/')
+
+          [ -z "$expiry_str" ] && echo "Could not read expiry for: $profile" && continue
+
+          expiry_epoch=$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "$expiry_str" +%s 2>/dev/null)
+          days=$(( (expiry_epoch - TODAY) / 86400 ))
+          # cyan
+          color=96
+          if [ "$days" -le "$FAIL_DAYS" ]; then
+            echo "##vso[task.logissue type=error]CRITICAL: '$name' expires in $days days ($expiry_str). Build blocked."
+            CRITICAL=1
+            # red
+            color=91
+          elif [ "$days" -le "$WARN_DAYS" ]; then
+            echo "##vso[task.logissue type=warning]WARNING: '$name' expires in $days days ($expiry_str)."
+            # magenta
+            color=95
+          fi
+
+          echo "Profile: $name | Expires: $expiry_str |[1;${color}m Days remaining: $days[0;0m"
+        done
+
+        if [ "$CRITICAL" -eq 1 ]; then
+          exit 1
+        fi
