@@ -5475,7 +5475,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SensorSuite Prod";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "SensorSuite Prod";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MobilityLab Prod";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) BMM";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
