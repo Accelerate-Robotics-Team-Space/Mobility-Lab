@@ -53,7 +53,8 @@ jobs:
           -scheme SensorSuite-Prod \
           -configuration Release \
           -archivePath SensorSuite.xcarchive \
-          -allowProvisioningUpdates
+          -allowProvisioningUpdates \
+          -skipPackagePluginValidation
           
     - name: Export IPA
       run: |
