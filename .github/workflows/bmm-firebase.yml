@@ -5,6 +5,7 @@ on:
     branches: [ main, develop, feature/pipeline-setup ]
   pull_request:
     branches: [ main, feature/pipeline-setup ]
+  workflow_dispatch:
 
 jobs:
   build-and-distribute:
