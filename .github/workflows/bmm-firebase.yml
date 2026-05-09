@@ -17,7 +17,7 @@ jobs:
     - name: Setup Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: latest-stable
+        xcode-version: "26.2"
         
     - name: Install dependencies
       run: |
@@ -52,20 +52,7 @@ jobs:
         xcodebuild -resolvePackageDependencies \
           -workspace SensorSuite.xcworkspace \
           -scheme SensorSuite-Prod \
-          -derivedDataPath DerivedData \
           -skipPackagePluginValidation
-
-    - name: Pre-build watchOS dependencies
-      run: |
-        xcodebuild build \
-          -workspace SensorSuite.xcworkspace \
-          -scheme SensorSuite-Prod \
-          -sdk watchos \
-          -configuration Release \
-          -derivedDataPath DerivedData \
-          -skipPackagePluginValidation \
-          CODE_SIGNING_ALLOWED=NO \
-          SKIP_INSTALL=YES
 
     - name: Build and archive SensorSuite-Prod scheme
       run: |
@@ -74,7 +61,6 @@ jobs:
           -scheme SensorSuite-Prod \
           -configuration Release \
           -archivePath SensorSuite.xcarchive \
-          -derivedDataPath DerivedData \
           -allowProvisioningUpdates \
           -skipPackagePluginValidation
           
