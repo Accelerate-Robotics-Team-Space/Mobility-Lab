@@ -77,15 +77,13 @@ jobs:
 
     - name: Upload to Firebase App Distribution
       run: |
-        echo '${{ secrets.FIREBASE_TOKEN }}' > /tmp/firebase-credentials.json
         IPA=$(find export -name "*.ipa" | head -1)
         echo "Uploading IPA: $IPA"
         firebase appdistribution:distribute "$IPA" \
           --app "${{ secrets.FIREBASE_APP_ID }}" \
+          --token "${{ secrets.FIREBASE_TOKEN }}" \
           --groups testers \
           --release-notes "Build from commit ${{ github.sha }}"
-      env:
-        GOOGLE_APPLICATION_CREDENTIALS: /tmp/firebase-credentials.json
 
     - name: Cleanup keychain
       if: always()
