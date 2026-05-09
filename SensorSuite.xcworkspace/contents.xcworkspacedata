@@ -4,4 +4,7 @@
    <FileRef
       location = "group:SensorSuite.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ExportOptions.plist">
+   </FileRef>
 </Workspace>

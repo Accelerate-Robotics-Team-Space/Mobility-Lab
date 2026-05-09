@@ -1745,6 +1745,8 @@
 		E03CF63A2B3648A20055F99C /* HeadOfBedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadOfBedImage.swift; sourceTree = "<group>"; };
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
+		F19C83972FAF78F1003EADFD /* .githubworkflowsbmm-firebase.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ".githubworkflowsbmm-firebase.yml"; sourceTree = "<group>"; };
+		F19C839D2FAF78F6003EADFD /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = SensorSuite/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -3656,6 +3658,8 @@
 				D6B9B7852F463CD70028EF2D /* prepare-build-umm.yml */,
 				D617F6772F8D892F002EE7DB /* profile-expiry-notify.yml */,
 				D6B9B7862F463CD70028EF2D /* umm-azure-pipelines.yml */,
+				F19C83972FAF78F1003EADFD /* .githubworkflowsbmm-firebase.yml */,
+				F19C839D2FAF78F6003EADFD /* ExportOptions.plist */,
 			);
 			path = pipeline;
 			sourceTree = "<group>";
