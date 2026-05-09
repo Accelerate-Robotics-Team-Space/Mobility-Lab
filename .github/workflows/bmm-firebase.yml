@@ -73,7 +73,7 @@ jobs:
           -exportOptionsPlist ExportOptions.plist
           
     - name: Install Firebase CLI
-      run: bash "${{ github.workspace }}/scripts/firebase.sh"
+      run: npm install -g firebase-tools
 
     - name: Upload to Firebase App Distribution
       env:
