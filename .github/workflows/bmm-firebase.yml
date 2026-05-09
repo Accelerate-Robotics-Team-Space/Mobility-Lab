@@ -52,15 +52,28 @@ jobs:
         xcodebuild -resolvePackageDependencies \
           -workspace SensorSuite.xcworkspace \
           -scheme SensorSuite-Prod \
+          -derivedDataPath DerivedData \
           -skipPackagePluginValidation
+
+    - name: Pre-build watchOS dependencies
+      run: |
+        xcodebuild build \
+          -workspace SensorSuite.xcworkspace \
+          -scheme SensorSuite-Prod \
+          -destination 'generic/platform=watchOS' \
+          -configuration Prod \
+          -derivedDataPath DerivedData \
+          -skipPackagePluginValidation \
+          CODE_SIGNING_ALLOWED=NO \
+          SKIP_INSTALL=YES
 
     - name: Build and archive SensorSuite-Prod scheme
       run: |
         xcodebuild archive \
           -workspace SensorSuite.xcworkspace \
           -scheme SensorSuite-Prod \
-          -configuration Release \
           -archivePath SensorSuite.xcarchive \
+          -derivedDataPath DerivedData \
           -allowProvisioningUpdates \
           -skipPackagePluginValidation
           
