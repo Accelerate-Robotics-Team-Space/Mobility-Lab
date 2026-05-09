@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockPatientManager: PatientManagerProtocol {
     typealias UpdatePatientProfileType = (String, Int, Int, Bool, Bool, ALTSex, Double, String, String) // swiftlint:disable:this large_tuple

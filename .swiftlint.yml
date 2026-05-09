@@ -1,7 +1,7 @@
 included:
-  - SensorSuite
-  - SensorSuiteTests
-  - SensorSuite WatchKit/SensorSuite WatchKit Extension
+  - MobilityLab
+  - MobilityLabTests
+  - MobilityLab WatchKit/MobilityLab WatchKit Extension
 analyzer_rules:
   - unused_declaration
   - unused_import
@@ -73,7 +73,7 @@ opt_in_rules:
 
 excluded:
   - R.generated.swift
-  - SensorSuite WatchKit/SensorSuite WatchKit Extension/R.generated.swift
+  - MobilityLab WatchKit/MobilityLab WatchKit Extension/R.generated.swift
 
 disabled_rules:
   - file_header # This rule gives too many warnings for not enough pay off

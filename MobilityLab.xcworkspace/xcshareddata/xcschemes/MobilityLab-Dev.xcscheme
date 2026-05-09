@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1430"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4352A6AE2437939A00050AD2"
+               BuildableName = "MobilityLab BMM.app"
+               BlueprintName = "MobilityLab BMM"
+               ReferencedContainer = "container:MobilityLab.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4352A6C42437939D00050AD2"
+               BuildableName = "MobilityLab BMM Tests.xctest"
+               BlueprintName = "MobilityLab BMM Tests"
+               ReferencedContainer = "container:MobilityLab.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Dev"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4352A6AE2437939A00050AD2"
+            BuildableName = "MobilityLab BMM.app"
+            BlueprintName = "MobilityLab BMM"
+            ReferencedContainer = "container:MobilityLab.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4352A6C42437939D00050AD2"
+               BuildableName = "MobilityLab BMM Tests.xctest"
+               BlueprintName = "MobilityLab BMM Tests"
+               ReferencedContainer = "container:MobilityLab.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AnalyticsDriverTests/testGoBackards()">
+               </Test>
+               <Test
+                  Identifier = "AnalyticsDriverTests/testGoForwards()">
+               </Test>
+               <Test
+                  Identifier = "AnalyticsDriverTests/testPausedDuration()">
+               </Test>
+               <Test
+                  Identifier = "AnalyticsDriverTests/testUpdateCurrentPosition()">
+               </Test>
+               <Test
+                  Identifier = "ConsoleLogRepositoryTests/testDeleteOldItemsAboveOffset()">
+               </Test>
+               <Test
+                  Identifier = "MQTTServiceTests/test_connect_success_setsConnected_andRegistersListeners()">
+               </Test>
+               <Test
+                  Identifier = "MQTTServiceTests/test_publish_failure_setsDisconnected_whenWasConnected()">
+               </Test>
+               <Test
+                  Identifier = "MQTTServiceTests/test_restartMQTTService_disconnectsAndConfigsClient()">
+               </Test>
+               <Test
+                  Identifier = "MQTTServiceTests/test_subscribe_updatesSubscriptions()">
+               </Test>
+               <Test
+                  Identifier = "NetworkMonitorTests/testNotificationsPosted()">
+               </Test>
+               <Test
+                  Identifier = "NetworkMonitorTests/testRequiresConnectionPostsDisconnectedAndFlags()">
+               </Test>
+               <Test
+                  Identifier = "NetworkMonitorTests/testStartWithInitialSatisfiedTriggersConnectAndNotification()">
+               </Test>
+               <Test
+                  Identifier = "NodeManagerTests/testAddLog()">
+               </Test>
+               <Test
+                  Identifier = "NodeManagerTests/testStart()">
+               </Test>
+               <Test
+                  Identifier = "PatientLandingDriverTests/testGetLastSessionIfExists_sessionEnded()">
+               </Test>
+               <Test
+                  Identifier = "PatientLandingDriverTests/testGetLastSessionIfExists_sessionNotEnded()">
+               </Test>
+               <Test
+                  Identifier = "PatientLocationDriverTests/testResetFromPatient()">
+               </Test>
+               <Test
+                  Identifier = "PatientRepositoryTests/testFetchNonSynced()">
+               </Test>
+               <Test
+                  Identifier = "PatientRepositoryTests/testFetchOrderedList()">
+               </Test>
+               <Test
+                  Identifier = "PatientRepositoryTests/testPrune()">
+               </Test>
+               <Test
+                  Identifier = "ProfileDriverTests/testProcessEndMonitoring_done()">
+               </Test>
+               <Test
+                  Identifier = "ProvisioningAPIServiceTests/testAddNewPatient_Failure()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Dev"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4352A6AE2437939A00050AD2"
+            BuildableName = "MobilityLab BMM.app"
+            BlueprintName = "MobilityLab BMM"
+            ReferencedContainer = "container:MobilityLab.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Dev"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4352A6AE2437939A00050AD2"
+            BuildableName = "MobilityLab BMM.app"
+            BlueprintName = "MobilityLab BMM"
+            ReferencedContainer = "container:MobilityLab.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Dev">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Dev"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

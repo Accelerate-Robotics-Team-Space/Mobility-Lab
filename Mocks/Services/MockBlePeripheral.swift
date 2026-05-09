@@ -4,7 +4,7 @@
 
 import CoreBluetooth
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockBlePeripheral<T: BleRoutable>: BlePeripheralProtocol {
     typealias Router = T

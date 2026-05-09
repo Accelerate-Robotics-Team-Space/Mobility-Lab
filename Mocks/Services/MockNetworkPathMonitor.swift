@@ -4,7 +4,7 @@
 
 import Foundation
 import Network
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 class MockNetworkPathMonitor: NetworkPathMonitorProtocol {
     var statusUpdateHandler: ((NWPath.Status) -> Void)?

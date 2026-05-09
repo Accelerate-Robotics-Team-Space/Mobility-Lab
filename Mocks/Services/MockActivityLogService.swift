@@ -4,7 +4,7 @@
 
 import Combine
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockActivityLogService: ActivityLogServiceProtocol {
     var setupHandler: ((String?) -> Void)?

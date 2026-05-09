@@ -4,7 +4,7 @@
 
 import FactoryKit
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 extension Container {
     func resetAll() {

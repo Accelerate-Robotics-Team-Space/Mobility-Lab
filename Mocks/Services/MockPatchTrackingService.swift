@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockPatchTrackingService: PatchTrackingServiceProtocol {
     var patchUsedHandler: (() -> Void)?

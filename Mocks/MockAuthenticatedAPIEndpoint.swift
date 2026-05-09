@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 enum MockAuthenticatedAPIEndpoint: AuthenticatedEndpointProtocol {
     static var validateHandler: ((URLResponse) throws(NetworkingError.REST) -> Void)?

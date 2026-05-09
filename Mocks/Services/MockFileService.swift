@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockFileService: FileServiceProtocol, @unchecked Sendable {
     var deleteHandler: ((URL) throws -> Void)?

@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockRevokedCertificateRepository: RevokedCertificateRepositoryProtocol {
     var loadIdFromDBAsyncHandler: ((String) async -> RevokedCertificate?)?
