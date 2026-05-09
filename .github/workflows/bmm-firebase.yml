@@ -72,14 +72,16 @@ jobs:
           -exportPath ./export \
           -exportOptionsPlist ExportOptions.plist
           
+    - name: Install Firebase CLI
+      run: bash "${{ github.workspace }}/scripts/firebase.sh"
+
     - name: Upload to Firebase App Distribution
-      uses: wzieba/Firebase-Distribution-Github-Action@v1
-      with:
-        appId: ${{ secrets.FIREBASE_APP_ID }}
-        serviceCredentialsFileContent: ${{ secrets.FIREBASE_TOKEN }}
-        groups: testers
-        file: export/SensorSuite.ipa
-        releaseNotes: "Build from commit ${{ github.sha }}"
+      run: |
+        firebase appdistribution:distribute export/SensorSuite.ipa \
+          --app "${{ secrets.FIREBASE_APP_ID }}" \
+          --token "${{ secrets.FIREBASE_TOKEN }}" \
+          --groups testers \
+          --release-notes "Build from commit ${{ github.sha }}"
 
     - name: Cleanup keychain
       if: always()
