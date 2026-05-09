@@ -20,6 +20,8 @@
     <dict>
         <key>com.AtlastLiftTech.MobilityLab.iOS.prod</key>
         <string>MobilityLab Prod</string>
+        <key>com.AtlastLiftTech.SensorSuite.iOS.prod.watchkitapp</key>
+        <string>SensorSuite WatchKit App Prod</string>
     </dict>
 </dict>
 </plist>
