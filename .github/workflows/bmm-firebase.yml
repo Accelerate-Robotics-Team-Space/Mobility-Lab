@@ -2,9 +2,9 @@ name: BMM Firebase Distribution
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, feature/pipeline-setup ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, feature/pipeline-setup ]
 
 jobs:
   build-and-distribute:
