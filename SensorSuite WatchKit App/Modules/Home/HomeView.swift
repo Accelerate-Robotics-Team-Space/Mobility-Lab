@@ -12,32 +12,28 @@ struct HomeView: View {
     @EnvironmentObject var devMenuSensorDriver: DevSensorDriver
     @ObservedObject var driver = HomeDriver()
 
-    @State private var showScanView = false
-    
+    @State private var showActivity = false
+
     private let btnRad: CGFloat = 17
     private let minTextSize: CGFloat = 0.2
-    
-    var primeBtnText: String {
-        return R.string.localizable.beginSession()
-    }
-    
+
     var body: some View {
-        if showScanView {
-            ScanView($showScanView,
-                     driver: driver.scanDriver)
-        } else if driver.scanDriver.showSessionFlow {
-            SessionView($driver.scanDriver.showSessionFlow,
-                        using: driver.connectionDriver)
+        if showActivity {
+            ActivitySessionView(isActive: $showActivity)
         } else {
             VStack {
                 Button(action: {
-                    showScanView.toggle()
+                    showActivity = true
                 }, label: {
-                    Text(primeBtnText)
-                        .textStyle(.bold, color: .ash)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.indigo1)
-                        .cornerRadius(btnRad)
+                    VStack(spacing: 6) {
+                        Image(systemName: "figure.walk")
+                            .font(.system(size: 28))
+                        Text("Start Activity")
+                            .textStyle(.bold, color: .ash)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.indigo1)
+                    .cornerRadius(btnRad)
                 })
                 .buttonStyle(WearableButtonStyle())
 

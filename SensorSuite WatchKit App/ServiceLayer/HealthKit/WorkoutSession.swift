@@ -16,6 +16,9 @@ protocol WorkoutSessionProtocol: AnyObject {
     var healthStoreAuth: Bool { get }
     var stepCount: Double { get }
     var heartRate: Double { get }
+    var distance: Double { get }
+    var activeCalories: Double { get }
+    var currentHealthData: [String: Any] { get }
 }
 
 extension Container {
@@ -31,12 +34,12 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
 			logger.info("Workout Session Step Count updated: \(stepCount) 👟")
         }
     }
-    private(set) var heartRate: Double = 0 // {
-//        didSet {
-//            logger.debug("Workout Session Heart Rate updated: \(heartRate) ❣️")
-//        }
-//    }
-    
+    private(set) var heartRate: Double = 0
+    private(set) var distance: Double = 0
+    private(set) var activeCalories: Double = 0
+
+    @Injected(\.watchConnectivityService) private var connectivityService
+
     private let healthStore = HKHealthStore()
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
@@ -89,6 +92,8 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         let typesToRead: Set = [
             HKQuantityType.quantityType(forIdentifier: .heartRate)!,
             HKQuantityType.quantityType(forIdentifier: .stepCount)!,
+            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
         ]
 
         // Request authorization for those quantity types.
@@ -103,6 +108,16 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         }
     }
     
+    var currentHealthData: [String: Any] {
+        [
+            "stepCount": stepCount,
+            "heartRate": heartRate,
+            "distance": distance,
+            "activeCalories": activeCalories,
+            "timestamp": Date().timeIntervalSince1970,
+        ]
+    }
+
     func startWorkout() {
         guard session?.state != .running else {
             return
@@ -163,22 +178,27 @@ extension WorkoutSession: HKLiveWorkoutBuilderDelegate {
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
         for type in collectedTypes {
             guard let quantityType = type as? HKQuantityType else { continue }
-            
+
             switch type {
             case HKQuantityType.quantityType(forIdentifier: .stepCount):
                 let statistics = workoutBuilder.statistics(for: quantityType)
-                let stepUnit = HKUnit.count()
-                
-                stepCount = (statistics?.mostRecentQuantity()?.doubleValue(for: stepUnit)) ?? 0
+                stepCount = statistics?.sumQuantity()?.doubleValue(for: .count()) ?? 0
             case HKQuantityType.quantityType(forIdentifier: .heartRate):
                 let statistics = workoutBuilder.statistics(for: quantityType)
                 let heartRateUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
                 let value = statistics?.mostRecentQuantity()?.doubleValue(for: heartRateUnit) ?? 0
-                
-                heartRate = Double(round(1 * value) / 1)
-            default: return
+                heartRate = Double(round(value))
+            case HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning):
+                let statistics = workoutBuilder.statistics(for: quantityType)
+                distance = statistics?.sumQuantity()?.doubleValue(for: .meter()) ?? 0
+            case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
+                let statistics = workoutBuilder.statistics(for: quantityType)
+                activeCalories = statistics?.sumQuantity()?.doubleValue(for: .kilocalorie()) ?? 0
+            default: continue
             }
         }
+
+        connectivityService.sendHealthData(currentHealthData)
     }
     
     func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {

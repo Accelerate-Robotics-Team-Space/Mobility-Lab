@@ -54,42 +54,13 @@ struct PatientHomeView: View {
 
                             VStack(spacing: 16, content: {
                                 HStack {
-									if driver.isRegistered {
-                                        Button(action: {
-                                            if securityService.isDeviceRegistered {
-                                                isLoading = true
-                                                driver.getFacilityConfig { completed in
-                                                    isLoading = false
-                                                    DispatchQueue.main.async {
-                                                        if completed {
-                                                            self.driver.modal = .newPatient
-                                                        }
-                                                    }
-                                                }
-                                            } else {
-                                                driver.isRegistered = securityService.isDeviceRegistered
-                                            }
-                                        }, label: {
-                                            if isLoading {
-                                                ProgressView()
-                                                    .tint(.white)
-                                                    .frame(maxWidth: .infinity)
-                                            } else {
-                                                Text(R.string.localizable.addPatient())
-                                                    .frame(maxWidth: .infinity)
-                                            }
-                                        })
-                                        .disabled(isLoading)
-                                        .altBtnIndigo()
-                                    } else {
-                                        Button(action: {
-                                            driver.modal = .registerDevice
-                                        }, label: {
-                                            Text(R.string.localizable.registerDevice())
-                                                .frame(maxWidth: .infinity)
-                                        })
-                                        .altBtnIndigo()
-                                    }
+                                    Button(action: {
+                                        driver.modal = .newPatient
+                                    }, label: {
+                                        Text("Start Tracking")
+                                            .frame(maxWidth: .infinity)
+                                    })
+                                    .altBtnIndigo()
 
                                     if driver.isDevMode {
                                         Button(action: {

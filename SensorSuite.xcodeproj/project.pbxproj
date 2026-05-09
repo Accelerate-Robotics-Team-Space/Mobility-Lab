@@ -894,6 +894,18 @@
 		E077A1C92B76F61500B87396 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB03452901D799000756D0 /* DataStore.swift */; };
 		E08079432B9B8A73000A81A9 /* StartEndSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */; };
 		E0D273DD2B570EA200BE0A2B /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7CB1B2B3DD38C00CAF75F /* SpeechSynthesizer.swift */; };
+04CA92BEA366FA1B122BA6B4 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
+F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
+688A2CC9051205F4D24C37B2 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
+6A9E6C45EB8D903462E2DC82 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
+		8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */; };
+		544D9B7F8055EFE051EB1E36 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
+		422114BBA8BE03A43E3941E3 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
+		56BD54B9533233F860FDF09E /* EmployeeMobilityDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */; };
+		5A940D48408005ECA7C51108 /* EmployeeMobilityDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */; };
+		54389C993F643E126FAEB557 /* EmployeeHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */; };
+		53FB852F4E8D13BBEC7E9E31 /* ActivitySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */; };
+		3BE75C6A34EB9EFDEA53341E /* ActivitySessionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1725,6 +1737,15 @@
 		E03CF63A2B3648A20055F99C /* HeadOfBedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadOfBedImage.swift; sourceTree = "<group>"; };
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
+9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingView.swift; sourceTree = "<group>"; };
+B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
+		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
+		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = SensorSuite/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
+		2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardView.swift; sourceTree = "<group>"; };
+		2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardViewModel.swift; sourceTree = "<group>"; };
+		71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHealthData.swift; sourceTree = "<group>"; };
+		4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionView.swift; sourceTree = "<group>"; };
+		20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionDriver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1899,6 +1920,7 @@
 		23314AF72900761B0023DB16 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7762F0C32C8A819AEC909C25 /* MobilityTracking */,
 				23BE3A7C2903052400E1FDB5 /* Dashboard */,
 				23314AF82900763C0023DB16 /* Onboarding */,
 				23EB03292901D14A000756D0 /* DeviceProvisioning */,
@@ -2372,6 +2394,7 @@
 		431972F224ED999E00397BDC /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */,
 				430B60762446E26300B90E04 /* HealthKit */,
 				4C7AE1142A327B7C00920D0E /* BLE */,
 				43BC05B02437E51F008CDB03 /* LocalSensorDataBuffer.swift */,
@@ -2766,6 +2789,7 @@
 		439597E7253E279300BC72D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CF175E4A789B326AAAFA2BCD /* Activity */,
 				43F8F3322550CDB9008221C3 /* Scan */,
 				4C991E5E2AA005F50017826B /* Session */,
 				43C3463925DF21FE002E5AA7 /* ViewModifiers */,
@@ -2978,6 +3002,7 @@
 		43C79023251175DF00F18EFC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A7956C75F2ECA7D345645A8F /* MobilityTracking */,
 				43A3277E2568576F00AFB383 /* Dashboard */,
 				43A0BA29256305D000BDC2EE /* Onboarding */,
 				43B81000253776F7008C8B77 /* DeviceProvisioning */,
@@ -3751,6 +3776,34 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
+	isa = PBXGroup;
+	children = (
+		9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */,
+		B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */,
+	);
+	path = MobilityTracking;
+	sourceTree = "<group>";
+};
+		7762F0C32C8A819AEC909C25 /* MobilityTracking */ = {
+			isa = PBXGroup;
+			children = (
+				2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */,
+				2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */,
+				71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */,
+			);
+			path = MobilityTracking;
+			sourceTree = "<group>";
+		};
+		CF175E4A789B326AAAFA2BCD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */,
+				20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4195,6 +4248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BD54B9533233F860FDF09E /* EmployeeMobilityDashboardView.swift in Sources */,
+				5A940D48408005ECA7C51108 /* EmployeeMobilityDashboardViewModel.swift in Sources */,
+				54389C993F643E126FAEB557 /* EmployeeHealthData.swift in Sources */,
+				422114BBA8BE03A43E3941E3 /* PhoneConnectivityService.swift in Sources */,
+				688A2CC9051205F4D24C37B2 /* MobilityTrackingView.swift in Sources */,
+				6A9E6C45EB8D903462E2DC82 /* MobilityTrackingViewModel.swift in Sources */,
 				233CE8112911ACFB00A9D2CE /* PatientLocationProfileCell.swift in Sources */,
 				230BCB1D2925A7EB00BA175A /* DetailedRadioBtn.swift in Sources */,
 				CBBCDCD02D3A0FA5009BF587 /* FacilityTurningProtocols.swift in Sources */,
@@ -4454,6 +4513,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544D9B7F8055EFE051EB1E36 /* PhoneConnectivityService.swift in Sources */,
+				04CA92BEA366FA1B122BA6B4 /* MobilityTrackingView.swift in Sources */,
+				F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */,
 				43F14936255F0D85004871CF /* PatientLandingView.swift in Sources */,
 				4CF6EDFF2C0E367A0051681B /* PatientMonitorDriver+Extensions.swift in Sources */,
 				43AFEAFF24D9EE3800FA592B /* DispatchQueue+Extension.swift in Sources */,
@@ -4879,6 +4941,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FB852F4E8D13BBEC7E9E31 /* ActivitySessionView.swift in Sources */,
+				3BE75C6A34EB9EFDEA53341E /* ActivitySessionDriver.swift in Sources */,
+				8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */,
 				434B556C2549FE990008C0D6 /* Result+Extensions.swift in Sources */,
 				434B553A2549FD050008C0D6 /* SecTrust+Extensions.swift in Sources */,
 				436EFA4827AC278C00EE425A /* JustRequest.swift in Sources */,
@@ -5050,7 +5115,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC812DDD72B000E6837B /* Watch UAT.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = "SSWatchkit $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "ML Watch $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-test";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
@@ -5085,7 +5150,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC832DDD72BE00E6837B /* Watch Production.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = SSWatchkit;
+				APP_DISPLAY_NAME = "Mobility Lab";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
@@ -5120,7 +5185,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC8D2DDD749C00E6837B /* Watch QA.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = "SSWatchkit $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "ML Watch $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
@@ -5155,7 +5220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DISPLAY_NAME = "$(TARGET_NAME) $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "Mobility Lab $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -5209,7 +5274,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_BUNDLE_IDENTIFIER:base)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -5222,7 +5287,7 @@
 				SUBVERSION = 0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = QA;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSION = 119;
+				VERSION = 0;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = QA;
@@ -5277,7 +5342,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuiteTests;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5296,7 +5361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DISPLAY_NAME = "$(TARGET_NAME) $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "Mobility Lab $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -5349,7 +5414,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_BUNDLE_IDENTIFIER:base)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -5363,7 +5428,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
-				VERSION = 119;
+				VERSION = 0;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Prod;
@@ -5372,7 +5437,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC772DDD726D00E6837B /* BMM Production.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = "$(TARGET_NAME)";
+				APP_DISPLAY_NAME = "Mobility Lab";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -5408,7 +5473,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC772DDD726D00E6837B /* BMM Production.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = "$(TARGET_NAME) $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "Mobility Lab $(CONFIGURATION)";
 				APP_VERSION_APPEND = 0;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -5423,7 +5488,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuiteTests;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5442,7 +5507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DISPLAY_NAME = "$(TARGET_NAME) $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "Mobility Lab $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -5495,7 +5560,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_BUNDLE_IDENTIFIER:base)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -5508,7 +5573,7 @@
 				SUBVERSION = 0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSION = 119;
+				VERSION = 0;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Dev;
@@ -5565,7 +5630,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuiteTests;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5583,7 +5648,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D682CC7F2DDD72A700E6837B /* Watch Debug.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = "SSWatchkit $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "ML Watch $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
@@ -5748,7 +5813,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.SensorSuiteUMMTests;
@@ -5859,7 +5924,7 @@
 			baseConfigurationReference = D682CC7D2DDD729100E6837B /* UMM Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DISPLAY_NAME = "$(TARGET_NAME)";
+				APP_DISPLAY_NAME = "Mobility Lab";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -6087,7 +6152,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.SensorSuiteUMMTests;
@@ -6155,7 +6220,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.SensorSuiteUMMTests;
@@ -6225,7 +6290,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.SensorSuiteUMMTests;
@@ -6247,7 +6312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DISPLAY_NAME = "$(TARGET_NAME) $(CONFIGURATION)";
+				APP_DISPLAY_NAME = "Mobility Lab $(CONFIGURATION)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -6301,7 +6366,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_BUNDLE_IDENTIFIER:base)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -6314,7 +6379,7 @@
 				SUBVERSION = 0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TEST;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSION = 119;
+				VERSION = 0;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Test;
@@ -6369,7 +6434,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "1.0.$(VERSION).$(SUBVERSION)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuiteTests;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

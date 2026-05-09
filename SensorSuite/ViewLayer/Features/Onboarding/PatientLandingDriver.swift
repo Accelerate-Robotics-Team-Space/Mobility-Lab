@@ -34,7 +34,6 @@ final class PatientLandingDriver: ObservableObject {
     enum ActiveModal: Identifiable {
         case devMenu
         case newPatient
-        case registerDevice
 
         var id: Int {
             hashValue
@@ -93,7 +92,6 @@ final class PatientLandingDriver: ObservableObject {
         notificationCenter.addObserver(self, selector: #selector(revokedHandler), name: SecurityService.revokedNote, object: nil)
 
         setupActionSheet()
-        requestCameraAuthIfNeeded()
 
         checkForExistingSessionAndMoveToDashboard()
         requestBluetoothPermission()

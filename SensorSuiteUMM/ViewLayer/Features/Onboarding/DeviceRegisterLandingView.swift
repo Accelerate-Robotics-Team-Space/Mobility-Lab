@@ -15,22 +15,7 @@ struct DeviceRegisterLandingView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .bottom) {
-                VStack {
-                    if deviceRegisterLandingDriver.currentScreen == .landing {
-                        DeviceHomeView(deviceRegistrationLandingDriver: deviceRegisterLandingDriver)
-                    } else if deviceRegisterLandingDriver.currentScreen == .dashboard {
-                        DashboardView()
-                            .environmentObject(deviceRegisterLandingDriver)
-                            .refreshable {
-                                DispatchQueue.main.async {
-                                    if let scene = UIApplication.shared.connectedScenes.first,
-                                       let sceneDelegate: SceneDelegate = (scene.delegate as? SceneDelegate) {
-                                        sceneDelegate.resetRootController(scene: scene)
-                                    }
-                                }
-                            }
-                    }
-                }
+                EmployeeMobilityDashboardView()
                 VStack {
                     Text(DeviceConstants.getUMMBuildInfoStr())
                         .textStyle(.overline, color: .silver)
@@ -44,15 +29,7 @@ struct DeviceRegisterLandingView: View {
             item: $deviceRegisterLandingDriver.modal,
             onDismiss: { }
         ) { item in
-            if item == .registerDevice {
-                ZStack(alignment: .bottom) {
-                    EnrollmentView($deviceRegisterLandingDriver.modal)
-                        .environmentObject(deviceRegisterLandingDriver)
-                    Text(DeviceConstants.getUMMBuildInfoStr())
-                        .textStyle(.overline, color: .silver)
-                        .multilineTextAlignment(.center)
-                }
-            } else if item == .devMenu {
+            if item == .devMenu {
                 DevMenuView($deviceRegisterLandingDriver.modal)
             }
         }

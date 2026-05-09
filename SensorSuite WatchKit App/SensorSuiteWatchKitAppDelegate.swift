@@ -12,12 +12,14 @@ class SensorSuiteWatchKitAppDelegate: NSObject, WKApplicationDelegate {
 
     private var runtimeSession: WKExtendedRuntimeSession?
     @Injected(\.sentryLogger) private var sentryLogger
+    @Injected(\.watchConnectivityService) private var watchConnectivityService
     // TODO: Inject with FactoryKit when available
     private let deviceMotionManager: DeviceMotionManagerProtocol = DeviceMotionManager.shared
     @Injected(\.locationService) var locationService
 
     func applicationDidFinishLaunching() {
         sentryLogger.start()
+        watchConnectivityService.activate()
     }
 
     func applicationDidBecomeActive() {

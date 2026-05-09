@@ -35,10 +35,10 @@ extension AppVersion {
     init?(_ version: String) {
         let parts = version.split(separator: ".").compactMap { Int($0) }
 
-        guard [3, 4].contains(parts.count) else { return nil }
+        guard (2...4).contains(parts.count) else { return nil }
         self.major = parts[0]
         self.minor = parts[1]
-        self.patch = parts[2]
+        self.patch = parts.count >= 3 ? parts[2] : 0
         if parts.count == 4 {
             self.atlasExtra = parts[3]
         } else {

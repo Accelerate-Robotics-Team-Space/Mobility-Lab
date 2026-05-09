@@ -37,8 +37,10 @@
 		<string>_proxy-alt-mesh._tcp</string>
 		<string>_edge-alt-mesh._tcp</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>We need to scan QR codes</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Our app uses HealthKit to track your mobility, steps, heart rate, and other fitness metrics</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Our app uses HealthKit to track your mobility, steps, heart rate, and other fitness metrics</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Our app uses the location data to monitor activity during use</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
