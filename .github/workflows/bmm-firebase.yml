@@ -44,21 +44,21 @@ jobs:
     - name: Import provisioning profile
       run: |
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/BMM.mobileprovision
+        echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_Prod.mobileprovision
         
-    - name: Build and archive BMM scheme
+    - name: Build and archive SensorSuite-Prod scheme
       run: |
         xcodebuild archive \
-          -workspace BMM.xcworkspace \
-          -scheme BMM \
+          -workspace SensorSuite.xcworkspace \
+          -scheme SensorSuite-Prod \
           -configuration Release \
-          -archivePath BMM.xcarchive \
+          -archivePath SensorSuite.xcarchive \
           -allowProvisioningUpdates
           
     - name: Export IPA
       run: |
         xcodebuild -exportArchive \
-          -archivePath BMM.xcarchive \
+          -archivePath SensorSuite.xcarchive \
           -exportPath ./export \
           -exportOptionsPlist ExportOptions.plist
           
@@ -68,7 +68,7 @@ jobs:
         appId: ${{ secrets.FIREBASE_APP_ID }}
         serviceCredentialsFileContent: ${{ secrets.FIREBASE_TOKEN }}
         groups: testers
-        file: export/BMM.ipa
+        file: export/SensorSuite.ipa
         releaseNotes: "Build from commit ${{ github.sha }}"
 
     - name: Cleanup keychain
