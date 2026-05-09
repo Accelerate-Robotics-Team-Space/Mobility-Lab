@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CA92BEA366FA1B122BA6B4 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
 		1145F83768243DE4049B431A /* CardViewWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145F42DFD602A2732484507 /* CardViewWithButton.swift */; };
 		230BCB0D291AEF5B00BA175A /* DashboardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BCB0C291AEF5B00BA175A /* DashboardListView.swift */; };
 		230BCB0F291AF01100BA175A /* BMMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BCB0E291AF01100BA175A /* BMMListView.swift */; };
@@ -186,6 +187,8 @@
 		35B321B9275A9FE80023132C /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B321B7275A9E660023132C /* chime.mp3 */; };
 		35B8A946276172CB00D1DF9C /* wrong-position.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B8A944276172CB00D1DF9C /* wrong-position.mp3 */; };
 		35B8A947276172CB00D1DF9C /* time-to-turn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B8A945276172CB00D1DF9C /* time-to-turn.mp3 */; };
+		3BE75C6A34EB9EFDEA53341E /* ActivitySessionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */; };
+		422114BBA8BE03A43E3941E3 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
 		4304B4E725474BEF0033711A /* LoggingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4304B4E625474BEF0033711A /* LoggingManager.swift */; };
 		4304B4F125474C090033711A /* LoggingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4304B4F025474C090033711A /* LoggingProxy.swift */; };
 		4304B51125474D4A0033711A /* LoggingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4304B4E625474BEF0033711A /* LoggingManager.swift */; };
@@ -572,6 +575,14 @@
 		4CFAAC3E29F2E86900CB1940 /* BMMCardLowBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAAC3D29F2E86900CB1940 /* BMMCardLowBattery.swift */; };
 		4CFAAC4029F2EC8A00CB1940 /* BMMCardReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAAC3F29F2EC8A00CB1940 /* BMMCardReady.swift */; };
 		4CFAAC4229F2ED3400CB1940 /* BMMCardSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAAC4129F2ED3400CB1940 /* BMMCardSwitching.swift */; };
+		53FB852F4E8D13BBEC7E9E31 /* ActivitySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */; };
+		54389C993F643E126FAEB557 /* EmployeeHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */; };
+		544D9B7F8055EFE051EB1E36 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
+		56BD54B9533233F860FDF09E /* EmployeeMobilityDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */; };
+		5A940D48408005ECA7C51108 /* EmployeeMobilityDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */; };
+		688A2CC9051205F4D24C37B2 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
+		6A9E6C45EB8D903462E2DC82 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
+		8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */; };
 		CBBCDCD02D3A0FA5009BF587 /* FacilityTurningProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */; };
 		D210E4452F72092900EF186B /* PatientLandingDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210E4442F72092900EF186B /* PatientLandingDriverTests.swift */; };
 		D2AA9FD82F32AB6800E2EF1A /* StaticStorageValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA9FD02F32AB6800E2EF1A /* StaticStorageValuePublisher.swift */; };
@@ -894,18 +905,7 @@
 		E077A1C92B76F61500B87396 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB03452901D799000756D0 /* DataStore.swift */; };
 		E08079432B9B8A73000A81A9 /* StartEndSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */; };
 		E0D273DD2B570EA200BE0A2B /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7CB1B2B3DD38C00CAF75F /* SpeechSynthesizer.swift */; };
-04CA92BEA366FA1B122BA6B4 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
-F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
-688A2CC9051205F4D24C37B2 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
-6A9E6C45EB8D903462E2DC82 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
-		8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */; };
-		544D9B7F8055EFE051EB1E36 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
-		422114BBA8BE03A43E3941E3 /* PhoneConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */; };
-		56BD54B9533233F860FDF09E /* EmployeeMobilityDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */; };
-		5A940D48408005ECA7C51108 /* EmployeeMobilityDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */; };
-		54389C993F643E126FAEB557 /* EmployeeHealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */; };
-		53FB852F4E8D13BBEC7E9E31 /* ActivitySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */; };
-		3BE75C6A34EB9EFDEA53341E /* ActivitySessionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */; };
+		F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1025,6 +1025,7 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 
 /* Begin PBXFileReference section */
 		1145F42DFD602A2732484507 /* CardViewWithButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewWithButton.swift; sourceTree = "<group>"; };
+		20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionDriver.swift; sourceTree = "<group>"; };
 		230BCB0C291AEF5B00BA175A /* DashboardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardListView.swift; sourceTree = "<group>"; };
 		230BCB0E291AF01100BA175A /* BMMListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMListView.swift; sourceTree = "<group>"; };
 		230BCB10291AF3A800BA175A /* RollPitchVisualizationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollPitchVisualizationsListView.swift; sourceTree = "<group>"; };
@@ -1104,7 +1105,7 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		2377A05027FD027B003EE436 /* ComplianceBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceBar.swift; sourceTree = "<group>"; };
 		2377A05227FE25AC003EE436 /* StartStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartStopButton.swift; sourceTree = "<group>"; };
 		2377A05427FE2AAE003EE436 /* StartNextPositionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNextPositionButton.swift; sourceTree = "<group>"; };
-		2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.119.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorSuite UMM.TEST.1.0.119.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorSuite UMM.TEST.1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2378ECDC29007061002B9EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2378ECE529007062002B9EA2 /* SensorSuite UMM Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SensorSuite UMM Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		238DFB7527E91CB5004F5DEF /* BadgeInfoBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeInfoBubble.swift; sourceTree = "<group>"; };
@@ -1180,6 +1181,8 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		255794752DD7D64A00377593 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
 		2580CCAA2E383F1F00D7B27F /* UnitRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitRoomModel.swift; sourceTree = "<group>"; };
 		2580CCAD2E383F7900D7B27F /* CheckUnitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUnitModel.swift; sourceTree = "<group>"; };
+		2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardViewModel.swift; sourceTree = "<group>"; };
+		2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardView.swift; sourceTree = "<group>"; };
 		35B321B3275A985E0023132C /* AudioAlertPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAlertPlayer.swift; sourceTree = "<group>"; };
 		35B321B7275A9E660023132C /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		35B8A944276172CB00D1DF9C /* wrong-position.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wrong-position.mp3"; sourceTree = "<group>"; };
@@ -1252,7 +1255,7 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		434EC518260BDE5800F38D16 /* ALTSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTSession.swift; sourceTree = "<group>"; };
 		43514E542575742A00BAC55D /* DashboardDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDriver.swift; sourceTree = "<group>"; };
 		435266A0255DE62700DC1CB0 /* PopupAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlert.swift; sourceTree = "<group>"; };
-		4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.119.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorSuite BMM.TEST.1.0.119.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorSuite BMM.TEST.1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4352A6B82437939D00050AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4352A6BB2437939D00050AD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4352A6C52437939D00050AD2 /* SensorSuite BMM Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SensorSuite BMM Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1421,6 +1424,7 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		43FC8142259A57CC00A8F385 /* WearableLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearableLocation.swift; sourceTree = "<group>"; };
 		43FE9F1D27599CC30084FCCF /* Time_To_Turn_Your_Patient.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Time_To_Turn_Your_Patient.mp3; sourceTree = "<group>"; };
 		43FE9F1E27599CC30084FCCF /* Wrong_Position_Detected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong_Position_Detected.mp3; sourceTree = "<group>"; };
+		4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionView.swift; sourceTree = "<group>"; };
 		4C0512A82BCF06BC0057CCB0 /* HeadOfBedSideImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadOfBedSideImage.swift; sourceTree = "<group>"; };
 		4C0D795D2C5979D300C042FE /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
 		4C0D79602C597A9D00C042FE /* ProvisioningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningEndpoint.swift; sourceTree = "<group>"; };
@@ -1512,6 +1516,10 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		4CFAAC3D29F2E86900CB1940 /* BMMCardLowBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMCardLowBattery.swift; sourceTree = "<group>"; };
 		4CFAAC3F29F2EC8A00CB1940 /* BMMCardReady.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMCardReady.swift; sourceTree = "<group>"; };
 		4CFAAC4129F2ED3400CB1940 /* BMMCardSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMCardSwitching.swift; sourceTree = "<group>"; };
+		71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHealthData.swift; sourceTree = "<group>"; };
+		9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingView.swift; sourceTree = "<group>"; };
+		B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
+		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityTurningProtocols.swift; sourceTree = "<group>"; };
 		D210E4442F72092900EF186B /* PatientLandingDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLandingDriverTests.swift; sourceTree = "<group>"; };
 		D2AA9FCD2F32AB6800E2EF1A /* CombineStorageValuePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineStorageValuePublisher.swift; sourceTree = "<group>"; };
@@ -1737,15 +1745,7 @@ F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa
 		E03CF63A2B3648A20055F99C /* HeadOfBedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadOfBedImage.swift; sourceTree = "<group>"; };
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
-9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingView.swift; sourceTree = "<group>"; };
-B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
-		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = SensorSuite/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
-		2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardView.swift; sourceTree = "<group>"; };
-		2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardViewModel.swift; sourceTree = "<group>"; };
-		71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHealthData.swift; sourceTree = "<group>"; };
-		4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionView.swift; sourceTree = "<group>"; };
-		20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionDriver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2549,16 +2549,17 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				D637EF9C2F608FFB00031080 /* scripts */,
 				4352A6B02437939A00050AD2 /* Products */,
 				4371485D24388457003273AC /* Frameworks */,
+				F19C83692FAF721F003EADFD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
 		4352A6B02437939A00050AD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.119.0.app */,
+				4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.app */,
 				4352A6C52437939D00050AD2 /* SensorSuite BMM Tests.xctest */,
 				230DC5C0280604D3003F96D2 /* SensorSuite WatchKit App.app */,
-				2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.119.0.app */,
+				2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.app */,
 				2378ECE529007062002B9EA2 /* SensorSuite UMM Tests.xctest */,
 			);
 			name = Products;
@@ -3443,6 +3444,34 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 			path = StateViews;
 			sourceTree = "<group>";
 		};
+		7762F0C32C8A819AEC909C25 /* MobilityTracking */ = {
+			isa = PBXGroup;
+			children = (
+				2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */,
+				2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */,
+				71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */,
+			);
+			path = MobilityTracking;
+			sourceTree = "<group>";
+		};
+		A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
+			isa = PBXGroup;
+			children = (
+				9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */,
+				B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */,
+			);
+			path = MobilityTracking;
+			sourceTree = "<group>";
+		};
+		CF175E4A789B326AAAFA2BCD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */,
+				20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		D2AA9FB32F32AB0700E2EF1A /* Internal */ = {
 			isa = PBXGroup;
 			children = (
@@ -3776,32 +3805,12 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
-	isa = PBXGroup;
-	children = (
-		9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */,
-		B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */,
-	);
-	path = MobilityTracking;
-	sourceTree = "<group>";
-};
-		7762F0C32C8A819AEC909C25 /* MobilityTracking */ = {
+		F19C83692FAF721F003EADFD /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */,
-				2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */,
-				71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */,
+				FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */,
 			);
-			path = MobilityTracking;
-			sourceTree = "<group>";
-		};
-		CF175E4A789B326AAAFA2BCD /* Activity */ = {
-			isa = PBXGroup;
-			children = (
-				4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */,
-				20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */,
-			);
-			path = Activity;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3859,7 +3868,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 				D6182A352F2A9D0100F9A9B6 /* FactoryKit */,
 			);
 			productName = SensorSuiteUMM;
-			productReference = 2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.119.0.app */;
+			productReference = 2378ECD629007060002B9EA2 /* SensorSuite UMM.TEST.1.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2378ECE429007062002B9EA2 /* SensorSuite UMM Tests */ = {
@@ -3911,7 +3920,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 				D6182A2E2F2A9CF100F9A9B6 /* FactoryKit */,
 			);
 			productName = SensorSuite;
-			productReference = 4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.119.0.app */;
+			productReference = 4352A6AF2437939A00050AD2 /* SensorSuite BMM.TEST.1.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4352A6C42437939D00050AD2 /* SensorSuite BMM Tests */ = {
@@ -5314,7 +5323,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.qa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.qa;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME).QA.$(MARKETING_VERSION)";
 				PROVISIONING_PROFILE_SPECIFIER = "SensorSuite QA";
@@ -5458,7 +5467,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.prod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.prod;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SensorSuite Prod";
@@ -5601,7 +5610,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=1000 -Xfrontend -warn-long-function-bodies=100";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.dev;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME).DEV.$(MARKETING_VERSION)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -6406,7 +6415,7 @@ A7956C75F2ECA7D345645A8F /* MobilityTracking */ = {
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.test;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME).TEST.$(MARKETING_VERSION)";
 				PROVISIONING_PROFILE_SPECIFIER = "SensorSuite Test";
