@@ -46,11 +46,10 @@ steps:
       targetType: "inline"
       script: |
         #!/bin/bash
-        PLIST_FILE="$(System.DefaultWorkingDirectory)$(plistPath)"
         NEW_VERSION="$(Build.BuildId)-$(FirGroupName)"
-        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $NEW_VERSION" "$PLIST_FILE"
-        CHECK=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$PLIST_FILE")
-        echo "Updated Build Number to $CHECK in 'info.plist' file: $PLIST_FILE"
+        cd "$(System.DefaultWorkingDirectory)"
+        agvtool new-version -all "$NEW_VERSION"
+        echo "Updated CURRENT_PROJECT_VERSION to $NEW_VERSION"
 
   - task: Bash@3
     displayName: "🏃🏻‍➡️✅ Run Tests"
