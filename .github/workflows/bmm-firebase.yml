@@ -77,15 +77,12 @@ jobs:
       run: npm install -g firebase-tools
 
     - name: Upload to Firebase App Distribution
-      env:
-        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_TOKEN }}
-        GOOGLE_APPLICATION_CREDENTIALS: /tmp/firebase-credentials.json
       run: |
-        echo "$FIREBASE_SERVICE_ACCOUNT" > /tmp/firebase-credentials.json
         IPA=$(find export -name "*.ipa" | head -1)
         echo "Uploading IPA: $IPA"
         firebase appdistribution:distribute "$IPA" \
           --app "${{ secrets.FIREBASE_APP_ID }}" \
+          --token "${{ secrets.FIREBASE_TOKEN }}" \
           --groups testers \
           --release-notes "Build from commit ${{ github.sha }}"
 
