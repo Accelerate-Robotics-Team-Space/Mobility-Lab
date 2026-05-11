@@ -66,7 +66,8 @@ jobs:
           -archivePath SensorSuite.xcarchive \
           -derivedDataPath DerivedData \
           -allowProvisioningUpdates \
-          -skipPackagePluginValidation
+          -skipPackagePluginValidation \
+          CURRENT_PROJECT_VERSION="${{ github.run_number }}-PROD"
           
     - name: Export IPA
       run: |
