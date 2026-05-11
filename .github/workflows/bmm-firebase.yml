@@ -51,28 +51,28 @@ jobs:
     - name: Resolve package dependencies
       run: |
         xcodebuild -resolvePackageDependencies \
-          -workspace SensorSuite.xcworkspace \
-          -scheme SensorSuite-Prod \
+          -workspace MobilityLab.xcworkspace \
+          -scheme MobilityLab-Prod \
           -configuration Prod \
           -derivedDataPath DerivedData \
           -skipPackagePluginValidation
 
-    - name: Build and archive SensorSuite-Prod scheme
+    - name: Build and archive MobilityLab-Prod scheme
       run: |
         xcodebuild archive \
-          -workspace SensorSuite.xcworkspace \
-          -scheme SensorSuite-Prod \
+          -workspace MobilityLab.xcworkspace \
+          -scheme MobilityLab-Prod \
           -configuration Prod \
-          -archivePath SensorSuite.xcarchive \
+          -archivePath MobilityLab.xcarchive \
           -derivedDataPath DerivedData \
           -allowProvisioningUpdates \
           -skipPackagePluginValidation \
           CURRENT_PROJECT_VERSION="${{ github.run_number }}-PROD"
-          
+
     - name: Export IPA
       run: |
         xcodebuild -exportArchive \
-          -archivePath SensorSuite.xcarchive \
+          -archivePath MobilityLab.xcarchive \
           -exportPath ./export \
           -exportOptionsPlist ExportOptions.plist
           
