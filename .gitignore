@@ -83,3 +83,4 @@ Package.pins
 iOSInjectionProject/
 
 .sentryclirc
+.github/workflows/bmm-firebase.yml

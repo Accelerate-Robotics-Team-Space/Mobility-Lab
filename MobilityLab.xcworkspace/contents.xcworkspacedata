@@ -4,4 +4,7 @@
    <FileRef
       location = "group:MobilityLab.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ExportOptions.plist">
+   </FileRef>
 </Workspace>
