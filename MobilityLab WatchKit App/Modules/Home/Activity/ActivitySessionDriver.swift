@@ -16,6 +16,9 @@ final class ActivitySessionDriver: ObservableObject {
     @Published var calories: Double = 0
     @Published var distance: Double = 0   // meters
     @Published var elapsedSeconds: Int = 0
+    @Published var wearLocation: WearLocation = .unknown
+
+    private var sessionStartDate = Date()
 
     @Injected(\.workoutSession) private var workoutSession
     @Injected(\.watchConnectivityService) private var connectivityService
@@ -24,6 +27,7 @@ final class ActivitySessionDriver: ObservableObject {
     private var timer: Timer?
     private var dataTimer: Timer?
     private let deviceMotionManager: DeviceMotionManagerProtocol = DeviceMotionManager.shared
+    private let motionDetector = MotionActivityDetector(sampleRate: 25.0)
 
     // MARK: - Formatted Values
 
@@ -59,6 +63,15 @@ final class ActivitySessionDriver: ObservableObject {
     // MARK: - Session Lifecycle
 
     func startSession() {
+        sessionStartDate = Date()
+
+        // Reset sensor-based detector
+        motionDetector.reset()
+        motionDetector.startListening()
+
+        // Increase sample rate for step detection (default 2Hz is too slow)
+        deviceMotionManager.sampleRate = 25.0
+
         workoutSession.startWorkout()
         locationService.startLocationUpdate()
         deviceMotionManager.initaliseDatasources()
@@ -69,7 +82,7 @@ final class ActivitySessionDriver: ObservableObject {
             self?.elapsedSeconds += 1
         }
 
-        // Data polling timer - read from workout session every 2 seconds
+        // Data polling timer - merge HealthKit + sensor data every 2 seconds
         dataTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
             self?.pollWorkoutData()
         }
@@ -78,21 +91,63 @@ final class ActivitySessionDriver: ObservableObject {
     func stopSession() {
         timer?.invalidate()
         dataTimer?.invalidate()
+        motionDetector.stopListening()
         workoutSession.stopWorkout()
         locationService.stopLocationUpdate()
 
-        // Send final data
-        connectivityService.sendHealthData(workoutSession.currentHealthData)
+        // Final merge of sensor + HealthKit data
+        pollWorkoutData()
+
+        // Send completed activity data to iPhone
+        var completedData = buildMergedHealthData()
+        completedData["activityCompleted"] = true
+        completedData["startTime"] = sessionStartDate.timeIntervalSince1970
+        completedData["endTime"] = Date().timeIntervalSince1970
+        completedData["duration"] = elapsedSeconds
+        completedData["wearLocation"] = motionDetector.detectedLocation.rawValue
+        connectivityService.sendHealthData(completedData)
     }
 
     // MARK: - Data Polling
 
+    /// Merges HealthKit data (accurate on wrist) with sensor-derived data (works anywhere).
+    /// Takes the maximum of each metric so the best source wins automatically.
     private func pollWorkoutData() {
-        steps = workoutSession.stepCount
-        heartRate = workoutSession.heartRate
-        distance = workoutSession.distance
-        calories = workoutSession.activeCalories
+        let hkSteps = workoutSession.stepCount
+        let sensorSteps = Double(motionDetector.stepCount)
 
-        connectivityService.sendHealthData(workoutSession.currentHealthData)
+        let hkDistance = workoutSession.distance
+        let sensorDistance = motionDetector.estimatedDistance
+
+        let hkCalories = workoutSession.activeCalories
+        let sensorCalories = motionDetector.estimatedCalories
+
+        // Best-of-both: HealthKit is accurate on wrist; sensor works on chest/ankle/foot
+        steps = max(hkSteps, sensorSteps)
+        distance = max(hkDistance, sensorDistance)
+        calories = max(hkCalories, sensorCalories)
+
+        // Heart rate only comes from HealthKit (requires skin contact)
+        heartRate = workoutSession.heartRate
+
+        // Update detected wear location
+        wearLocation = motionDetector.detectedLocation
+
+        connectivityService.sendHealthData(buildMergedHealthData())
+    }
+
+    /// Builds the data dictionary with merged sensor + HealthKit values.
+    private func buildMergedHealthData() -> [String: Any] {
+        [
+            "stepCount": steps,
+            "heartRate": heartRate,
+            "heartRateAvg": workoutSession.heartRateAvg,
+            "heartRateMax": workoutSession.heartRateMax,
+            "distance": distance,
+            "activeCalories": calories,
+            "wearLocation": motionDetector.detectedLocation.rawValue,
+            "isMoving": motionDetector.isMoving,
+            "timestamp": Date().timeIntervalSince1970,
+        ]
     }
 }

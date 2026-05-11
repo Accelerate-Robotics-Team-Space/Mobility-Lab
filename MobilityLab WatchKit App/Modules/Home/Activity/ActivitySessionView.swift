@@ -38,6 +38,17 @@ struct ActivitySessionView: View {
                     .foregroundColor(.white)
                     .padding(.top, 4)
 
+                // Wear location indicator
+                if driver.wearLocation != .unknown {
+                    HStack(spacing: 4) {
+                        Image(systemName: "sensor.fill")
+                            .font(.system(size: 9))
+                        Text(driver.wearLocation.displayName)
+                            .font(.system(size: 10, weight: .medium))
+                    }
+                    .foregroundColor(.white.opacity(0.6))
+                }
+
                 // Metrics grid
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 6) {
                     WatchMetricTile(icon: "figure.walk", value: driver.formattedSteps, label: "Steps", color: .indigo1)
