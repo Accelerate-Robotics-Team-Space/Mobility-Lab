@@ -5155,7 +5155,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.test;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.test;
 			};
 			name = Test;
 		};
@@ -5190,7 +5190,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.prod;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.prod;
 			};
 			name = Prod;
 		};
@@ -5225,7 +5225,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.qa;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.qa;
 			};
 			name = QA;
 		};
@@ -5686,7 +5686,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.dev;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.dev;
 			};
 			name = Dev;
 		};
