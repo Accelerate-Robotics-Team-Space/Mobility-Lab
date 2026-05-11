@@ -5676,7 +5676,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.SensorSuite.iOS.dev.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.dev.watchkitapp;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
