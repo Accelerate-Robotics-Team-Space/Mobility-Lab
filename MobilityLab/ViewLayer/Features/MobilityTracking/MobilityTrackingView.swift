@@ -58,6 +58,16 @@ struct MobilityTrackingView: View {
                     Image(systemName: "applewatch")
                         .font(.caption)
                         .foregroundColor(viewModel.isWatchConnected ? .green1 : .charcoal3)
+                    if !viewModel.wearLocation.isEmpty && viewModel.isWatchConnected {
+                        Text("·")
+                            .foregroundColor(.charcoal3)
+                        Image(systemName: "sensor.fill")
+                            .font(.system(size: 9))
+                            .foregroundColor(.indigo1)
+                        Text(viewModel.wearLocation.capitalized)
+                            .font(.custom("Avenir", size: 11))
+                            .foregroundColor(.charcoal3)
+                    }
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 6)

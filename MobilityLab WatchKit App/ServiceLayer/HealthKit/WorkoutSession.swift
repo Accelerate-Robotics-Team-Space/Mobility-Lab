@@ -16,6 +16,8 @@ protocol WorkoutSessionProtocol: AnyObject {
     var healthStoreAuth: Bool { get }
     var stepCount: Double { get }
     var heartRate: Double { get }
+    var heartRateAvg: Double { get }
+    var heartRateMax: Double { get }
     var distance: Double { get }
     var activeCalories: Double { get }
     var currentHealthData: [String: Any] { get }
@@ -35,6 +37,17 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         }
     }
     private(set) var heartRate: Double = 0
+    private var heartRateSamples: [Double] = []
+
+    var heartRateAvg: Double {
+        guard !heartRateSamples.isEmpty else { return 0 }
+        return heartRateSamples.reduce(0, +) / Double(heartRateSamples.count)
+    }
+
+    var heartRateMax: Double {
+        heartRateSamples.max() ?? 0
+    }
+
     private(set) var distance: Double = 0
     private(set) var activeCalories: Double = 0
 
@@ -112,6 +125,8 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         [
             "stepCount": stepCount,
             "heartRate": heartRate,
+            "heartRateAvg": heartRateAvg,
+            "heartRateMax": heartRateMax,
             "distance": distance,
             "activeCalories": activeCalories,
             "timestamp": Date().timeIntervalSince1970,
@@ -123,6 +138,14 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
             return
         }
 		logger.info("⌚️ startworkout, prepare to init")
+
+        // Reset metrics
+        stepCount = 0
+        heartRate = 0
+        heartRateSamples = []
+        distance = 0
+        activeCalories = 0
+
         // Initialize our workout
         initWorkout()
         
@@ -188,6 +211,9 @@ extension WorkoutSession: HKLiveWorkoutBuilderDelegate {
                 let heartRateUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
                 let value = statistics?.mostRecentQuantity()?.doubleValue(for: heartRateUnit) ?? 0
                 heartRate = Double(round(value))
+                if heartRate > 0 {
+                    heartRateSamples.append(heartRate)
+                }
             case HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning):
                 let statistics = workoutBuilder.statistics(for: quantityType)
                 distance = statistics?.sumQuantity()?.doubleValue(for: .meter()) ?? 0

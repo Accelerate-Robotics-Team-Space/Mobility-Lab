@@ -9,6 +9,7 @@ import Combine
 import FactoryKit
 import HealthKit
 import Foundation
+import SwiftUI
 
 final class MobilityTrackingViewModel: ObservableObject {
     @Published var steps: Double = 0
@@ -19,6 +20,8 @@ final class MobilityTrackingViewModel: ObservableObject {
     @Published var floorsClimbed: Double = 0
     @Published var activeMinutes: Double = 0
     @Published var isWatchConnected: Bool = false
+    @Published var isMoving: Bool = false
+    @Published var wearLocation: String = ""
     @Published var activities: [ActivityRecord] = []
 
     @Injected(\.phoneConnectivityService) private var connectivityService
@@ -64,7 +67,6 @@ final class MobilityTrackingViewModel: ObservableObject {
 
     init() {
         subscribeToWatchData()
-        loadTodayActivities()
     }
 
     // MARK: - Watch Data
@@ -79,11 +81,47 @@ final class MobilityTrackingViewModel: ObservableObject {
     }
 
     private func handleWatchData(_ data: [String: Any]) {
-        if let val = data["stepCount"] as? Double { steps = val }
-        if let val = data["heartRate"] as? Double { heartRate = val }
-        if let val = data["distance"] as? Double { distance = val }
-        if let val = data["activeCalories"] as? Double { calories = val }
+        if let val = data["stepCount"] as? Double { steps = max(steps, val) }
+        if let val = data["heartRate"] as? Double, val > 0 { heartRate = val }
+        if let val = data["distance"] as? Double { distance = max(distance, val) }
+        if let val = data["activeCalories"] as? Double { calories = max(calories, val) }
+        if let val = data["wearLocation"] as? String { wearLocation = val }
+        if let val = data["isMoving"] as? Bool { isMoving = val }
         isWatchConnected = true
+
+        // When watch sends a completed activity, add it immediately and refresh from HealthKit
+        if data["activityCompleted"] as? Bool == true {
+            addActivityFromWatchData(data)
+            // Delayed refresh to pick up the HealthKit-saved workout
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+                self?.fetchTodayWorkouts()
+            }
+        }
+    }
+
+    private func addActivityFromWatchData(_ data: [String: Any]) {
+        guard let startTimeInterval = data["startTime"] as? TimeInterval,
+              let endTimeInterval = data["endTime"] as? TimeInterval else { return }
+
+        let record = ActivityRecord(
+            title: "Activity",
+            icon: "figure.walk",
+            color: .indigo1,
+            startTime: Date(timeIntervalSince1970: startTimeInterval),
+            endTime: Date(timeIntervalSince1970: endTimeInterval),
+            steps: data["stepCount"] as? Double ?? 0,
+            distance: data["distance"] as? Double ?? 0,
+            heartRateAvg: data["heartRateAvg"] as? Double ?? 0,
+            heartRateMax: data["heartRateMax"] as? Double ?? 0,
+            calories: data["activeCalories"] as? Double ?? 0,
+            spO2: 0
+        )
+
+        // Avoid duplicates — don't add if an activity with the same start time exists
+        if !activities.contains(where: { abs($0.startTime.timeIntervalSince(record.startTime)) < 60 }) {
+            activities.append(record)
+            activities.sort { $0.startTime < $1.startTime }
+        }
     }
 
     // MARK: - Authorization
@@ -101,12 +139,14 @@ final class MobilityTrackingViewModel: ObservableObject {
             HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
             HKQuantityType.quantityType(forIdentifier: .flightsClimbed)!,
             HKQuantityType.quantityType(forIdentifier: .appleExerciseTime)!,
+            HKObjectType.workoutType(),
         ]
 
         healthStore.requestAuthorization(toShare: nil, read: readTypes) { [weak self] success, _ in
             guard success else { return }
             DispatchQueue.main.async {
                 self?.fetchAllMetrics()
+                self?.fetchTodayWorkouts()
                 self?.startPeriodicRefresh()
             }
         }
@@ -145,6 +185,7 @@ final class MobilityTrackingViewModel: ObservableObject {
     private func startPeriodicRefresh() {
         timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
             self?.fetchAllMetrics()
+            self?.fetchTodayWorkouts()
         }
     }
 
@@ -152,47 +193,140 @@ final class MobilityTrackingViewModel: ObservableObject {
         timer?.invalidate()
     }
 
-    // MARK: - Activities
+    // MARK: - Activities (HealthKit Workouts)
 
-    private func loadTodayActivities() {
-        let cal = Calendar.current
+    private func fetchTodayWorkouts() {
+        let workoutType = HKObjectType.workoutType()
         let now = Date()
-        let today = cal.startOfDay(for: now)
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: true)
 
-        activities = [
-            ActivityRecord(
-                title: "Morning Walk",
-                icon: "figure.walk",
-                color: .indigo1,
-                startTime: cal.date(bySettingHour: 7, minute: 15, second: 0, of: today)!,
-                endTime: cal.date(bySettingHour: 7, minute: 50, second: 0, of: today)!,
-                steps: 3200, distance: 2100, heartRateAvg: 92, heartRateMax: 118, calories: 145, spO2: 98
-            ),
-            ActivityRecord(
-                title: "Stair Climb",
-                icon: "figure.stairs",
-                color: .tangerine,
-                startTime: cal.date(bySettingHour: 9, minute: 30, second: 0, of: today)!,
-                endTime: cal.date(bySettingHour: 9, minute: 42, second: 0, of: today)!,
-                steps: 680, distance: 320, heartRateAvg: 105, heartRateMax: 132, calories: 62, spO2: 97
-            ),
-            ActivityRecord(
-                title: "Afternoon Run",
-                icon: "figure.run",
-                color: .green1,
-                startTime: cal.date(bySettingHour: 12, minute: 0, second: 0, of: today)!,
-                endTime: cal.date(bySettingHour: 12, minute: 35, second: 0, of: today)!,
-                steps: 4500, distance: 3800, heartRateAvg: 142, heartRateMax: 168, calories: 320, spO2: 96
-            ),
-            ActivityRecord(
-                title: "Evening Walk",
-                icon: "figure.walk",
-                color: .cornflower,
-                startTime: cal.date(bySettingHour: 17, minute: 30, second: 0, of: today)!,
-                endTime: cal.date(bySettingHour: 18, minute: 10, second: 0, of: today)!,
-                steps: 4100, distance: 2800, heartRateAvg: 88, heartRateMax: 105, calories: 180, spO2: 98
-            ),
-        ]
+        let query = HKSampleQuery(
+            sampleType: workoutType,
+            predicate: predicate,
+            limit: HKObjectQueryNoLimit,
+            sortDescriptors: [sortDescriptor]
+        ) { [weak self] _, samples, _ in
+            guard let self, let workouts = samples as? [HKWorkout], !workouts.isEmpty else {
+                return
+            }
+
+            let group = DispatchGroup()
+            var records: [ActivityRecord] = []
+
+            for workout in workouts {
+                group.enter()
+                self.buildActivityRecord(from: workout) { record in
+                    records.append(record)
+                    group.leave()
+                }
+            }
+
+            group.notify(queue: .main) {
+                self.activities = records.sorted { $0.startTime < $1.startTime }
+            }
+        }
+
+        healthStore.execute(query)
+    }
+
+    private func buildActivityRecord(from workout: HKWorkout, completion: @escaping (ActivityRecord) -> Void) {
+        let (title, icon, color) = workoutMetadata(for: workout.workoutActivityType)
+        let distance = workout.totalDistance?.doubleValue(for: .meter()) ?? 0
+        let calories = workout.totalEnergyBurned?.doubleValue(for: .kilocalorie()) ?? 0
+
+        // Fetch steps, heart rate stats, and SpO2 for the workout time range
+        let workoutPredicate = HKQuery.predicateForSamples(
+            withStart: workout.startDate, end: workout.endDate, options: .strictStartDate
+        )
+
+        let group = DispatchGroup()
+        var steps: Double = 0
+        var hrAvg: Double = 0
+        var hrMax: Double = 0
+        var spO2Value: Double = 0
+
+        // Fetch steps
+        group.enter()
+        if let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount) {
+            let stepQuery = HKStatisticsQuery(
+                quantityType: stepType, quantitySamplePredicate: workoutPredicate, options: .cumulativeSum
+            ) { _, result, _ in
+                steps = result?.sumQuantity()?.doubleValue(for: .count()) ?? 0
+                group.leave()
+            }
+            healthStore.execute(stepQuery)
+        } else { group.leave() }
+
+        // Fetch heart rate samples for avg/max
+        group.enter()
+        if let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) {
+            let hrSort = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: true)
+            let hrQuery = HKSampleQuery(
+                sampleType: hrType, predicate: workoutPredicate,
+                limit: HKObjectQueryNoLimit, sortDescriptors: [hrSort]
+            ) { _, samples, _ in
+                let hrUnit = HKUnit.count().unitDivided(by: .minute())
+                let values = (samples as? [HKQuantitySample])?.map { $0.quantity.doubleValue(for: hrUnit) } ?? []
+                if !values.isEmpty {
+                    hrAvg = values.reduce(0, +) / Double(values.count)
+                    hrMax = values.max() ?? 0
+                }
+                group.leave()
+            }
+            healthStore.execute(hrQuery)
+        } else { group.leave() }
+
+        // Fetch SpO2
+        group.enter()
+        if let spO2Type = HKQuantityType.quantityType(forIdentifier: .oxygenSaturation) {
+            let spO2Sort = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+            let spO2Query = HKSampleQuery(
+                sampleType: spO2Type, predicate: workoutPredicate,
+                limit: 1, sortDescriptors: [spO2Sort]
+            ) { _, samples, _ in
+                if let sample = samples?.first as? HKQuantitySample {
+                    spO2Value = sample.quantity.doubleValue(for: .percent()) * 100
+                }
+                group.leave()
+            }
+            healthStore.execute(spO2Query)
+        } else { group.leave() }
+
+        group.notify(queue: .main) {
+            let record = ActivityRecord(
+                title: title,
+                icon: icon,
+                color: color,
+                startTime: workout.startDate,
+                endTime: workout.endDate,
+                steps: steps,
+                distance: distance,
+                heartRateAvg: hrAvg,
+                heartRateMax: hrMax,
+                calories: calories,
+                spO2: spO2Value
+            )
+            completion(record)
+        }
+    }
+
+    private func workoutMetadata(for type: HKWorkoutActivityType) -> (String, String, Color) {
+        switch type {
+        case .walking:
+            return ("Walk", "figure.walk", .indigo1)
+        case .running:
+            return ("Run", "figure.run", .green1)
+        case .stairClimbing:
+            return ("Stair Climb", "figure.stairs", .tangerine)
+        case .cycling:
+            return ("Cycling", "figure.outdoor.cycle", .cornflower)
+        case .hiking:
+            return ("Hike", "figure.hiking", .green1)
+        default:
+            return ("Activity", "figure.walk", .indigo1)
+        }
     }
 
     // MARK: - HealthKit Queries

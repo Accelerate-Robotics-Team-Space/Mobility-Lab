@@ -275,7 +275,7 @@
 		4352A6B92437939D00050AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4352A6B82437939D00050AD2 /* Assets.xcassets */; };
 		4352A6BC2437939D00050AD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4352A6BB2437939D00050AD2 /* Preview Assets.xcassets */; };
 		4352A6E52437939D00050AD2 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352A6E42437939D00050AD2 /* HostingController.swift */; };
-		4352A6E72437939D00050AD2 /* MobilityLabWatchKitAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352A6E62437939D00050AD2 /* MobilityLabWatchKitAppDelegate.swift */; };
+		4352A6E72437939D00050AD2 /* SensorSuiteWatchKitAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352A6E62437939D00050AD2 /* SensorSuiteWatchKitAppDelegate.swift */; };
 		4352A6E92437939D00050AD2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352A6E82437939D00050AD2 /* NotificationController.swift */; };
 		4352A6ED2437939E00050AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4352A6EC2437939E00050AD2 /* Assets.xcassets */; };
 		4352A6F02437939E00050AD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4352A6EF2437939E00050AD2 /* Preview Assets.xcassets */; };
@@ -561,7 +561,7 @@
 		4CF2E5E52AF544240030E8A8 /* DashboardNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2E5E32AF544200030E8A8 /* DashboardNavigationView.swift */; };
 		4CF2E5E82AF545F10030E8A8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2E5E62AF545ED0030E8A8 /* SideMenuView.swift */; };
 		4CF6EDFF2C0E367A0051681B /* PatientMonitorDriver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6EDFE2C0E367A0051681B /* PatientMonitorDriver+Extensions.swift */; };
-		4CF6EE432C1900450051681B /* MobilityLabWatchKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6EE422C1900450051681B /* MobilityLabWatchKitApp.swift */; };
+		4CF6EE432C1900450051681B /* SensorSuiteWatchKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6EE422C1900450051681B /* SensorSuiteWatchKitApp.swift */; };
 		4CF9EF472B8E7E7B00029649 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EF462B8E7E7B00029649 /* DateExtensionsTests.swift */; };
 		4CFA9B872BBB3C2100ABF77C /* TurnProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA9B862BBB3C2100ABF77C /* TurnProtocol.swift */; };
 		4CFA9B8B2BBB3C2A00ABF77C /* ComplianceAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA9B8A2BBB3C2A00ABF77C /* ComplianceAngle.swift */; };
@@ -803,6 +803,7 @@
 		D69B05522CAF0556001C351F /* AuthenticatedEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B05512CAF0556001C351F /* AuthenticatedEndpointProtocol.swift */; };
 		D69B11822D2460B300EE28C7 /* SystemInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B11812D2460B300EE28C7 /* SystemInfoCell.swift */; };
 		D6A0F7D02F84263B001E1821 /* PatientMonitorDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F7CF2F84263B001E1821 /* PatientMonitorDriverTests.swift */; };
+		D6A1B2C3D4E5F60718293A5C /* MotionActivityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1B2C3D4E5F60718293A4B /* MotionActivityDetector.swift */; };
 		D6A391AA2F6336A1008B6618 /* XCTestCase+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391A92F6336A1008B6618 /* XCTestCase+Utilities.swift */; };
 		D6AA0C162F71CE7A00EF31ED /* NodeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA0C152F71CE7A00EF31ED /* NodeManagerTests.swift */; };
 		D6AA0C3E2F71D46E00EF31ED /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA0C3D2F71D46E00EF31ED /* TimeInterval+Ext.swift */; };
@@ -1105,7 +1106,7 @@
 		2377A05027FD027B003EE436 /* ComplianceBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceBar.swift; sourceTree = "<group>"; };
 		2377A05227FE25AC003EE436 /* StartStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartStopButton.swift; sourceTree = "<group>"; };
 		2377A05427FE2AAE003EE436 /* StartNextPositionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNextPositionButton.swift; sourceTree = "<group>"; };
-		2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.119.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobilityLab EMD.TEST.1.0.119.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobilityLab EMD.TEST.1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2378ECDC29007061002B9EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2378ECE529007062002B9EA2 /* MobilityLab EMD Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MobilityLab EMD Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		238DFB7527E91CB5004F5DEF /* BadgeInfoBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeInfoBubble.swift; sourceTree = "<group>"; };
@@ -1255,13 +1256,13 @@
 		434EC518260BDE5800F38D16 /* ALTSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTSession.swift; sourceTree = "<group>"; };
 		43514E542575742A00BAC55D /* DashboardDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDriver.swift; sourceTree = "<group>"; };
 		435266A0255DE62700DC1CB0 /* PopupAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlert.swift; sourceTree = "<group>"; };
-		4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.119.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobilityLab BMM.TEST.1.0.119.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobilityLab BMM.TEST.1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4352A6B82437939D00050AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4352A6BB2437939D00050AD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4352A6C52437939D00050AD2 /* MobilityLab BMM Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MobilityLab BMM Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4352A6D62437939D00050AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4352A6E42437939D00050AD2 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		4352A6E62437939D00050AD2 /* MobilityLabWatchKitAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSuiteWatchKitAppDelegate.swift; sourceTree = "<group>"; };
+		4352A6E62437939D00050AD2 /* SensorSuiteWatchKitAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSuiteWatchKitAppDelegate.swift; sourceTree = "<group>"; };
 		4352A6E82437939D00050AD2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		4352A6EC2437939E00050AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4352A6EF2437939E00050AD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -1504,7 +1505,7 @@
 		4CF6EE2D2C18B7AA0051681B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CF6EE2E2C18B7AA0051681B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CF6EE332C18B9AF0051681B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4CF6EE422C1900450051681B /* MobilityLabWatchKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSuiteWatchKitApp.swift; sourceTree = "<group>"; };
+		4CF6EE422C1900450051681B /* SensorSuiteWatchKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSuiteWatchKitApp.swift; sourceTree = "<group>"; };
 		4CF9EF462B8E7E7B00029649 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
 		4CFA9B862BBB3C2100ABF77C /* TurnProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnProtocol.swift; sourceTree = "<group>"; };
 		4CFA9B8A2BBB3C2A00ABF77C /* ComplianceAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceAngle.swift; sourceTree = "<group>"; };
@@ -1666,6 +1667,7 @@
 		D69B05512CAF0556001C351F /* AuthenticatedEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedEndpointProtocol.swift; sourceTree = "<group>"; };
 		D69B11812D2460B300EE28C7 /* SystemInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfoCell.swift; sourceTree = "<group>"; };
 		D6A0F7CF2F84263B001E1821 /* PatientMonitorDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMonitorDriverTests.swift; sourceTree = "<group>"; };
+		D6A1B2C3D4E5F60718293A4B /* MotionActivityDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityDetector.swift; sourceTree = "<group>"; };
 		D6A391A92F6336A1008B6618 /* XCTestCase+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utilities.swift"; sourceTree = "<group>"; };
 		D6AA0C152F71CE7A00EF31ED /* NodeManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeManagerTests.swift; sourceTree = "<group>"; };
 		D6AA0C3D2F71D46E00EF31ED /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
@@ -1738,15 +1740,7 @@
 		E03CF63A2B3648A20055F99C /* HeadOfBedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadOfBedImage.swift; sourceTree = "<group>"; };
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
-9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingView.swift; sourceTree = "<group>"; };
-B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
-		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = MobilityLab/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
-		2FF8292C286077D6A94CF6B9 /* EmployeeMobilityDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardView.swift; sourceTree = "<group>"; };
-		2BF73BBDCF78E7C039B57D32 /* EmployeeMobilityDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMobilityDashboardViewModel.swift; sourceTree = "<group>"; };
-		71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHealthData.swift; sourceTree = "<group>"; };
-		4A6A98E567803AD64A159BA6 /* ActivitySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionView.swift; sourceTree = "<group>"; };
-		20711A0B181CC4599EE8FC6C /* ActivitySessionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySessionDriver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2400,6 +2394,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				4C7AE1142A327B7C00920D0E /* BLE */,
 				43BC05B02437E51F008CDB03 /* LocalSensorDataBuffer.swift */,
 				432393692437C1C2007F5C4A /* DeviceMotionManager.swift */,
+				D6A1B2C3D4E5F60718293A4B /* MotionActivityDetector.swift */,
 				4C597BE42B98DCD300257D7A /* LocationService.swift */,
 				4C5629D62B7A89D700B6FA16 /* LogStore.swift */,
 			);
@@ -2556,10 +2551,10 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 		4352A6B02437939A00050AD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.119.0.app */,
+				4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.app */,
 				4352A6C52437939D00050AD2 /* MobilityLab BMM Tests.xctest */,
 				230DC5C0280604D3003F96D2 /* MobilityLab WatchKit App.app */,
-				2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.119.0.app */,
+				2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.app */,
 				2378ECE529007062002B9EA2 /* MobilityLab EMD Tests.xctest */,
 			);
 			name = Products;
@@ -2932,8 +2927,8 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				431972F224ED999E00397BDC /* ServiceLayer */,
 				4C991E602AA007240017826B /* Modules */,
 				43C5545624C7849F0007E454 /* Resources */,
-				4352A6E62437939D00050AD2 /* MobilityLabWatchKitAppDelegate.swift */,
-				4CF6EE422C1900450051681B /* MobilityLabWatchKitApp.swift */,
+				4352A6E62437939D00050AD2 /* SensorSuiteWatchKitAppDelegate.swift */,
+				4CF6EE422C1900450051681B /* SensorSuiteWatchKitApp.swift */,
 				43EE332A253E3F7900E23C7E /* WatchConstants.swift */,
 				4352A6D62437939D00050AD2 /* Assets.xcassets */,
 			);
@@ -3854,7 +3849,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				D6182A352F2A9D0100F9A9B6 /* FactoryKit */,
 			);
 			productName = MobilityLabEMD;
-			productReference = 2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.119.0.app */;
+			productReference = 2378ECD629007060002B9EA2 /* MobilityLab EMD.TEST.1.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2378ECE429007062002B9EA2 /* MobilityLab EMD Tests */ = {
@@ -3906,7 +3901,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				D6182A2E2F2A9CF100F9A9B6 /* FactoryKit */,
 			);
 			productName = MobilityLab;
-			productReference = 4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.119.0.app */;
+			productReference = 4352A6AF2437939A00050AD2 /* MobilityLab BMM.TEST.1.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4352A6C42437939D00050AD2 /* MobilityLab BMM Tests */ = {
@@ -4980,7 +4975,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				43C6E90125000693003EC525 /* UserDefaults+Watch+Extensions.swift in Sources */,
 				432C41B725785E5900FCAAB5 /* UInt8+Extensions.swift in Sources */,
 				D693A4402EEB99710033FEBB /* ClosedRange+Extension.swift in Sources */,
-				4CF6EE432C1900450051681B /* MobilityLabWatchKitApp.swift in Sources */,
+				4CF6EE432C1900450051681B /* SensorSuiteWatchKitApp.swift in Sources */,
 				43726F42250AF304006A96A9 /* BleRoutable.swift in Sources */,
 				23C03E382A4A41E900926843 /* Toast.swift in Sources */,
 				43966C272641F67100007DB6 /* ALTRevoker.swift in Sources */,
@@ -4989,6 +4984,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				4C991E692AA0E1080017826B /* BLEPeripheralDriver.swift in Sources */,
 				4C3CFAB12C61839C000C524B /* FirebaseLogWriter.swift in Sources */,
 				4371485824388107003273AC /* DeviceMotionManager.swift in Sources */,
+				D6A1B2C3D4E5F60718293A5C /* MotionActivityDetector.swift in Sources */,
 				43F682352649EFE1006BBE1B /* SecIdentity+Extensions.swift in Sources */,
 				D658FA142F2D7F5B00680E95 /* NotificationCenterService.swift in Sources */,
 				43729F0725F2B29B0028F0ED /* ScanView.swift in Sources */,
@@ -5007,7 +5003,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				43EE332B253E3F7900E23C7E /* WatchConstants.swift in Sources */,
 				4352A6E92437939D00050AD2 /* NotificationController.swift in Sources */,
 				4C991E672AA0D73B0017826B /* BLECentralManagerDriver.swift in Sources */,
-				4352A6E72437939D00050AD2 /* MobilityLabWatchKitAppDelegate.swift in Sources */,
+				4352A6E72437939D00050AD2 /* SensorSuiteWatchKitAppDelegate.swift in Sources */,
 				4313CDA524F5AADD0056DC6A /* BleService.swift in Sources */,
 				43CDF8172469C3E700338248 /* Date+Extension.swift in Sources */,
 				4356235424EDA28100521AD7 /* DevMenuSensorView.swift in Sources */,
@@ -5114,12 +5110,11 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-test";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = TEST;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
-				"DEVELOPMENT_TEAM[sdk=watchos*]" = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5130,7 +5125,6 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MobilityLab WatchKit App Test";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WATCH";
@@ -5328,7 +5322,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MobilityLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -5474,7 +5468,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MobilityLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -5616,7 +5610,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MobilityLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -6420,7 +6414,7 @@ B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileR
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MobilityLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
