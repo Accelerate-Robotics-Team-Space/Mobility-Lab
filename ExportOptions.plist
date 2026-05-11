@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>enterprise</string>
+    <key>teamID</key>
+    <string>5H7L8A5TP8</string>
+    <key>compileBitcode</key>
+    <false/>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>stripSwiftSymbols</key>
+    <true/>
+    <key>thinning</key>
+    <string>&lt;none&gt;</string>
+    <key>uploadSymbols</key>
+    <true/>
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>com.AtlastLiftTech.MobilityLab.iOS.prod</key>
+        <string>MobilityLab Prod</string>
+        <key>com.AtlastLiftTech.MobilityLab.iOS.prod.watchkitapp</key>
+        <string>MobilityLab WatchKit App Prod</string>
+    </dict>
+</dict>
+</plist>

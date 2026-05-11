@@ -46,11 +46,8 @@ steps:
       targetType: "inline"
       script: |
         #!/bin/bash
-        PLIST_FILE="$(System.DefaultWorkingDirectory)$(plistPath)"
         NEW_VERSION="$(Build.BuildId)-$(FirGroupName)"
-        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $NEW_VERSION" "$PLIST_FILE"
-        CHECK=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$PLIST_FILE")
-        echo "Updated Build Number to $CHECK in 'info.plist' file: $PLIST_FILE"
+        echo "Build number will be set to: $NEW_VERSION"
 
   - task: Bash@3
     displayName: "🏃🏻‍➡️✅ Run Tests"
@@ -155,6 +152,7 @@ steps:
         -scheme "$(Scheme)" \
         -archivePath "SensorSuite" \
         archive \
+        CURRENT_PROJECT_VERSION="$(Build.BuildId)-$(FirGroupName)" \
         | tee "xcodebuild.log" \
         | xcbeautify
 
