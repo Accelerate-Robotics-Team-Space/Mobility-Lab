@@ -1,0 +1,95 @@
+name: BMM Firebase Distribution
+
+on:
+  push:
+    branches: [ main, develop, feature/pipeline-setup ]
+  pull_request:
+    branches: [ main, feature/pipeline-setup ]
+  workflow_dispatch:
+
+jobs:
+  build-and-distribute:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: "26.2"
+        
+    - name: Install dependencies
+      run: |
+        if [ -f "Podfile" ]; then
+          sudo gem install cocoapods
+          pod install
+        elif [ -f "Package.swift" ]; then
+          echo "Using Swift Package Manager"
+        fi
+        
+    - name: Create temporary keychain
+      run: |
+        security create-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        security default-keychain -s build.keychain
+        security unlock-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        security set-keychain-settings -t 3600 -u build.keychain
+        
+    - name: Import certificate
+      run: |
+        echo "${{ secrets.IOS_CERTIFICATE_BASE64 }}" | base64 --decode > certificate.p12
+        security import certificate.p12 -k build.keychain -P "${{ secrets.IOS_CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        
+    - name: Import provisioning profiles
+      run: |
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_Prod.mobileprovision
+        echo "${{ secrets.WATCHKIT_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_WatchKit_Prod.mobileprovision
+        
+    - name: Resolve package dependencies
+      run: |
+        xcodebuild -resolvePackageDependencies \
+          -workspace MobilityLab.xcworkspace \
+          -scheme MobilityLab-Prod \
+          -configuration Prod \
+          -derivedDataPath DerivedData \
+          -skipPackagePluginValidation
+
+    - name: Build and archive MobilityLab-Prod scheme
+      run: |
+        xcodebuild archive \
+          -workspace MobilityLab.xcworkspace \
+          -scheme MobilityLab-Prod \
+          -configuration Prod \
+          -archivePath MobilityLab.xcarchive \
+          -derivedDataPath DerivedData \
+          -allowProvisioningUpdates \
+          -skipPackagePluginValidation \
+          CURRENT_PROJECT_VERSION="${{ github.run_number }}-PROD"
+          
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+          -archivePath MobilityLab.xcarchive \
+          -exportPath ./export \
+          -exportOptionsPlist ExportOptions.plist
+          
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+
+    - name: Upload to Firebase App Distribution
+      run: |
+        IPA=$(find export -name "*.ipa" | head -1)
+        echo "Uploading IPA: $IPA"
+        firebase appdistribution:distribute "$IPA" \
+          --app "${{ secrets.FIREBASE_APP_ID }}" \
+          --token "${{ secrets.FIREBASE_TOKEN }}" \
+          --groups testers \
+          --release-notes "Build from commit ${{ github.sha }}"
+
+    - name: Cleanup keychain
+      if: always()
+      run: |
+        security delete-keychain build.keychain || true

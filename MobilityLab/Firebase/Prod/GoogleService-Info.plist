@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDJRgddEPEykCCyl35pQPP8EArtBh6Qz-M</string>
+	<string>AIzaSyDUoTmi2SQyt0gvu7fs173swmP8whC-bxM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>417482253665</string>
+	<string>377968343758</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.AtlastLiftTech.SensorSuite.iOS.prod</string>
+	<string>com.AtlastLiftTech.MobilityLab.iOS.prod</string>
 	<key>PROJECT_ID</key>
-	<string>sensorsuite-bmm-8de44</string>
+	<string>mobility-lab-d1cbc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sensorsuite-bmm-8de44.appspot.com</string>
+	<string>mobility-lab-d1cbc.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:417482253665:ios:4fb2d443f8636c09ae1120</string>
+	<string>1:377968343758:ios:07b275c0120b72ec96ee9f</string>
 </dict>
 </plist>
