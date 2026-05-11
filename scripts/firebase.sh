@@ -10,7 +10,7 @@
 :   Atlas Mobility Modifications
 : ==========================================
 
-# This script is used in the SensorSuite CI/CD build pipeline. currently it is referenced by `build-template.yml`
+# This script is used in the MobilityLab CI/CD build pipeline. currently it is referenced by `build-template.yml`
 #
 # This is a slightly modified version of the script downloaded from https://firebase.tools
 # This version will attempt to download the previous version if the `latest` version fails

@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockSessionRepository: SessionRepositoryProtocol {
     // swiftlint:disable:next large_tuple

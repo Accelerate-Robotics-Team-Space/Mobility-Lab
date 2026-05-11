@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockPatientRepository: PatientRepositoryProtocol {
     var updateLocationHandler: ((ALTPatient, PatientLocation) async -> ALTPatient)?

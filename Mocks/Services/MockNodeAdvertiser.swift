@@ -4,7 +4,7 @@
 
 import Foundation
 import MultipeerConnectivity
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class FakeAdvertiser: NearbyServiceAdvertising {
     weak var delegate: MCNearbyServiceAdvertiserDelegate?

@@ -8,7 +8,7 @@ import NIO
 import NIOCore
 import NIOHTTP1
 import NIOTransportServices
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 struct MockConnAck: MQTTConnAck {
     let sessionPresent: Bool

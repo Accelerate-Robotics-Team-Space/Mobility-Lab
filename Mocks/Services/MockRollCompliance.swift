@@ -3,7 +3,7 @@
 //
 
 import Foundation
-@testable import SensorSuite_BMM
+@testable import MobilityLab_BMM
 
 final class MockRollCompliance: RollComplianceProtocol {
     var targetRollHandler: ((PositionalFlagCategory) -> ClosedRange<Double>)?

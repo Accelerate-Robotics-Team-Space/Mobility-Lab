@@ -10,10 +10,10 @@
 	<string>enterprise</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.AtlastLiftTech.SensorSuite.iOS.prod</key>
-		<string>SensorSuite Prod</string>
-		<key>com.AtlastLiftTech.SensorSuite.iOS.prod.watchkitapp</key>
-		<string>SensorSuite WatchKit App Prod</string>
+		<key>com.AtlastLiftTech.MobilityLab.iOS.prod</key>
+		<string>MobilityLab Prod</string>
+		<key>com.AtlastLiftTech.MobilityLab.iOS.prod.watchkitapp</key>
+		<string>MobilityLab WatchKit App Prod</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>

@@ -1,0 +1,58 @@
+//
+//  DispatchQueue+Extension.swift
+//  MobilityLab
+//
+//  Created by Josh Franco on 8/4/20.
+//  Copyright © 2020 Atlas LiftTech. All rights reserved.
+//
+
+import Foundation
+
+// swiftlint:disable:next legacy_random
+private let nilContext: AnyHashable = arc4random()
+private var throttleWorkItems = [AnyHashable: DispatchWorkItem]()
+private var lastDebounceCallTimes = [AnyHashable: DispatchTime]()
+
+public extension DispatchQueue {
+    /// Delays a closure execution and ensures no other executions are made during deadline
+    /// - Parameters:
+    ///   - deadline: The timespan to delay a closure execution
+    ///   - context: The context in which the throttle should be executed
+    ///   - action:  The closure to be executed
+    func throttle(deadline: DispatchTime, context: AnyHashable? = nil, action: @escaping () -> Void) {
+        let worker = DispatchWorkItem {
+            defer { throttleWorkItems.removeValue(forKey: context ?? nilContext) }
+            action()
+        }
+        
+        asyncAfter(deadline: deadline, execute: worker)
+        
+        throttleWorkItems[context ?? nilContext]?.cancel()
+        throttleWorkItems[context ?? nilContext] = worker
+    }
+    
+    /// Executes a closure and ensures no other executions will be made during the interval.
+    /// - Parameters:
+    ///   - interval: The interval in which new calls will be ignored
+    ///   - context: The context in which the debounce should be executed
+    ///   - action: The closure to be executed
+    func debounce(interval: Double, context: AnyHashable? = nil, action: @escaping () -> Void) {
+        if let last = lastDebounceCallTimes[context ?? nilContext], last + interval > .now() {
+            return
+        }
+        
+        lastDebounceCallTimes[context ?? nilContext] = .now()
+        async(execute: action)
+        
+        // Cleanup & release context
+        throttle(deadline: .now() + interval) {
+            lastDebounceCallTimes.removeValue(forKey: context ?? nilContext)
+        }
+    }
+}
+
+func dispatchAssertion(condition: DispatchPredicate) {
+		#if DEV || QA || TEST
+		dispatchPrecondition(condition: condition)
+		#endif
+}
