@@ -5182,8 +5182,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.prod.watchkitapp;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "SensorSuite WatchKit App Prod";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "SensorSuite WatchKit App Prod";
+				PROVISIONING_PROFILE_SPECIFIER = "MobilityLab WatchKit App Prod";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MobilityLab WatchKit App Prod";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WATCH";
