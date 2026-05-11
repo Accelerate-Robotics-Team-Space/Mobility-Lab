@@ -46,7 +46,7 @@ jobs:
       run: |
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
         echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_Prod.mobileprovision
-        echo "${{ secrets.WATCHKIT_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/SensorSuite_WatchKit_Prod.mobileprovision
+        echo "${{ secrets.WATCHKIT_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_WatchKit_Prod.mobileprovision
         
     - name: Resolve package dependencies
       run: |
