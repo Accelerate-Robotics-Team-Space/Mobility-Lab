@@ -26,6 +26,7 @@ final class ActivitySessionDriver: ObservableObject {
 
     private var timer: Timer?
     private var dataTimer: Timer?
+    private var sensorTimer: Timer?
     private let deviceMotionManager: DeviceMotionManagerProtocol = DeviceMotionManager.shared
     private let motionDetector = MotionActivityDetector(sampleRate: 25.0)
 
@@ -67,7 +68,6 @@ final class ActivitySessionDriver: ObservableObject {
 
         // Reset sensor-based detector
         motionDetector.reset()
-        motionDetector.startListening()
 
         // Increase sample rate for step detection (default 2Hz is too slow)
         deviceMotionManager.sampleRate = 25.0
@@ -77,12 +77,19 @@ final class ActivitySessionDriver: ObservableObject {
         deviceMotionManager.initaliseDatasources()
         WKInterfaceDevice.current().play(.start)
 
-        // Duration timer
+        // Duration timer (1s)
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             self?.elapsedSeconds += 1
         }
 
-        // Data polling timer - merge HealthKit + sensor data every 2 seconds
+        // Sensor polling timer (25Hz) — directly feeds accelerometer data to the motion detector
+        sensorTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / 25.0, repeats: true) { [weak self] _ in
+            guard let self else { return }
+            let dataPoint = self.deviceMotionManager.getDataPoint()
+            self.motionDetector.processMotionData(dataPoint)
+        }
+
+        // Data sync timer — merge HealthKit + sensor data and send to iPhone every 2 seconds
         dataTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
             self?.pollWorkoutData()
         }
@@ -91,9 +98,10 @@ final class ActivitySessionDriver: ObservableObject {
     func stopSession() {
         timer?.invalidate()
         dataTimer?.invalidate()
-        motionDetector.stopListening()
+        sensorTimer?.invalidate()
         workoutSession.stopWorkout()
         locationService.stopLocationUpdate()
+        deviceMotionManager.deinitDatasources()
 
         // Final merge of sensor + HealthKit data
         pollWorkoutData()
