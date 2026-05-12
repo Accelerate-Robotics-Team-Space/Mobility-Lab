@@ -2,7 +2,7 @@ name: BMM Firebase Distribution
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, App-Behavior-and-UI-changes ]
   workflow_dispatch:
 
 jobs:
