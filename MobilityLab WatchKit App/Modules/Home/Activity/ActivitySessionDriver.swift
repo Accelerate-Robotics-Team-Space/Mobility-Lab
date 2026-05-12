@@ -63,13 +63,15 @@ final class ActivitySessionDriver: ObservableObject {
 
     // MARK: - Session Lifecycle
 
-    func startSession() {
+    func startSession(placement: WearLocation = .wrist) {
         sessionStartDate = Date()
 
-        // Reset sensor-based detector
+        // Reset and start sensor-based detector + pedometer
         motionDetector.reset()
+        motionDetector.userPlacement = placement
+        motionDetector.startPedometer()
 
-        // Increase sample rate for step detection (default 2Hz is too slow)
+        // Set sample rate for accelerometer (used for location detection + fallback steps)
         deviceMotionManager.sampleRate = 25.0
 
         workoutSession.startWorkout()
@@ -82,14 +84,14 @@ final class ActivitySessionDriver: ObservableObject {
             self?.elapsedSeconds += 1
         }
 
-        // Sensor polling timer (25Hz) — directly feeds accelerometer data to the motion detector
-        sensorTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / 25.0, repeats: true) { [weak self] _ in
+        // Sensor polling timer (10Hz) — feeds accelerometer data for location + fallback steps
+        sensorTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
             guard let self else { return }
             let dataPoint = self.deviceMotionManager.getDataPoint()
             self.motionDetector.processMotionData(dataPoint)
         }
 
-        // Data sync timer — merge HealthKit + sensor data and send to iPhone every 2 seconds
+        // Data sync timer — merge all sources and send to iPhone every 2 seconds
         dataTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
             self?.pollWorkoutData()
         }
@@ -99,11 +101,12 @@ final class ActivitySessionDriver: ObservableObject {
         timer?.invalidate()
         dataTimer?.invalidate()
         sensorTimer?.invalidate()
+        motionDetector.stopPedometer()
         workoutSession.stopWorkout()
         locationService.stopLocationUpdate()
         deviceMotionManager.deinitDatasources()
 
-        // Final merge of sensor + HealthKit data
+        // Final data merge
         pollWorkoutData()
 
         // Send completed activity data to iPhone
@@ -118,33 +121,34 @@ final class ActivitySessionDriver: ObservableObject {
 
     // MARK: - Data Polling
 
-    /// Merges HealthKit data (accurate on wrist) with sensor-derived data (works anywhere).
-    /// Takes the maximum of each metric so the best source wins automatically.
+    /// Merges three data sources: HealthKit, CMPedometer, and accelerometer.
+    /// Takes the best value from each source automatically.
     private func pollWorkoutData() {
+        // Steps: best of HealthKit, pedometer, or sensor
         let hkSteps = workoutSession.stepCount
-        let sensorSteps = Double(motionDetector.stepCount)
+        let detectorSteps = Double(motionDetector.stepCount)
+        steps = max(hkSteps, detectorSteps)
 
+        // Distance: best of HealthKit or pedometer/sensor
         let hkDistance = workoutSession.distance
-        let sensorDistance = motionDetector.estimatedDistance
+        let detectorDistance = motionDetector.estimatedDistance
+        distance = max(hkDistance, detectorDistance)
 
+        // Calories: best of HealthKit or sensor estimate
         let hkCalories = workoutSession.activeCalories
         let sensorCalories = motionDetector.estimatedCalories
-
-        // Best-of-both: HealthKit is accurate on wrist; sensor works on chest/ankle/foot
-        steps = max(hkSteps, sensorSteps)
-        distance = max(hkDistance, sensorDistance)
         calories = max(hkCalories, sensorCalories)
 
-        // Heart rate only comes from HealthKit (requires skin contact)
+        // Heart rate: HealthKit only (requires optical sensor on skin)
         heartRate = workoutSession.heartRate
 
-        // Update detected wear location
-        wearLocation = motionDetector.detectedLocation
+        // Wear location: user-specified placement
+        wearLocation = motionDetector.effectivePlacement
 
         connectivityService.sendHealthData(buildMergedHealthData())
     }
 
-    /// Builds the data dictionary with merged sensor + HealthKit values.
+    /// Builds the data dictionary with merged values from all sources.
     private func buildMergedHealthData() -> [String: Any] {
         [
             "stepCount": steps,
@@ -153,7 +157,7 @@ final class ActivitySessionDriver: ObservableObject {
             "heartRateMax": workoutSession.heartRateMax,
             "distance": distance,
             "activeCalories": calories,
-            "wearLocation": motionDetector.detectedLocation.rawValue,
+            "wearLocation": motionDetector.effectivePlacement.rawValue,
             "isMoving": motionDetector.isMoving,
             "timestamp": Date().timeIntervalSince1970,
         ]

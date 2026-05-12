@@ -98,15 +98,23 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
     override init() {
         super.init()
         
-        // The quantity type to write to the health store.
-        let typesToShare: Set = [HKQuantityType.workoutType()]
-        
-        // The quantity types to read from the health store.
-        let typesToRead: Set = [
+        // The quantity types to write to the health store.
+        // The workout builder needs share permission for all collected data types.
+        let typesToShare: Set<HKSampleType> = [
+            HKQuantityType.workoutType(),
             HKQuantityType.quantityType(forIdentifier: .heartRate)!,
             HKQuantityType.quantityType(forIdentifier: .stepCount)!,
             HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
             HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+        ]
+
+        // The quantity types to read from the health store.
+        let typesToRead: Set<HKObjectType> = [
+            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
+            HKQuantityType.quantityType(forIdentifier: .stepCount)!,
+            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKObjectType.workoutType(),
         ]
 
         // Request authorization for those quantity types.
@@ -190,9 +198,14 @@ private extension WorkoutSession {
         session?.delegate = self
         builder?.delegate = self
         
-        // Set the workout builder's data source.
-        builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore,
-                                                      workoutConfiguration: config)
+        // Set the workout builder's data source with explicit collection for all types.
+        let dataSource = HKLiveWorkoutDataSource(healthStore: healthStore,
+                                                  workoutConfiguration: config)
+        dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .heartRate)!, predicate: nil)
+        dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .stepCount)!, predicate: nil)
+        dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!, predicate: nil)
+        dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!, predicate: nil)
+        builder?.dataSource = dataSource
     }
 }
 
