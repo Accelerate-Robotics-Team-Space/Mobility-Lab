@@ -176,8 +176,8 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
 private extension WorkoutSession {
     func initWorkout() {
         let config = HKWorkoutConfiguration()
-        config.activityType = .other
-        config.locationType = .indoor
+        config.activityType = .walking
+        config.locationType = .outdoor
         
         do {
             session = try HKWorkoutSession(healthStore: healthStore, configuration: config)
