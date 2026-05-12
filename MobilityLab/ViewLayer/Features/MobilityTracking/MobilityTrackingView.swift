@@ -12,28 +12,66 @@ import SwiftUI
 
 struct MobilityTrackingView: View {
     @StateObject private var viewModel = MobilityTrackingViewModel()
-    @State private var selectedActivity: ActivityRecord?
+    @State private var selectedTab = 0
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.aqua5.ignoresSafeArea()
-
-                VStack(spacing: 0) {
-                    header
-                    todaySummaryStrip
-                    activitiesList
+        TabView(selection: $selectedTab) {
+            // Dashboard Tab
+            NavigationView {
+                ZStack {
+                    Color.aqua5.ignoresSafeArea()
+                    VStack(spacing: 0) {
+                        header
+                        todaySummaryStrip
+                        Spacer()
+                    }
                 }
+                .navigationBarHidden(true)
             }
-            .navigationBarHidden(true)
+            .navigationViewStyle(.stack)
+            .tabItem {
+                Image(systemName: "heart.text.square")
+                Text("Dashboard")
+            }
+            .tag(0)
+
+            // Activities Tab
+            NavigationView {
+                ZStack {
+                    Color.aqua5.ignoresSafeArea()
+                    VStack(spacing: 0) {
+                        activitiesHeader
+                        WorkoutHistoryView(viewModel: viewModel)
+                    }
+                }
+                .navigationBarHidden(true)
+            }
+            .navigationViewStyle(.stack)
+            .tabItem {
+                Image(systemName: "figure.walk")
+                Text("Activities")
+            }
+            .tag(1)
         }
-        .navigationViewStyle(.stack)
+        .accentColor(.indigo1)
         .onAppear {
             viewModel.requestAuthorization()
         }
-        .sheet(item: $selectedActivity) { activity in
-            ActivityDetailView(activity: activity, viewModel: viewModel)
+    }
+
+    // MARK: - Activities Header
+
+    @ViewBuilder
+    private var activitiesHeader: some View {
+        HStack {
+            Text("Activities")
+                .font(.custom("Avenir-Heavy", size: 28))
+                .foregroundColor(.indigo1)
+            Spacer()
         }
+        .padding(.horizontal, 16)
+        .padding(.top, 16)
+        .padding(.bottom, 8)
     }
 
     // MARK: - Header
@@ -97,44 +135,7 @@ struct MobilityTrackingView: View {
         .padding(.bottom, 12)
     }
 
-    // MARK: - Activities List
-
-    @ViewBuilder
-    private var activitiesList: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Today's Activities")
-                .font(.custom("Avenir-Heavy", size: 18))
-                .foregroundColor(.charcoal1)
-                .padding(.horizontal, 16)
-
-            ScrollView {
-                LazyVStack(spacing: 10) {
-                    ForEach(viewModel.activities) { activity in
-                        ActivityListItem(activity: activity)
-                            .onTapGesture { selectedActivity = activity }
-                    }
-
-                    if viewModel.activities.isEmpty {
-                        VStack(spacing: 12) {
-                            Image(systemName: "figure.walk.motion")
-                                .font(.system(size: 40))
-                                .foregroundColor(.charcoal3.opacity(0.4))
-                            Text("No activities recorded yet")
-                                .font(.custom("Avenir", size: 15))
-                                .foregroundColor(.charcoal3)
-                            Text("Start an activity on your Apple Watch")
-                                .font(.custom("Avenir", size: 13))
-                                .foregroundColor(.charcoal3.opacity(0.6))
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 60)
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 32)
-            }
-        }
-    }
+    // (Activities list moved to WorkoutHistoryView in Activities tab)
 
     // MARK: - Helpers
 

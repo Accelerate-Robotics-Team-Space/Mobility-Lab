@@ -907,6 +907,10 @@
 		E08079432B9B8A73000A81A9 /* StartEndSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */; };
 		E0D273DD2B570EA200BE0A2B /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7CB1B2B3DD38C00CAF75F /* SpeechSynthesizer.swift */; };
 		F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
+		A1B2C3D4E5F60718293A4B5D /* WorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */; };
+		A1B2C3D4E5F60718293A4B6D /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */; };
+		A1B2C3D4E5F60718293A4B7D /* 2026-05-12-AddWorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */; };
+		A1B2C3D4E5F60718293A4B8D /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1741,6 +1745,10 @@
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
 		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = MobilityLab/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRecord.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRepository.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2026-05-12-AddWorkoutRecord.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2692,6 +2700,7 @@
 				43AC92D32534CE4C0088A5C3 /* HospitalUnit.swift */,
 				43C00B4D256490C500AB0F9A /* HospitalUnitInfo.swift */,
 				430FDDF325B0F93900379939 /* PersistenceError.swift */,
+				A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3454,6 +3463,7 @@
 			children = (
 				9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */,
 				B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */,
+				A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */,
 			);
 			path = MobilityTracking;
 			sourceTree = "<group>";
@@ -3536,6 +3546,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAA1562F32B42100E2EF1A /* 2026-02-03-Initial.swift */,
+				A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */,
 			);
 			path = BMM;
 			sourceTree = "<group>";
@@ -3755,6 +3766,7 @@
 				D6E7C4352F33D06A006592D7 /* PatientRepository.swift */,
 				D689455B2F3427650017A6E9 /* RevokedCertificateRepository.swift */,
 				D6E7C48A2F340B39006592D7 /* SessionRepository.swift */,
+				A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -4835,6 +4847,10 @@
 				D697D95A2F50AE3000B8D116 /* DatabaseWriter+Extension.swift in Sources */,
 				1145F83768243DE4049B431A /* CardViewWithButton.swift in Sources */,
 				2580CC512E36D37D00D7B27F /* DateFormatter+Extensions.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5D /* WorkoutRecord.swift in Sources */,
+				A1B2C3D4E5F60718293A4B6D /* WorkoutRepository.swift in Sources */,
+				A1B2C3D4E5F60718293A4B7D /* 2026-05-12-AddWorkoutRecord.swift in Sources */,
+				A1B2C3D4E5F60718293A4B8D /* WorkoutHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5114,7 +5130,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = TEST;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = UV44D8VXXF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5143,12 +5159,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = PROD;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
-				"DEVELOPMENT_TEAM[sdk=watchos*]" = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5158,8 +5173,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.prod.watchkitapp;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MobilityLab WatchKit App Prod";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MobilityLab WatchKit App Prod";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WATCH";
@@ -5178,12 +5192,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = QA;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
-				"DEVELOPMENT_TEAM[sdk=watchos*]" = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5194,7 +5207,6 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MobilityLab WatchKit App Qa";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WATCH";
@@ -5429,13 +5441,12 @@
 				APP_DISPLAY_NAME = "Mobility Lab";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = PROD;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "MobilityLab/Resources/Preview\\ Content";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
@@ -5450,8 +5461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.prod;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MobilityLab Prod";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MobilityLab Prod";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) BMM";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5578,7 +5588,7 @@
 				CURRENT_PROJECT_VERSION = DEV;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "MobilityLab/Resources/Preview\\ Content";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -5645,7 +5655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = DEV;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6379,12 +6389,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-test";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = TEST;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "MobilityLab/Resources/Preview\\ Content";
-				DEVELOPMENT_TEAM = 5H7L8A5TP8;
+				DEVELOPMENT_TEAM = UV44D8VXXF;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -6398,7 +6408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtlastLiftTech.MobilityLab.iOS.test;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME).TEST.$(MARKETING_VERSION)";
-				PROVISIONING_PROFILE_SPECIFIER = "MobilityLab Test";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) BMM";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

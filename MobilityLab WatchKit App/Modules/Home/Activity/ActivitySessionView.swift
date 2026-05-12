@@ -11,6 +11,7 @@ import WatchKit
 
 struct ActivitySessionView: View {
     @Binding var isActive: Bool
+    let placement: WearLocation
     @StateObject private var driver = ActivitySessionDriver()
     @State private var showEndConfirmation = false
 
@@ -23,7 +24,7 @@ struct ActivitySessionView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .onAppear { driver.startSession() }
+        .onAppear { driver.startSession(placement: placement) }
     }
 
     // MARK: - Active Session

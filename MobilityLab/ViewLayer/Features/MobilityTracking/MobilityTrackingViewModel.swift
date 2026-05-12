@@ -23,8 +23,11 @@ final class MobilityTrackingViewModel: ObservableObject {
     @Published var isMoving: Bool = false
     @Published var wearLocation: String = ""
     @Published var activities: [ActivityRecord] = []
+    @Published var historyActivities: [ActivityRecord] = []
+    @Published var selectedHistoryDate: Date = Date()
 
     @Injected(\.phoneConnectivityService) private var connectivityService
+    @Injected(\.workoutRepository) private var workoutRepository: any WorkoutRepositoryProtocol
 
     private let healthStore = HKHealthStore()
     private var timer: Timer?
@@ -67,6 +70,7 @@ final class MobilityTrackingViewModel: ObservableObject {
 
     init() {
         subscribeToWatchData()
+        loadActivitiesFromDB()
     }
 
     // MARK: - Watch Data
@@ -103,17 +107,26 @@ final class MobilityTrackingViewModel: ObservableObject {
         guard let startTimeInterval = data["startTime"] as? TimeInterval,
               let endTimeInterval = data["endTime"] as? TimeInterval else { return }
 
+        let startTime = Date(timeIntervalSince1970: startTimeInterval)
+        let endTime = Date(timeIntervalSince1970: endTimeInterval)
+        let stepsVal = data["stepCount"] as? Double ?? 0
+        let distanceVal = data["distance"] as? Double ?? 0
+        let hrAvg = data["heartRateAvg"] as? Double ?? 0
+        let hrMax = data["heartRateMax"] as? Double ?? 0
+        let cals = data["activeCalories"] as? Double ?? 0
+        let location = data["wearLocation"] as? String ?? "wrist"
+
         let record = ActivityRecord(
             title: "Activity",
             icon: "figure.walk",
             color: .indigo1,
-            startTime: Date(timeIntervalSince1970: startTimeInterval),
-            endTime: Date(timeIntervalSince1970: endTimeInterval),
-            steps: data["stepCount"] as? Double ?? 0,
-            distance: data["distance"] as? Double ?? 0,
-            heartRateAvg: data["heartRateAvg"] as? Double ?? 0,
-            heartRateMax: data["heartRateMax"] as? Double ?? 0,
-            calories: data["activeCalories"] as? Double ?? 0,
+            startTime: startTime,
+            endTime: endTime,
+            steps: stepsVal,
+            distance: distanceVal,
+            heartRateAvg: hrAvg,
+            heartRateMax: hrMax,
+            calories: cals,
             spO2: 0
         )
 
@@ -121,6 +134,49 @@ final class MobilityTrackingViewModel: ObservableObject {
         if !activities.contains(where: { abs($0.startTime.timeIntervalSince(record.startTime)) < 60 }) {
             activities.append(record)
             activities.sort { $0.startTime < $1.startTime }
+        }
+
+        // Persist to GRDB
+        let workoutRecord = WorkoutRecord(
+            startTime: startTime,
+            endTime: endTime,
+            steps: stepsVal,
+            distance: distanceVal,
+            heartRateAvg: hrAvg,
+            heartRateMax: hrMax,
+            calories: cals,
+            wearLocation: location
+        )
+        Task {
+            let exists = await workoutRepository.hasWorkout(startTime: startTime)
+            if !exists {
+                try? await workoutRepository.asyncSaveToDB(workoutRecord)
+            }
+        }
+    }
+
+    // MARK: - Load from GRDB
+
+    func loadActivitiesFromDB() {
+        Task {
+            let records = await workoutRepository.fetchTodayWorkouts()
+            let mapped = records.map { $0.toActivityRecord() }
+            await MainActor.run {
+                self.activities = mapped.sorted { $0.startTime < $1.startTime }
+            }
+        }
+    }
+
+    func loadHistoryForDate(_ date: Date) {
+        selectedHistoryDate = date
+        let startOfDay = Calendar.current.startOfDay(for: date)
+        let endOfDay = startOfDay.addingTimeInterval(86400)
+        Task {
+            let records = await workoutRepository.fetchWorkouts(from: startOfDay, to: endOfDay)
+            let mapped = records.map { $0.toActivityRecord() }
+            await MainActor.run {
+                self.historyActivities = mapped.sorted { $0.startTime < $1.startTime }
+            }
         }
     }
 
