@@ -27,24 +27,11 @@ jobs:
           echo "Using Swift Package Manager"
         fi
         
-    - name: Create temporary keychain
+    - name: Unlock keychain
       run: |
-        security create-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
-        security default-keychain -s build.keychain
-        security unlock-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
-        security set-keychain-settings -t 3600 -u build.keychain
-        
-    - name: Import certificate
-      run: |
-        echo "${{ secrets.IOS_CERTIFICATE_BASE64 }}" | base64 --decode > certificate.p12
-        security import certificate.p12 -k build.keychain -P "${{ secrets.IOS_CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
-        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
-        
-    - name: Import provisioning profiles
-      run: |
-        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-        echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_Prod.mobileprovision
-        echo "${{ secrets.WATCHKIT_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_WatchKit_Prod.mobileprovision
+        security unlock-keychain -p "${{ secrets.MAC_PASSWORD }}" ~/Library/Keychains/login.keychain-db
+        security set-keychain-settings -t 3600 -u ~/Library/Keychains/login.keychain-db
+        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${{ secrets.MAC_PASSWORD }}" ~/Library/Keychains/login.keychain-db
         
     - name: Resolve package dependencies
       run: |
@@ -87,7 +74,7 @@ jobs:
           --groups testers \
           --release-notes "Build from commit ${{ github.sha }}"
 
-    - name: Cleanup keychain
+    - name: Lock keychain
       if: always()
       run: |
-        security delete-keychain build.keychain || true
+        security lock-keychain ~/Library/Keychains/login.keychain-db || true
