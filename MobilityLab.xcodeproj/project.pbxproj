@@ -583,6 +583,10 @@
 		688A2CC9051205F4D24C37B2 /* MobilityTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */; };
 		6A9E6C45EB8D903462E2DC82 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
 		8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */; };
+		A1B2C3D4E5F60718293A4B5D /* WorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */; };
+		A1B2C3D4E5F60718293A4B6D /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */; };
+		A1B2C3D4E5F60718293A4B7D /* 2026-05-12-AddWorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */; };
+		A1B2C3D4E5F60718293A4B8D /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */; };
 		CBBCDCD02D3A0FA5009BF587 /* FacilityTurningProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */; };
 		D210E4452F72092900EF186B /* PatientLandingDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210E4442F72092900EF186B /* PatientLandingDriverTests.swift */; };
 		D2AA9FD82F32AB6800E2EF1A /* StaticStorageValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA9FD02F32AB6800E2EF1A /* StaticStorageValuePublisher.swift */; };
@@ -907,10 +911,6 @@
 		E08079432B9B8A73000A81A9 /* StartEndSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */; };
 		E0D273DD2B570EA200BE0A2B /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7CB1B2B3DD38C00CAF75F /* SpeechSynthesizer.swift */; };
 		F4963CF13D035B0A120E1884 /* MobilityTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */; };
-		A1B2C3D4E5F60718293A4B5D /* WorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */; };
-		A1B2C3D4E5F60718293A4B6D /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */; };
-		A1B2C3D4E5F60718293A4B7D /* 2026-05-12-AddWorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */; };
-		A1B2C3D4E5F60718293A4B8D /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1523,6 +1523,10 @@
 		4CFAAC4129F2ED3400CB1940 /* BMMCardSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMCardSwitching.swift; sourceTree = "<group>"; };
 		71B193F0BD174C6116F6DCF2 /* EmployeeHealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHealthData.swift; sourceTree = "<group>"; };
 		9B552576C7B373FFDCFFDBBC /* MobilityTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRecord.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRepository.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2026-05-12-AddWorkoutRecord.swift"; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
 		B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
 		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityTurningProtocols.swift; sourceTree = "<group>"; };
@@ -1745,10 +1749,6 @@
 		E06597F52BA11348001DF88E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E08079422B9B8A73000A81A9 /* StartEndSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartEndSessionModel.swift; sourceTree = "<group>"; };
 		FB69FA2DB4DC4E2DBC021414 /* PhoneConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnectivityService.swift; path = MobilityLab/ServiceLayer/PhoneConnectivityService.swift; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F60718293A4B5C /* WorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRecord.swift; sourceTree = "<group>"; };
-		A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRepository.swift; sourceTree = "<group>"; };
-		A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2026-05-12-AddWorkoutRecord.swift"; sourceTree = "<group>"; };
-		A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5160,10 +5160,12 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SensorSuite WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = PROD;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 5H7L8A5TP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5174,6 +5176,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MobilityLab WatchKit App Prod";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WATCH";
@@ -5442,11 +5445,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-prod";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = PROD;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "MobilityLab/Resources/Preview\\ Content";
-				DEVELOPMENT_TEAM = UV44D8VXXF;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5H7L8A5TP8;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
@@ -5462,6 +5467,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MobilityLab Prod";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) BMM";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
