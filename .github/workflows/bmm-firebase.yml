@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-distribute:
-    runs-on: self-hosted
+    runs-on: macos-latest
     
     steps:
     - name: Checkout code
@@ -16,7 +16,7 @@ jobs:
     - name: Setup Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: "26.0.1"
+        xcode-version: "26.2"
         
     - name: Install dependencies
       run: |
@@ -27,11 +27,24 @@ jobs:
           echo "Using Swift Package Manager"
         fi
         
-    - name: Unlock keychain
+    - name: Create temporary keychain
       run: |
-        security unlock-keychain -p "${{ secrets.MAC_PASSWORD }}" ~/Library/Keychains/login.keychain-db
-        security set-keychain-settings -t 3600 -u ~/Library/Keychains/login.keychain-db
-        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${{ secrets.MAC_PASSWORD }}" ~/Library/Keychains/login.keychain-db
+        security create-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        security default-keychain -s build.keychain
+        security unlock-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        security set-keychain-settings -t 3600 -u build.keychain
+        
+    - name: Import certificate
+      run: |
+        echo "${{ secrets.IOS_CERTIFICATE_BASE64 }}" | base64 --decode > certificate.p12
+        security import certificate.p12 -k build.keychain -P "${{ secrets.IOS_CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${{ secrets.KEYCHAIN_PASSWORD }}" build.keychain
+        
+    - name: Import provisioning profiles
+      run: |
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        echo "${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_Prod.mobileprovision
+        echo "${{ secrets.WATCHKIT_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/MobilityLab_WatchKit_Prod.mobileprovision
         
     - name: Resolve package dependencies
       run: |
@@ -74,7 +87,7 @@ jobs:
           --groups testers \
           --release-notes "Build from commit ${{ github.sha }}"
 
-    - name: Lock keychain
+    - name: Cleanup keychain
       if: always()
       run: |
-        security lock-keychain ~/Library/Keychains/login.keychain-db || true
+        security delete-keychain build.keychain || true
