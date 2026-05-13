@@ -89,6 +89,7 @@ final class MobilityTrackingViewModel: ObservableObject {
         if let val = data["heartRate"] as? Double, val > 0 { heartRate = val }
         if let val = data["distance"] as? Double { distance = max(distance, val) }
         if let val = data["activeCalories"] as? Double { calories = max(calories, val) }
+        if let val = data["flightsClimbed"] as? Double { floorsClimbed = max(floorsClimbed, val) }
         if let val = data["wearLocation"] as? String { wearLocation = val }
         if let val = data["isMoving"] as? Bool { isMoving = val }
         isWatchConnected = true
@@ -114,12 +115,24 @@ final class MobilityTrackingViewModel: ObservableObject {
         let hrAvg = data["heartRateAvg"] as? Double ?? 0
         let hrMax = data["heartRateMax"] as? Double ?? 0
         let cals = data["activeCalories"] as? Double ?? 0
+        let flights = data["flightsClimbed"] as? Double ?? 0
+        let cadenceVal = data["cadence"] as? Double ?? 0
         let location = data["wearLocation"] as? String ?? "wrist"
+        let durationSeconds = endTime.timeIntervalSince(startTime)
+
+        // Auto-classify the activity based on HR, cadence, flights, and speed
+        let classification = ActivityClassification.classify(
+            heartRateAvg: hrAvg,
+            cadence: cadenceVal,
+            flightsClimbed: flights,
+            durationSeconds: durationSeconds,
+            distance: distanceVal
+        )
 
         let record = ActivityRecord(
-            title: "Activity",
-            icon: "figure.walk",
-            color: .indigo1,
+            title: classification.title,
+            icon: classification.icon,
+            color: classification.color,
             startTime: startTime,
             endTime: endTime,
             steps: stepsVal,
@@ -127,6 +140,8 @@ final class MobilityTrackingViewModel: ObservableObject {
             heartRateAvg: hrAvg,
             heartRateMax: hrMax,
             calories: cals,
+            flightsClimbed: flights,
+            cadence: cadenceVal,
             spO2: 0
         )
 
@@ -145,6 +160,9 @@ final class MobilityTrackingViewModel: ObservableObject {
             heartRateAvg: hrAvg,
             heartRateMax: hrMax,
             calories: cals,
+            flightsClimbed: flights,
+            cadence: cadenceVal,
+            activityType: classification.rawValue,
             wearLocation: location
         )
         Task {
@@ -288,11 +306,11 @@ final class MobilityTrackingViewModel: ObservableObject {
     }
 
     private func buildActivityRecord(from workout: HKWorkout, completion: @escaping (ActivityRecord) -> Void) {
-        let (title, icon, color) = workoutMetadata(for: workout.workoutActivityType)
         let distance = workout.totalDistance?.doubleValue(for: .meter()) ?? 0
         let calories = workout.totalEnergyBurned?.doubleValue(for: .kilocalorie()) ?? 0
+        let durationSeconds = workout.endDate.timeIntervalSince(workout.startDate)
 
-        // Fetch steps, heart rate stats, and SpO2 for the workout time range
+        // Fetch steps, heart rate stats, flights, and SpO2 for the workout time range
         let workoutPredicate = HKQuery.predicateForSamples(
             withStart: workout.startDate, end: workout.endDate, options: .strictStartDate
         )
@@ -301,6 +319,7 @@ final class MobilityTrackingViewModel: ObservableObject {
         var steps: Double = 0
         var hrAvg: Double = 0
         var hrMax: Double = 0
+        var flights: Double = 0
         var spO2Value: Double = 0
 
         // Fetch steps
@@ -334,6 +353,18 @@ final class MobilityTrackingViewModel: ObservableObject {
             healthStore.execute(hrQuery)
         } else { group.leave() }
 
+        // Fetch flights climbed
+        group.enter()
+        if let flightsType = HKQuantityType.quantityType(forIdentifier: .flightsClimbed) {
+            let flightsQuery = HKStatisticsQuery(
+                quantityType: flightsType, quantitySamplePredicate: workoutPredicate, options: .cumulativeSum
+            ) { _, result, _ in
+                flights = result?.sumQuantity()?.doubleValue(for: .count()) ?? 0
+                group.leave()
+            }
+            healthStore.execute(flightsQuery)
+        } else { group.leave() }
+
         // Fetch SpO2
         group.enter()
         if let spO2Type = HKQuantityType.quantityType(forIdentifier: .oxygenSaturation) {
@@ -351,10 +382,30 @@ final class MobilityTrackingViewModel: ObservableObject {
         } else { group.leave() }
 
         group.notify(queue: .main) {
+            // Calculate cadence from steps and duration
+            let cadence = durationSeconds > 0 ? (steps / durationSeconds) * 60 : 0
+
+            // Auto-classify activity, but prefer HealthKit's type if it's specific
+            let classification: ActivityClassification
+            switch workout.workoutActivityType {
+            case .running:
+                classification = .running
+            case .stairClimbing:
+                classification = .stairClimbing
+            default:
+                classification = ActivityClassification.classify(
+                    heartRateAvg: hrAvg,
+                    cadence: cadence,
+                    flightsClimbed: flights,
+                    durationSeconds: durationSeconds,
+                    distance: distance
+                )
+            }
+
             let record = ActivityRecord(
-                title: title,
-                icon: icon,
-                color: color,
+                title: classification.title,
+                icon: classification.icon,
+                color: classification.color,
                 startTime: workout.startDate,
                 endTime: workout.endDate,
                 steps: steps,
@@ -362,28 +413,14 @@ final class MobilityTrackingViewModel: ObservableObject {
                 heartRateAvg: hrAvg,
                 heartRateMax: hrMax,
                 calories: calories,
+                flightsClimbed: flights,
+                cadence: cadence,
                 spO2: spO2Value
             )
             completion(record)
         }
     }
 
-    private func workoutMetadata(for type: HKWorkoutActivityType) -> (String, String, Color) {
-        switch type {
-        case .walking:
-            return ("Walk", "figure.walk", .indigo1)
-        case .running:
-            return ("Run", "figure.run", .green1)
-        case .stairClimbing:
-            return ("Stair Climb", "figure.stairs", .tangerine)
-        case .cycling:
-            return ("Cycling", "figure.outdoor.cycle", .cornflower)
-        case .hiking:
-            return ("Hike", "figure.hiking", .green1)
-        default:
-            return ("Activity", "figure.walk", .indigo1)
-        }
-    }
 
     // MARK: - HealthKit Queries
 

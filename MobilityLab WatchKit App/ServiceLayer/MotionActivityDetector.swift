@@ -40,6 +40,7 @@ final class MotionActivityDetector {
 
     private(set) var pedometerSteps: Int = 0
     private(set) var pedometerDistance: Double = 0   // meters
+    private(set) var floorsAscended: Double = 0      // flights climbed
     private(set) var sensorSteps: Int = 0
     private(set) var movementIntensity: Double = 0
     private(set) var estimatedCalories: Double = 0   // kcal
@@ -115,6 +116,7 @@ final class MotionActivityDetector {
     func reset() {
         pedometerSteps = 0
         pedometerDistance = 0
+        floorsAscended = 0
         sensorSteps = 0
         movementIntensity = 0
         estimatedCalories = 0
@@ -150,6 +152,7 @@ final class MotionActivityDetector {
             }
             self.pedometerSteps = data.numberOfSteps.intValue
             self.pedometerDistance = data.distance?.doubleValue ?? 0
+            self.floorsAscended = data.floorsAscended?.doubleValue ?? 0
         }
     }
 

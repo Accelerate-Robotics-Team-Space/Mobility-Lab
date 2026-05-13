@@ -7,5 +7,6 @@ enum Migrations: MigrationsList {
     static let migrations: [Migration.Type] = [
         Initial_20260203.self,
         AddWorkoutRecord_20260512.self,
+        AddWorkoutActivityFields_20260513.self,
     ]
 }

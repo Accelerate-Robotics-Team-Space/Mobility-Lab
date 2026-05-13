@@ -52,10 +52,11 @@ struct ActivitySessionView: View {
 
                 // Metrics grid
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 6) {
-                    WatchMetricTile(icon: "figure.walk", value: driver.formattedSteps, label: "Steps", color: .indigo1)
                     WatchMetricTile(icon: "heart.fill", value: driver.formattedHeartRate, label: "BPM", color: .red1)
+                    WatchMetricTile(icon: "figure.walk", value: driver.formattedSteps, label: "Steps", color: .indigo1)
                     WatchMetricTile(icon: "flame.fill", value: driver.formattedCalories, label: "Cal", color: .tangerine)
                     WatchMetricTile(icon: "point.topleft.down.to.point.bottomright.curvepath", value: driver.formattedDistance, label: "km", color: .green1)
+                    WatchMetricTile(icon: "figure.stairs", value: driver.formattedFlights, label: "Floors", color: .tangerine)
                 }
 
                 // End button

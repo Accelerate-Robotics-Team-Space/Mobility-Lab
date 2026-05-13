@@ -20,6 +20,7 @@ protocol WorkoutSessionProtocol: AnyObject {
     var heartRateMax: Double { get }
     var distance: Double { get }
     var activeCalories: Double { get }
+    var flightsClimbed: Double { get }
     var currentHealthData: [String: Any] { get }
 }
 
@@ -50,12 +51,14 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
 
     private(set) var distance: Double = 0
     private(set) var activeCalories: Double = 0
+    private(set) var flightsClimbed: Double = 0
 
     @Injected(\.watchConnectivityService) private var connectivityService
 
     private let healthStore = HKHealthStore()
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
+    private var heartRateQuery: HKAnchoredObjectQuery?
     
     enum WorkoutState {
         case notStarted
@@ -106,6 +109,7 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
             HKQuantityType.quantityType(forIdentifier: .stepCount)!,
             HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
             HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKQuantityType.quantityType(forIdentifier: .flightsClimbed)!,
         ]
 
         // The quantity types to read from the health store.
@@ -114,6 +118,7 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
             HKQuantityType.quantityType(forIdentifier: .stepCount)!,
             HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
             HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKQuantityType.quantityType(forIdentifier: .flightsClimbed)!,
             HKObjectType.workoutType(),
         ]
 
@@ -137,6 +142,7 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
             "heartRateMax": heartRateMax,
             "distance": distance,
             "activeCalories": activeCalories,
+            "flightsClimbed": flightsClimbed,
             "timestamp": Date().timeIntervalSince1970,
         ]
     }
@@ -153,10 +159,11 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         heartRateSamples = []
         distance = 0
         activeCalories = 0
+        flightsClimbed = 0
 
         // Initialize our workout
         initWorkout()
-        
+
         // Start the workout session and begin data collection
         let startDate = Date()
         session?.startActivity(with: startDate)
@@ -169,6 +176,10 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
 
             logger.info("⌚️ Workout activity successfully started")
         }
+
+        // Start fallback heart rate query — reads HR samples directly from HealthKit
+        // in case the HKLiveWorkoutBuilder delegate doesn't deliver them
+        startHeartRateQuery(from: startDate)
     }
     
     func stopWorkout() {
@@ -176,6 +187,13 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
           return
         }
         logger.info("stopWorkout = \(session.state.rawValue)")
+
+        // Stop the fallback heart rate query
+        if let heartRateQuery {
+            healthStore.stop(heartRateQuery)
+            self.heartRateQuery = nil
+        }
+
         session.end()
     }
 }
@@ -205,13 +223,58 @@ private extension WorkoutSession {
         dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .stepCount)!, predicate: nil)
         dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!, predicate: nil)
         dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!, predicate: nil)
+        dataSource.enableCollection(for: HKQuantityType.quantityType(forIdentifier: .flightsClimbed)!, predicate: nil)
         builder?.dataSource = dataSource
+    }
+
+    /// Fallback: query heart rate samples directly from HealthKit using HKAnchoredObjectQuery.
+    /// This ensures heart rate is captured even if the HKLiveWorkoutBuilder delegate doesn't deliver it.
+    func startHeartRateQuery(from startDate: Date) {
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
+
+        let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
+        let datePredicate = HKQuery.predicateForSamples(withStart: startDate, end: nil, options: .strictStartDate)
+        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [datePredicate, devicePredicate])
+
+        let query = HKAnchoredObjectQuery(
+            type: hrType,
+            predicate: predicate,
+            anchor: nil,
+            limit: HKObjectQueryNoLimit
+        ) { [weak self] _, samples, _, _, _ in
+            self?.processHeartRateSamples(samples)
+        }
+
+        query.updateHandler = { [weak self] _, samples, _, _, _ in
+            self?.processHeartRateSamples(samples)
+        }
+
+        heartRateQuery = query
+        healthStore.execute(query)
+        logger.info("⌚️ Started fallback HKAnchoredObjectQuery for heart rate")
+    }
+
+    func processHeartRateSamples(_ samples: [HKSample]?) {
+        guard let hrSamples = samples as? [HKQuantitySample], !hrSamples.isEmpty else { return }
+
+        let hrUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
+        for sample in hrSamples {
+            let value = sample.quantity.doubleValue(for: hrUnit)
+            if value > 0 {
+                logger.debug("⌚️ Fallback HR sample: \(value) bpm")
+                heartRate = Double(round(value))
+                heartRateSamples.append(heartRate)
+            }
+        }
     }
 }
 
 // MARK: - HKLiveWorkoutBuilderDelegate
 extension WorkoutSession: HKLiveWorkoutBuilderDelegate {
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
+        let typeNames = collectedTypes.compactMap { ($0 as? HKQuantityType)?.identifier }.joined(separator: ", ")
+        logger.debug("⌚️ didCollectDataOf types: \(typeNames)")
+
         for type in collectedTypes {
             guard let quantityType = type as? HKQuantityType else { continue }
 
@@ -223,6 +286,7 @@ extension WorkoutSession: HKLiveWorkoutBuilderDelegate {
                 let statistics = workoutBuilder.statistics(for: quantityType)
                 let heartRateUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
                 let value = statistics?.mostRecentQuantity()?.doubleValue(for: heartRateUnit) ?? 0
+                logger.debug("⌚️ Heart rate raw value: \(value), statistics nil: \(statistics == nil), mostRecent nil: \(statistics?.mostRecentQuantity() == nil)")
                 heartRate = Double(round(value))
                 if heartRate > 0 {
                     heartRateSamples.append(heartRate)
@@ -233,6 +297,9 @@ extension WorkoutSession: HKLiveWorkoutBuilderDelegate {
             case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
                 let statistics = workoutBuilder.statistics(for: quantityType)
                 activeCalories = statistics?.sumQuantity()?.doubleValue(for: .kilocalorie()) ?? 0
+            case HKQuantityType.quantityType(forIdentifier: .flightsClimbed):
+                let statistics = workoutBuilder.statistics(for: quantityType)
+                flightsClimbed = statistics?.sumQuantity()?.doubleValue(for: .count()) ?? 0
             default: continue
             }
         }
@@ -260,10 +327,11 @@ extension WorkoutSession: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didChangeTo toState: HKWorkoutSessionState,
                         from fromState: HKWorkoutSessionState, date: Date) {
+        let toWorkoutState = WorkoutState(using: toState)
+        let fromWorkoutState = WorkoutState(using: fromState)
+        logger.info("⌚️ Workout Session state: \(fromWorkoutState.description) → \(toWorkoutState.description)")
+
         if toState == .ended {
-            let toWorkoutState = WorkoutState(using: toState)
-            let fromWorkoutState = WorkoutState(using: fromState)
-            logger.debug("Workout Session state updated from \(fromWorkoutState.description) to \(toWorkoutState.description)")
 
             builder?.endCollection(withEnd: Date()) { success, error in
                 if success == false {

@@ -15,6 +15,7 @@ final class ActivitySessionDriver: ObservableObject {
     @Published var heartRate: Double = 0
     @Published var calories: Double = 0
     @Published var distance: Double = 0   // meters
+    @Published var flightsClimbed: Double = 0
     @Published var elapsedSeconds: Int = 0
     @Published var wearLocation: WearLocation = .unknown
 
@@ -59,6 +60,10 @@ final class ActivitySessionDriver: ObservableObject {
 
     var formattedDistance: String {
         String(format: "%.2f", distance / 1000.0)
+    }
+
+    var formattedFlights: String {
+        String(format: "%.0f", flightsClimbed)
     }
 
     // MARK: - Session Lifecycle
@@ -115,6 +120,8 @@ final class ActivitySessionDriver: ObservableObject {
         completedData["startTime"] = sessionStartDate.timeIntervalSince1970
         completedData["endTime"] = Date().timeIntervalSince1970
         completedData["duration"] = elapsedSeconds
+        completedData["flightsClimbed"] = flightsClimbed
+        completedData["cadence"] = cadence
         completedData["wearLocation"] = motionDetector.detectedLocation.rawValue
         connectivityService.sendHealthData(completedData)
     }
@@ -142,6 +149,11 @@ final class ActivitySessionDriver: ObservableObject {
         // Heart rate: HealthKit only (requires optical sensor on skin)
         heartRate = workoutSession.heartRate
 
+        // Flights climbed: best of HealthKit or pedometer
+        let hkFlights = workoutSession.flightsClimbed
+        let pedometerFlights = motionDetector.floorsAscended
+        flightsClimbed = max(hkFlights, pedometerFlights)
+
         // Wear location: user-specified placement
         wearLocation = motionDetector.effectivePlacement
 
@@ -149,6 +161,12 @@ final class ActivitySessionDriver: ObservableObject {
     }
 
     /// Builds the data dictionary with merged values from all sources.
+    /// Computes the cadence (steps per minute) from current session data.
+    var cadence: Double {
+        guard elapsedSeconds > 0 else { return 0 }
+        return (steps / Double(elapsedSeconds)) * 60.0
+    }
+
     private func buildMergedHealthData() -> [String: Any] {
         [
             "stepCount": steps,
@@ -157,6 +175,8 @@ final class ActivitySessionDriver: ObservableObject {
             "heartRateMax": workoutSession.heartRateMax,
             "distance": distance,
             "activeCalories": calories,
+            "flightsClimbed": flightsClimbed,
+            "cadence": cadence,
             "wearLocation": motionDetector.effectivePlacement.rawValue,
             "isMoving": motionDetector.isMoving,
             "timestamp": Date().timeIntervalSince1970,
