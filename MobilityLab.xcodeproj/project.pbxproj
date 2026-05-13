@@ -587,6 +587,9 @@
 		A1B2C3D4E5F60718293A4B6D /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B6C /* WorkoutRepository.swift */; };
 		A1B2C3D4E5F60718293A4B7D /* 2026-05-12-AddWorkoutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */; };
 		A1B2C3D4E5F60718293A4B8D /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */; };
+		B45D05AE2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D05AD2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift */; };
+		B45D05AF2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D05AD2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift */; };
+		B45D05B02FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D05AD2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift */; };
 		CBBCDCD02D3A0FA5009BF587 /* FacilityTurningProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */; };
 		D210E4452F72092900EF186B /* PatientLandingDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210E4442F72092900EF186B /* PatientLandingDriverTests.swift */; };
 		D2AA9FD82F32AB6800E2EF1A /* StaticStorageValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA9FD02F32AB6800E2EF1A /* StaticStorageValuePublisher.swift */; };
@@ -1528,6 +1531,7 @@
 		A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2026-05-12-AddWorkoutRecord.swift"; sourceTree = "<group>"; };
 		A1B2C3D4E5F60718293A4B8C /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
 		B26E56C5563D1323105F08E9 /* MobilityTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityTrackingViewModel.swift; sourceTree = "<group>"; };
+		B45D05AD2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2026-05-13-AddWorkoutActivityFields.swift"; sourceTree = "<group>"; };
 		BA44868831F7E2E730CA69F7 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		CBBCDCCF2D3A0FA5009BF587 /* FacilityTurningProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityTurningProtocols.swift; sourceTree = "<group>"; };
 		D210E4442F72092900EF186B /* PatientLandingDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLandingDriverTests.swift; sourceTree = "<group>"; };
@@ -3545,6 +3549,7 @@
 		D2AAA1552F32B3FE00E2EF1A /* BMM */ = {
 			isa = PBXGroup;
 			children = (
+				B45D05AD2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift */,
 				D2AAA1562F32B42100E2EF1A /* 2026-02-03-Initial.swift */,
 				A1B2C3D4E5F60718293A4B7C /* 2026-05-12-AddWorkoutRecord.swift */,
 			);
@@ -3943,7 +3948,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2640;
 				ORGANIZATIONNAME = "Atlas LiftTech";
 				TargetAttributes = {
 					2378ECD529007060002B9EA2 = {
@@ -4610,6 +4615,7 @@
 				43C721CB273B050D0007F7CD /* PatientMonitorSetupView.swift in Sources */,
 				431EC44B24FD810000601AC5 /* Serializable.swift in Sources */,
 				431F314025ACF16300AD24C5 /* CircularArrowShape.swift in Sources */,
+				B45D05AE2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */,
 				43680BEF25D70A4A00E040AD /* ALTEnvironment.swift in Sources */,
 				4311D0272575B9000054CCAF /* BindedRadioBtn.swift in Sources */,
 				4325D61927A20A5400F60D6A /* ManualCalibration.swift in Sources */,
@@ -4873,6 +4879,7 @@
 				D68945A32F34FE880017A6E9 /* MockRevokedCertificateRepository.swift in Sources */,
 				D68945942F34FE120017A6E9 /* MockConsoleLogRepository.swift in Sources */,
 				D68E9CDB2F6B508F006225F2 /* HospitalUnitRepositoryTests.swift in Sources */,
+				B45D05AF2FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */,
 				D6DC959D2F2D298100D148AE /* MockMQTTService.swift in Sources */,
 				D6973A1E2F59067900556F4D /* MockPatientMonitor.swift in Sources */,
 				D6239EC52F2D820000E340A1 /* MockNotificationCenterService.swift in Sources */,
@@ -4950,6 +4957,7 @@
 				53FB852F4E8D13BBEC7E9E31 /* ActivitySessionView.swift in Sources */,
 				3BE75C6A34EB9EFDEA53341E /* ActivitySessionDriver.swift in Sources */,
 				8720745D995B1BAAD3BE38A7 /* WatchConnectivityService.swift in Sources */,
+				B45D05B02FB5307400AEC80D /* 2026-05-13-AddWorkoutActivityFields.swift in Sources */,
 				434B556C2549FE990008C0D6 /* Result+Extensions.swift in Sources */,
 				434B553A2549FD050008C0D6 /* SecTrust+Extensions.swift in Sources */,
 				436EFA4827AC278C00EE425A /* JustRequest.swift in Sources */,
@@ -5594,7 +5602,7 @@
 				CURRENT_PROJECT_VERSION = DEV;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "MobilityLab/Resources/Preview\\ Content";
-				DEVELOPMENT_TEAM = UV44D8VXXF;
+				DEVELOPMENT_TEAM = 5H7L8A5TP8;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -5661,7 +5669,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = DEV;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5H7L8A5TP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

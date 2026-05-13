@@ -128,6 +128,7 @@ struct MobilityTrackingView: View {
                 SummaryChip(icon: "heart.fill", value: viewModel.formattedHeartRate, label: "BPM", color: .red1)
                 SummaryChip(icon: "flame.fill", value: viewModel.formattedCalories, label: "Cal", color: .tangerine)
                 SummaryChip(icon: "point.topleft.down.to.point.bottomright.curvepath", value: viewModel.formattedDistance, label: "km", color: .green1)
+                SummaryChip(icon: "figure.stairs", value: viewModel.formattedFloors, label: "Floors", color: .tangerine)
                 SummaryChip(icon: "lungs.fill", value: viewModel.formattedSpO2, label: "SpO2", color: .cornflower)
             }
             .padding(.horizontal, 16)
@@ -230,6 +231,82 @@ struct ActivityListItem: View {
 
 // MARK: - Activity Record Model
 
+// MARK: - Activity Classification
+
+enum ActivityClassification: String {
+    case lightWalk = "light_walk"
+    case briskWalk = "brisk_walk"
+    case stairClimbing = "stair_climbing"
+    case running = "running"
+    case activity = "activity"
+
+    var title: String {
+        switch self {
+        case .lightWalk: return "Light Walk"
+        case .briskWalk: return "Brisk Walk"
+        case .stairClimbing: return "Stair Climb"
+        case .running: return "Run"
+        case .activity: return "Activity"
+        }
+    }
+
+    var icon: String {
+        switch self {
+        case .lightWalk: return "figure.walk"
+        case .briskWalk: return "figure.walk.motion"
+        case .stairClimbing: return "figure.stairs"
+        case .running: return "figure.run"
+        case .activity: return "figure.walk"
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .lightWalk: return .indigo1
+        case .briskWalk: return .green1
+        case .stairClimbing: return .tangerine
+        case .running: return .vermillion
+        case .activity: return .indigo1
+        }
+    }
+
+    /// Classify an activity based on heart rate, cadence, flights climbed, and speed.
+    /// Uses HR zones (220 - age), cadence thresholds, and altitude gain.
+    static func classify(
+        heartRateAvg: Double,
+        cadence: Double,
+        flightsClimbed: Double,
+        durationSeconds: Double,
+        distance: Double,
+        age: Int = 40
+    ) -> ActivityClassification {
+        let maxHR = Double(220 - age)
+        let hrPercent = heartRateAvg > 0 ? (heartRateAvg / maxHR) * 100 : 0
+        let speedMph = durationSeconds > 0 ? (distance / 1609.34) / (durationSeconds / 3600) : 0
+
+        // Stair climbing: flights > 0 with active stepping
+        if flightsClimbed >= 1 && cadence >= 40 {
+            return .stairClimbing
+        }
+
+        // Running: high cadence OR high speed with elevated HR
+        if cadence >= 150 || (speedMph > 5.0 && hrPercent > 70) {
+            return .running
+        }
+
+        // Brisk walk: moderate cadence OR moderate speed with some HR elevation
+        if cadence >= 100 || (speedMph > 3.3 && hrPercent > 55) {
+            return .briskWalk
+        }
+
+        return .lightWalk
+    }
+
+    static func from(activityType: String) -> ActivityClassification {
+        ActivityClassification(rawValue: activityType) ?? .activity
+    }
+}
+
 struct ActivityRecord: Identifiable {
     let id = UUID()
     let title: String
@@ -242,6 +319,8 @@ struct ActivityRecord: Identifiable {
     let heartRateAvg: Double
     let heartRateMax: Double
     let calories: Double
+    let flightsClimbed: Double
+    let cadence: Double        // steps per minute
     let spO2: Double
 
     var formattedDuration: String {
@@ -281,6 +360,14 @@ struct ActivityRecord: Identifiable {
 
     var formattedHeartRateMax: String {
         heartRateMax > 0 ? String(format: "%.0f", heartRateMax) : "--"
+    }
+
+    var formattedFlightsClimbed: String {
+        flightsClimbed > 0 ? String(format: "%.0f", flightsClimbed) : "0"
+    }
+
+    var formattedCadence: String {
+        cadence > 0 ? String(format: "%.0f", cadence) : "--"
     }
 
     var formattedSpO2: String {
@@ -330,6 +417,8 @@ struct ActivityDetailView: View {
                         MetricCardView(icon: "heart.fill", title: "Avg Heart Rate", value: activity.formattedHeartRateAvg, unit: "bpm", color: .red1)
                         MetricCardView(icon: "heart.circle", title: "Max Heart Rate", value: activity.formattedHeartRateMax, unit: "bpm", color: .vermillion)
                         MetricCardView(icon: "flame.fill", title: "Calories", value: activity.formattedCalories, color: .tangerine)
+                        MetricCardView(icon: "figure.stairs", title: "Flights Climbed", value: activity.formattedFlightsClimbed, unit: "floors", color: .tangerine)
+                        MetricCardView(icon: "metronome", title: "Cadence", value: activity.formattedCadence, unit: "spm", color: .indigo1)
                         MetricCardView(icon: "lungs.fill", title: "SpO2", value: activity.formattedSpO2, color: .cornflower)
                     }
                 }

@@ -18,6 +18,9 @@ struct WorkoutRecord: DataStorable, Hashable {
     private(set) var heartRateAvg: Double
     private(set) var heartRateMax: Double
     private(set) var calories: Double
+    private(set) var flightsClimbed: Double
+    private(set) var cadence: Double           // steps per minute
+    private(set) var activityType: String       // light_walk, brisk_walk, stair_climbing, running
     private(set) var spO2: Double
     private(set) var wearLocation: String      // wrist, chest, ankle
     private(set) var isSynced: Bool
@@ -33,6 +36,9 @@ struct WorkoutRecord: DataStorable, Hashable {
         heartRateAvg: Double = 0,
         heartRateMax: Double = 0,
         calories: Double = 0,
+        flightsClimbed: Double = 0,
+        cadence: Double = 0,
+        activityType: String = "activity",
         spO2: Double = 0,
         wearLocation: String = "wrist",
         healthKitWorkoutId: String? = nil
@@ -45,6 +51,9 @@ struct WorkoutRecord: DataStorable, Hashable {
         self.heartRateAvg = heartRateAvg
         self.heartRateMax = heartRateMax
         self.calories = calories
+        self.flightsClimbed = flightsClimbed
+        self.cadence = cadence
+        self.activityType = activityType
         self.spO2 = spO2
         self.wearLocation = wearLocation
         self.isSynced = false
@@ -66,10 +75,11 @@ struct WorkoutRecord: DataStorable, Hashable {
 
 extension WorkoutRecord {
     func toActivityRecord() -> ActivityRecord {
-        ActivityRecord(
-            title: "Activity",
-            icon: "figure.walk",
-            color: .indigo1,
+        let classification = ActivityClassification.from(activityType: activityType)
+        return ActivityRecord(
+            title: classification.title,
+            icon: classification.icon,
+            color: classification.color,
             startTime: startTime,
             endTime: endTime,
             steps: steps,
@@ -77,6 +87,8 @@ extension WorkoutRecord {
             heartRateAvg: heartRateAvg,
             heartRateMax: heartRateMax,
             calories: calories,
+            flightsClimbed: flightsClimbed,
+            cadence: cadence,
             spO2: spO2
         )
     }
@@ -94,6 +106,9 @@ extension WorkoutRecord: Codable {
         case heartRateAvg
         case heartRateMax
         case calories
+        case flightsClimbed
+        case cadence
+        case activityType
         case spO2
         case wearLocation
         case isSynced
