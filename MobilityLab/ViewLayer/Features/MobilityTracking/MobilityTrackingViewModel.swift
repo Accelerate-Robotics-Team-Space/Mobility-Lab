@@ -370,7 +370,7 @@ final class MobilityTrackingViewModel: ObservableObject {
         healthStore.execute(query)
     }
 
-    private func buildActivityRecord(from workout: HKWorkout, completion: @escaping (ActivityRecord) -> Void) {
+    private func buildActivityRecord(from workout: HKWorkout, completion: @escaping (ActivityRecord) -> Void) { // swiftlint:disable:this function_body_length
         let distance = workout.totalDistance?.doubleValue(for: .meter()) ?? 0
         let calories = workout.totalEnergyBurned?.doubleValue(for: .kilocalorie()) ?? 0
         let durationSeconds = workout.endDate.timeIntervalSince(workout.startDate)
@@ -467,23 +467,33 @@ final class MobilityTrackingViewModel: ObservableObject {
                 )
             }
 
-            let record = ActivityRecord(
-                title: classification.title,
-                icon: classification.icon,
-                color: classification.color,
-                startTime: workout.startDate,
-                endTime: workout.endDate,
-                steps: steps,
-                distance: distance,
-                heartRateAvg: hrAvg,
-                heartRateMax: hrMax,
-                calories: calories,
-                flightsClimbed: flights,
-                cadence: cadence,
-                spO2: spO2Value,
-                wearLocation: "wrist"
-            )
-            completion(record)
+            // Look up wear location from GRDB (saved from watch data)
+            Task {
+                let dbRecord = await self.workoutRepository.hasWorkoutRecord(
+                    startTime: workout.startDate
+                )
+                let location = dbRecord?.wearLocation ?? "wrist"
+
+                await MainActor.run {
+                    let record = ActivityRecord(
+                        title: classification.title,
+                        icon: classification.icon,
+                        color: classification.color,
+                        startTime: workout.startDate,
+                        endTime: workout.endDate,
+                        steps: steps,
+                        distance: distance,
+                        heartRateAvg: hrAvg,
+                        heartRateMax: hrMax,
+                        calories: calories,
+                        flightsClimbed: flights,
+                        cadence: cadence,
+                        spO2: spO2Value,
+                        wearLocation: location
+                    )
+                    completion(record)
+                }
+            }
         }
     }
 

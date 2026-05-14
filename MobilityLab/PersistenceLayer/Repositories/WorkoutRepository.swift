@@ -14,6 +14,7 @@ protocol WorkoutRepositoryProtocol: DataStorableRepositoryProtocol where Record 
     func fetchTodayWorkouts() async -> [WorkoutRecord]
     func fetchWorkout(healthKitId: String) async -> WorkoutRecord?
     func hasWorkout(startTime: Date) async -> Bool
+    func hasWorkoutRecord(startTime: Date) async -> WorkoutRecord?
 }
 
 extension Container {
@@ -67,6 +68,19 @@ final class WorkoutRepository: DataStorableRepository<WorkoutRecord>, WorkoutRep
             return count > 0
         } catch {
             return false
+        }
+    }
+
+    func hasWorkoutRecord(startTime: Date) async -> WorkoutRecord? {
+        do {
+            return try await grdbService.read { db in
+                try WorkoutRecord
+                    .filter(Column("startTime") >= startTime.addingTimeInterval(-60)
+                         && Column("startTime") <= startTime.addingTimeInterval(60))
+                    .fetchOne(db)
+            }
+        } catch {
+            return nil
         }
     }
 }
