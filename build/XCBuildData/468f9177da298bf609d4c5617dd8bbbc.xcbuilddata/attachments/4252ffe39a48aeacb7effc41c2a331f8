@@ -1,0 +1,4 @@
+module CNIOOpenBSD {
+umbrella header "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/CNIOOpenBSD/include/CNIOOpenBSD.h"
+export *
+}

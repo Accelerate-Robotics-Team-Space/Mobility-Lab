@@ -1,0 +1,26 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/Exports.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Exports.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/JSONSerialization+ByteBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/WaitSpinningRunLoop.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/WaitSpinningRunLoop.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/WaitSpinningRunLoop.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/WaitSpinningRunLoop.o"
+  }
+}

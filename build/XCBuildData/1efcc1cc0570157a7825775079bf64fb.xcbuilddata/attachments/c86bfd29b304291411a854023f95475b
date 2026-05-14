@@ -1,0 +1,66 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/CryptorECC-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ASN1.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ASN1.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ASN1.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ASN1.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/Data+Extensions.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/Data+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/Data+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/Data+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECDecryptable.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECDecryptable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECDecryptable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECDecryptable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECEncryptable.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECEncryptable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECEncryptable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECEncryptable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECError.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECError.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECError.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECError.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECPrivateKey.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPrivateKey.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPrivateKey.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPrivateKey.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECPublicKey.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPublicKey.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPublicKey.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECPublicKey.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECSignable.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/ECSignature.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignature.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignature.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/ECSignature.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/EllipticCurve.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/EllipticCurve.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/EllipticCurve.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/EllipticCurve.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/Sources/CryptorECC/SSLPointerTricks.swift" : {
+    "index-unit-output-path" : "/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/SSLPointerTricks.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/SSLPointerTricks.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueECC/build/CryptorECC.build/Dev-iphoneos/CryptorECC.build/Objects-normal/arm64/SSLPointerTricks.o"
+  }
+}

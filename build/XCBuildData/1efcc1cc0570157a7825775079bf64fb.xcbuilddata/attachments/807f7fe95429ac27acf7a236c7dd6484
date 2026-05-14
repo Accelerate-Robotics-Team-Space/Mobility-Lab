@@ -1,0 +1,4 @@
+module MQTTNIO {
+header "MQTTNIO-Swift.h"
+export *
+}

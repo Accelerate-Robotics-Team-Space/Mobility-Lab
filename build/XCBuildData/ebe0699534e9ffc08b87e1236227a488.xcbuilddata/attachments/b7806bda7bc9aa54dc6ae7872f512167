@@ -1,0 +1,51 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XcodeEdit-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/AllObjects.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/AllObjects.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/AllObjects.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/AllObjects.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/Extensions.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/PBXIdentifier.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXIdentifier.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXIdentifier.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXIdentifier.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/PBXObject+Fields.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject+Fields.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject+Fields.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject+Fields.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/PBXObject.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/PBXObject.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/Serialization.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Serialization.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Serialization.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/Serialization.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/XCProjectFile+Rswift.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile+Rswift.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile+Rswift.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile+Rswift.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/Sources/XcodeEdit/XCProjectFile.swift" : {
+    "index-unit-output-path" : "/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/XcodeEdit/build/XcodeEdit.build/Dev/XcodeEdit.build/Objects-normal/arm64/XCProjectFile.o"
+  }
+}

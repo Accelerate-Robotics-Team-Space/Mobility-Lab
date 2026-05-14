@@ -1,0 +1,66 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Crypto.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Crypto.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Crypto.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Crypto.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Cryptor.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Cryptor.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Digest.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Digest.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Digest.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Digest.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/HMAC.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/HMAC.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/HMAC.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/HMAC.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/KeyDerivation.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/KeyDerivation.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/KeyDerivation.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/KeyDerivation.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Random.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Random.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Random.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Random.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/SSLPointerTricks.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/SSLPointerTricks.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/SSLPointerTricks.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/SSLPointerTricks.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Status.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Status.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Status.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Status.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/StreamCryptor.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/StreamCryptor.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/StreamCryptor.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/StreamCryptor.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Updatable.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Updatable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Updatable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Updatable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/Sources/Cryptor/Utilities.swift" : {
+    "index-unit-output-path" : "/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Utilities.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Utilities.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueCryptor/build/Cryptor.build/Dev-iphoneos/Cryptor.build/Objects-normal/arm64/Utilities.o"
+  }
+}

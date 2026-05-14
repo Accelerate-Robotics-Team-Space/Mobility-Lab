@@ -1,0 +1,4 @@
+module CNIOLLHTTP {
+umbrella header "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/CNIOLLHTTP/include/CNIOLLHTTP.h"
+export *
+}

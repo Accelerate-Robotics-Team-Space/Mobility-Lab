@@ -7,8 +7,8 @@
 
 import Combine
 import FactoryKit
-import HealthKit
 import Foundation
+import HealthKit
 import SwiftUI
 
 final class MobilityTrackingViewModel: ObservableObject {
@@ -27,10 +27,11 @@ final class MobilityTrackingViewModel: ObservableObject {
     @Published var selectedHistoryDate: Date = Date()
 
     @Injected(\.phoneConnectivityService) private var connectivityService
-    @Injected(\.workoutRepository) private var workoutRepository: any WorkoutRepositoryProtocol
+    @Injected(\.workoutRepository) private var workoutRepository
 
     private let healthStore = HKHealthStore()
     private var timer: Timer?
+    private var observerQueries: [HKObserverQuery] = []
     private var cancellables: Set<AnyCancellable> = []
 
     // MARK: - Formatted Values
@@ -69,6 +70,9 @@ final class MobilityTrackingViewModel: ObservableObject {
     // MARK: - Init
 
     init() {
+        exportStartDate = Calendar.current.date(
+            byAdding: .day, value: -7, to: Date()
+        ) ?? Date()
         subscribeToWatchData()
         loadActivitiesFromDB()
     }
@@ -168,7 +172,7 @@ final class MobilityTrackingViewModel: ObservableObject {
         Task {
             let exists = await workoutRepository.hasWorkout(startTime: startTime)
             if !exists {
-                try? await workoutRepository.asyncSaveToDB(workoutRecord)
+                _ = try? await workoutRepository.asyncSaveToDB(workoutRecord)
             }
         }
     }
@@ -221,6 +225,7 @@ final class MobilityTrackingViewModel: ObservableObject {
             DispatchQueue.main.async {
                 self?.fetchAllMetrics()
                 self?.fetchTodayWorkouts()
+                self?.startObserverQueries()
                 self?.startPeriodicRefresh()
             }
         }
@@ -265,6 +270,7 @@ final class MobilityTrackingViewModel: ObservableObject {
 
     deinit {
         timer?.invalidate()
+        observerQueries.forEach { healthStore.stop($0) }
     }
 
     // MARK: - Activities (HealthKit Workouts)
@@ -421,6 +427,127 @@ final class MobilityTrackingViewModel: ObservableObject {
         }
     }
 
+    // MARK: - CSV Export
+
+    @Published var exportStartDate = Date()
+    @Published var exportEndDate = Date()
+    @Published var exportCSVURL: URL?
+    @Published var isExporting = false
+
+    func exportActivitiesCSV() {
+        isExporting = true
+        let start = Calendar.current.startOfDay(for: exportStartDate)
+        let end = Calendar.current.startOfDay(
+            for: exportEndDate
+        ).addingTimeInterval(86400)
+
+        Task {
+            let records = await workoutRepository.fetchWorkouts(
+                from: start, to: end
+            )
+            let csv = buildCSV(from: records)
+            let url = writeCSVToTempFile(csv)
+            await MainActor.run {
+                self.exportCSVURL = url
+                self.isExporting = false
+            }
+        }
+    }
+
+    private func buildCSV(from records: [WorkoutRecord]) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let timeFormatter = DateFormatter()
+        timeFormatter.dateFormat = "HH:mm:ss"
+
+        var lines: [String] = []
+        lines.append([
+            "Date",
+            "Start Time",
+            "End Time",
+            "Duration (min)",
+            "Activity Type",
+            "Steps",
+            "Distance (m)",
+            "Calories (kcal)",
+            "Avg HR (bpm)",
+            "Max HR (bpm)",
+            "Flights Climbed",
+            "Cadence (spm)",
+            "SpO2 (%)",
+            "Wear Location",
+        ].joined(separator: ","))
+
+        for r in records {
+            let duration = r.endTime.timeIntervalSince(r.startTime) / 60.0
+            let row = [
+                dateFormatter.string(from: r.startTime),
+                timeFormatter.string(from: r.startTime),
+                timeFormatter.string(from: r.endTime),
+                String(format: "%.1f", duration),
+                r.activityType,
+                String(format: "%.0f", r.steps),
+                String(format: "%.1f", r.distance),
+                String(format: "%.1f", r.calories),
+                String(format: "%.0f", r.heartRateAvg),
+                String(format: "%.0f", r.heartRateMax),
+                String(format: "%.0f", r.flightsClimbed),
+                String(format: "%.0f", r.cadence),
+                String(format: "%.0f", r.spO2),
+                r.wearLocation,
+            ]
+            lines.append(row.joined(separator: ","))
+        }
+
+        return lines.joined(separator: "\n")
+    }
+
+    private func writeCSVToTempFile(_ csv: String) -> URL? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let startStr = dateFormatter.string(from: exportStartDate)
+        let endStr = dateFormatter.string(from: exportEndDate)
+        let fileName = "MobilityLab_\(startStr)_to_\(endStr).csv"
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent(fileName)
+        do {
+            try csv.write(to: url, atomically: true, encoding: .utf8)
+            return url
+        } catch {
+            return nil
+        }
+    }
+
+    // MARK: - Observer Queries (Real-Time HealthKit Updates)
+
+    private func startObserverQueries() {
+        let typesToObserve: [HKQuantityTypeIdentifier] = [
+            .heartRate,
+            .stepCount,
+            .activeEnergyBurned,
+            .distanceWalkingRunning,
+            .flightsClimbed,
+            .appleExerciseTime,
+            .oxygenSaturation,
+        ]
+
+        for identifier in typesToObserve {
+            guard let quantityType = HKQuantityType.quantityType(
+                forIdentifier: identifier
+            ) else { continue }
+
+            let query = HKObserverQuery(
+                sampleType: quantityType,
+                predicate: nil
+            ) { [weak self] _, _, _ in
+                DispatchQueue.main.async {
+                    self?.fetchAllMetrics()
+                }
+            }
+            healthStore.execute(query)
+            observerQueries.append(query)
+        }
+    }
 
     // MARK: - HealthKit Queries
 
@@ -453,10 +580,24 @@ final class MobilityTrackingViewModel: ObservableObject {
         unit: HKUnit,
         completion: @escaping (Double) -> Void
     ) {
-        guard let quantityType = HKQuantityType.quantityType(forIdentifier: identifier) else { return }
+        guard let quantityType = HKQuantityType.quantityType(
+            forIdentifier: identifier
+        ) else { return }
 
-        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
-        let query = HKSampleQuery(sampleType: quantityType, predicate: nil, limit: 1, sortDescriptors: [sortDescriptor]) { _, samples, _ in
+        // Query today's samples only to get fresh data from watch
+        let startOfDay = Calendar.current.startOfDay(for: Date())
+        let predicate = HKQuery.predicateForSamples(
+            withStart: startOfDay, end: nil, options: .strictStartDate
+        )
+        let sortDescriptor = NSSortDescriptor(
+            key: HKSampleSortIdentifierStartDate, ascending: false
+        )
+        let query = HKSampleQuery(
+            sampleType: quantityType,
+            predicate: predicate,
+            limit: 1,
+            sortDescriptors: [sortDescriptor]
+        ) { _, samples, _ in
             guard let sample = samples?.first as? HKQuantitySample else {
                 DispatchQueue.main.async { completion(0) }
                 return

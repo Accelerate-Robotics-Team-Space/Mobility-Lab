@@ -1,0 +1,116 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/RswiftParsers-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/ProjectResources.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ProjectResources.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ProjectResources.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ProjectResources.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/AssetCatalog+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/AssetCatalog+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/AssetCatalog+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/AssetCatalog+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/FileResource+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FileResource+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FileResource+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FileResource+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/FontResource+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FontResource+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FontResource+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FontResource+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/ImageResource+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ImageResource+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ImageResource+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ImageResource+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/Nib+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Nib+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Nib+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Nib+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/PropertyList+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/PropertyList+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/PropertyList+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/PropertyList+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/Storyboard+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Storyboard+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Storyboard+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Storyboard+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Resources/StringsTable+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/StringsTable+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/StringsTable+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/StringsTable+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/Bundle+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Bundle+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Bundle+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Bundle+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/DeploymentTarget+Parser.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/DeploymentTarget+Parser.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/DeploymentTarget+Parser.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/DeploymentTarget+Parser.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/FormatPart+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FormatPart+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FormatPart+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/FormatPart+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/GeneratedId.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/GeneratedId.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/GeneratedId.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/GeneratedId.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/Glob.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Glob.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Glob.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Glob.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/IgnoreFile.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/IgnoreFile.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/IgnoreFile.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/IgnoreFile.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/ResourceParsingError.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ResourceParsingError.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ResourceParsingError.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/ResourceParsingError.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/SourceTreeURLs.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SourceTreeURLs.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SourceTreeURLs.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SourceTreeURLs.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/SupportedExtensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SupportedExtensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SupportedExtensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/SupportedExtensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/TypeReference+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/TypeReference+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/TypeReference+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/TypeReference+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/URL+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/URL+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/URL+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/URL+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftParsers/Shared/Xcodeproj.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Xcodeproj.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Xcodeproj.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev/RswiftParsers.build/Objects-normal/x86_64/Xcodeproj.o"
+  }
+}

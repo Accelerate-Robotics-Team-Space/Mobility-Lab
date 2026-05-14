@@ -1,0 +1,56 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/KituraContracts-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/BodyDecoder.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyDecoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyDecoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyDecoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/BodyEncoder.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyEncoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyEncoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyEncoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/BodyFormat.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyFormat.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyFormat.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/BodyFormat.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/ClosureAliases.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/ClosureAliases.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/ClosureAliases.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/ClosureAliases.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/Coder.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Coder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Coder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Coder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/Extensions.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/QueryDecoder.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryDecoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryDecoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryDecoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/QueryEncoder.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryEncoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryEncoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/QueryEncoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/Sources/KituraContracts/Contracts.swift" : {
+    "index-unit-output-path" : "/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Contracts.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Contracts.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/KituraContracts/build/KituraContracts.build/Dev-iphoneos/KituraContracts.build/Objects-normal/arm64/Contracts.o"
+  }
+}

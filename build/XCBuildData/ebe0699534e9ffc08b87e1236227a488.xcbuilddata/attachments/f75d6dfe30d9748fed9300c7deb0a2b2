@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Dev/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.o"
+  }
+}

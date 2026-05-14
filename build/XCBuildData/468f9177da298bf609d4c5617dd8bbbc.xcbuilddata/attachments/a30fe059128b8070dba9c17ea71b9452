@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/LoggerAPI-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/Sources/LoggerAPI/Logger.swift" : {
+    "index-unit-output-path" : "/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/Logger.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/Logger.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/LoggerAPI/build/LoggerAPI.build/Dev-iphoneos/LoggerAPI.build/Objects-normal/arm64/Logger.o"
+  }
+}

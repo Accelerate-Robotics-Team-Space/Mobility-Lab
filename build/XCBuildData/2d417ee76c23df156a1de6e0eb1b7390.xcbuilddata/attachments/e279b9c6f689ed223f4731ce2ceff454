@@ -1,0 +1,4 @@
+module SwiftJWT {
+header "SwiftJWT-Swift.h"
+export *
+}

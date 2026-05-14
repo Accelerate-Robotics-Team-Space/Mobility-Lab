@@ -1,0 +1,51 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSA.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSA.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSAConstants.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAConstants.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAConstants.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAConstants.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSADigest.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSADigest.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSADigest.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSADigest.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAErrors.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAErrors.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAErrors.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSAKey.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAKey.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAKey.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAKey.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/CryptorRSAUtilities.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAUtilities.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAUtilities.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/CryptorRSAUtilities.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/Data+Extensions.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/Data+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/Data+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/Data+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/Sources/CryptorRSA/SSLPointerTricks.swift" : {
+    "index-unit-output-path" : "/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/SSLPointerTricks.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/SSLPointerTricks.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/BlueRSA/build/CryptorRSA.build/Dev-iphoneos/CryptorRSA.build/Objects-normal/arm64/SSLPointerTricks.o"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SwiftJWT-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/BlueECDSA.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueECDSA.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueECDSA.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueECDSA.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/BlueHMAC.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueHMAC.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueHMAC.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueHMAC.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/BlueRSA.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueRSA.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueRSA.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/BlueRSA.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/Claims.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Claims.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Claims.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Claims.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/ClaimsExamples/ClaimsMicroProfile.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsMicroProfile.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsMicroProfile.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsMicroProfile.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/ClaimsExamples/ClaimsOpenID.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsOpenID.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsOpenID.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsOpenID.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/ClaimsExamples/ClaimsStandardJWT.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsStandardJWT.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsStandardJWT.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ClaimsStandardJWT.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/Data+Base64URLEncoded.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Data+Base64URLEncoded.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Data+Base64URLEncoded.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Data+Base64URLEncoded.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/Header.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Header.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Header.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/Header.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWT.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWT.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWT.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWT.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWTDecoder.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTDecoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTDecoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTDecoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWTEncoder.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTEncoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTEncoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTEncoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWTError.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTError.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTError.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTError.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWTSigner.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTSigner.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTSigner.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTSigner.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/JWTVerifier.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTVerifier.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTVerifier.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/JWTVerifier.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/NoneAlgorithm.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/NoneAlgorithm.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/NoneAlgorithm.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/NoneAlgorithm.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/RSAKeyType.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/RSAKeyType.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/RSAKeyType.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/RSAKeyType.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/SignerAlgorithm.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SignerAlgorithm.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SignerAlgorithm.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/SignerAlgorithm.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/ValidateClaimsResult.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ValidateClaimsResult.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ValidateClaimsResult.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/ValidateClaimsResult.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/Sources/SwiftJWT/VerifierAlgorithm.swift" : {
+    "index-unit-output-path" : "/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/VerifierAlgorithm.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/VerifierAlgorithm.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Swift-JWT/build/SwiftJWT.build/Dev-iphoneos/SwiftJWT.build/Objects-normal/arm64/VerifierAlgorithm.o"
+  }
+}

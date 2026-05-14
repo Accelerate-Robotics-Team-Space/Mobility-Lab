@@ -1,0 +1,4 @@
+module KituraContracts {
+header "KituraContracts-Swift.h"
+export *
+}

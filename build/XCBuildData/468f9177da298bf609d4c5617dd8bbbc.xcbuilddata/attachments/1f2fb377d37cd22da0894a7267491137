@@ -1,0 +1,4 @@
+module XcodeEdit {
+header "XcodeEdit-Swift.h"
+export *
+}
