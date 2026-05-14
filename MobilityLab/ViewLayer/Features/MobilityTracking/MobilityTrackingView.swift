@@ -367,20 +367,26 @@ enum ActivityClassification: String {
         let speedMph = durationSeconds > 0
             ? (distance / 1609.34) / (durationSeconds / 3600) : 0
 
-        // Stair climbing: flights > 0 with active stepping
-        if flightsClimbed >= 1 && cadence >= 40 {
+        // Stair climbing: multiple flights = definite stair climbing
+        if flightsClimbed >= 2 && cadence >= 40 {
+            return .stairClimbing
+        }
+
+        // Stair climbing: 1 flight but must also have low speed
+        // (rules out inclines during normal walks)
+        if flightsClimbed >= 1 && cadence >= 60 && speedMph < 2.0 {
             return .stairClimbing
         }
 
         // Stair climbing heuristic: high cadence but very low speed
         // (stairs produce many steps with minimal horizontal distance)
-        if cadence >= 80 && speedMph < 2.5 && durationSeconds > 30 {
+        if cadence >= 80 && speedMph < 2.0 && durationSeconds > 30 {
             return .stairClimbing
         }
 
         // Chest placement heuristic: moderate+ cadence with low speed
         // is likely stair climbing in clinical mobility assessments
-        if wearLocation == "chest" && cadence >= 60 && speedMph < 3.0 {
+        if wearLocation == "chest" && cadence >= 60 && speedMph < 2.5 {
             return .stairClimbing
         }
 
@@ -417,6 +423,7 @@ struct ActivityRecord: Identifiable {
     let flightsClimbed: Double
     let cadence: Double        // steps per minute
     let spO2: Double
+    let wearLocation: String   // wrist, chest, ankle
 
     var formattedDuration: String {
         let interval = Int(endTime.timeIntervalSince(startTime))
@@ -502,6 +509,21 @@ struct ActivityDetailView: View {
                         Text(activity.formattedDuration)
                             .font(.custom("Avenir-Heavy", size: 32))
                             .foregroundColor(.indigo1)
+
+                        // Watch location badge
+                        if !activity.wearLocation.isEmpty {
+                            HStack(spacing: 6) {
+                                Image(systemName: "applewatch")
+                                    .font(.system(size: 12))
+                                Text(activity.wearLocation.capitalized)
+                                    .font(.custom("Avenir", size: 13))
+                            }
+                            .foregroundColor(.charcoal3)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.white)
+                            .cornerRadius(12)
+                        }
                     }
                     .padding(.top, 8)
 
