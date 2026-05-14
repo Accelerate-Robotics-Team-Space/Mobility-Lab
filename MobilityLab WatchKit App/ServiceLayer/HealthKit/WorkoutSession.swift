@@ -11,7 +11,8 @@ import HealthKit
 import WatchKit
 
 protocol WorkoutSessionProtocol: AnyObject {
-    func startWorkout(placement: String)
+    var placement: String { get set }
+    func startWorkout()
     func stopWorkout()
     var healthStoreAuth: Bool { get }
     var stepCount: Double { get }
@@ -39,7 +40,7 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
     }
     private(set) var heartRate: Double = 0
     private var heartRateSamples: [Double] = []
-    private var currentPlacement: String = "wrist"
+    var placement: String = "wrist"
 
     var heartRateAvg: Double {
         guard !heartRateSamples.isEmpty else { return 0 }
@@ -60,6 +61,8 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
     private var heartRateQuery: HKAnchoredObjectQuery?
+    private var hrPollTimer: Timer?
+    private var workoutStartDate: Date?
     
     enum WorkoutState {
         case notStarted
@@ -148,12 +151,11 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         ]
     }
 
-    func startWorkout(placement: String = "wrist") {
+    func startWorkout() {
         guard session?.state != .running else {
             return
         }
 		logger.info("⌚️ startworkout, prepare to init, placement: \(placement)")
-        currentPlacement = placement
 
         // Reset metrics
         stepCount = 0
@@ -182,13 +184,21 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         // Start fallback heart rate query — reads HR samples directly from HealthKit
         // in case the HKLiveWorkoutBuilder delegate doesn't deliver them
         startHeartRateQuery(from: startDate)
+
+        // Start aggressive HR polling — queries HealthKit every 5 seconds
+        // as a last resort if both the builder delegate and anchored query fail
+        workoutStartDate = startDate
+        startHRPolling()
     }
-    
+
     func stopWorkout() {
         guard let session, session.state == .running else {
           return
         }
         logger.info("stopWorkout = \(session.state.rawValue)")
+
+        hrPollTimer?.invalidate()
+        hrPollTimer = nil
 
         // Stop the fallback heart rate query
         if let heartRateQuery {
@@ -207,7 +217,7 @@ private extension WorkoutSession {
         // Use .other + .indoor for non-wrist placements — .walking may reduce
         // HR sampling when the watch detects non-wrist orientation.
         // .other triggers high-frequency HR monitoring regardless of placement.
-        if currentPlacement != "wrist" {
+        if placement != "wrist" {
             config.activityType = .other
             config.locationType = .indoor
         } else {
@@ -263,6 +273,52 @@ private extension WorkoutSession {
         heartRateQuery = query
         healthStore.execute(query)
         logger.info("⌚️ Started fallback HKAnchoredObjectQuery for heart rate")
+    }
+
+    /// Polls HealthKit every 5 seconds for the latest HR sample.
+    /// This is the most reliable method — works regardless of whether
+    /// the workout builder or anchored query deliver HR data.
+    func startHRPolling() {
+        hrPollTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] _ in
+            self?.pollLatestHeartRate()
+        }
+    }
+
+    func pollLatestHeartRate() {
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate),
+              let startDate = workoutStartDate else { return }
+
+        let predicate = HKQuery.predicateForSamples(
+            withStart: startDate, end: nil, options: .strictStartDate
+        )
+        let sort = NSSortDescriptor(
+            key: HKSampleSortIdentifierStartDate, ascending: false
+        )
+        let query = HKSampleQuery(
+            sampleType: hrType,
+            predicate: predicate,
+            limit: 1,
+            sortDescriptors: [sort]
+        ) { [weak self] _, samples, error in
+            if let error {
+                logger.error("⌚️ HR poll error: \(error.localizedDescription)")
+                return
+            }
+            guard let sample = samples?.first as? HKQuantitySample else {
+                logger.debug("⌚️ HR poll: no samples yet")
+                return
+            }
+            let hrUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
+            let value = sample.quantity.doubleValue(for: hrUnit)
+            if value > 0 {
+                logger.info("⌚️ HR poll got: \(value) bpm")
+                self?.heartRate = Double(round(value))
+                if let hr = self?.heartRate, hr > 0 {
+                    self?.heartRateSamples.append(hr)
+                }
+            }
+        }
+        healthStore.execute(query)
     }
 
     func processHeartRateSamples(_ samples: [HKSample]?) {
