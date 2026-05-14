@@ -40,7 +40,11 @@ final class MotionActivityDetector {
 
     private(set) var pedometerSteps: Int = 0
     private(set) var pedometerDistance: Double = 0   // meters
-    private(set) var floorsAscended: Double = 0      // flights climbed
+    /// Best of CMPedometer floors vs CMAltimeter-computed floors
+    var floorsAscended: Double {
+        max(pedometerFloors, altimeterFloorsAscended)
+    }
+    private var pedometerFloors: Double = 0
     private(set) var sensorSteps: Int = 0
     private(set) var movementIntensity: Double = 0
     private(set) var estimatedCalories: Double = 0   // kcal
@@ -80,10 +84,14 @@ final class MotionActivityDetector {
 
     private let bodyWeightKg: Double
 
-    // MARK: - CMPedometer
+    // MARK: - CMPedometer & CMAltimeter
 
     private let pedometer = CMPedometer()
+    private let altimeter = CMAltimeter()
     private var pedometerStartDate: Date?
+    private var altimeterFloorsAscended: Double = 0
+    private var totalAltitudeGain: Double = 0
+    private var lastAltitude: Double?
 
     // MARK: - Step Detection State (accelerometer-based fallback)
 
@@ -116,7 +124,10 @@ final class MotionActivityDetector {
     func reset() {
         pedometerSteps = 0
         pedometerDistance = 0
-        floorsAscended = 0
+        pedometerFloors = 0
+        altimeterFloorsAscended = 0
+        totalAltitudeGain = 0
+        lastAltitude = nil
         sensorSteps = 0
         movementIntensity = 0
         estimatedCalories = 0
@@ -152,13 +163,34 @@ final class MotionActivityDetector {
             }
             self.pedometerSteps = data.numberOfSteps.intValue
             self.pedometerDistance = data.distance?.doubleValue ?? 0
-            self.floorsAscended = data.floorsAscended?.doubleValue ?? 0
+            self.pedometerFloors = data.floorsAscended?.doubleValue ?? 0
+        }
+
+        // Start CMAltimeter for direct altitude tracking
+        // Computes floors from relative altitude gain (1 floor ≈ 3m)
+        if CMAltimeter.isRelativeAltitudeAvailable() {
+            altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, _ in
+                guard let self, let data else { return }
+                let altitude = data.relativeAltitude.doubleValue
+                if let last = self.lastAltitude {
+                    let gain = altitude - last
+                    if gain > 0 {
+                        self.totalAltitudeGain += gain
+                        // 1 floor ≈ 3 meters elevation
+                        self.altimeterFloorsAscended = floor(
+                            self.totalAltitudeGain / 3.0
+                        )
+                    }
+                }
+                self.lastAltitude = altitude
+            }
         }
     }
 
-    /// Stop the pedometer.
+    /// Stop the pedometer and altimeter.
     func stopPedometer() {
         pedometer.stopUpdates()
+        altimeter.stopRelativeAltitudeUpdates()
     }
 
     // MARK: - Core Processing (Accelerometer Data)
