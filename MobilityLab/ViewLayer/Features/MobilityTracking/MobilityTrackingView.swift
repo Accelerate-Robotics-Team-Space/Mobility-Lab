@@ -352,14 +352,28 @@ enum ActivityClassification: String {
         flightsClimbed: Double,
         durationSeconds: Double,
         distance: Double,
-        age: Int = 40
+        age: Int = 40,
+        wearLocation: String = ""
     ) -> ActivityClassification {
         let maxHR = Double(220 - age)
         let hrPercent = heartRateAvg > 0 ? (heartRateAvg / maxHR) * 100 : 0
-        let speedMph = durationSeconds > 0 ? (distance / 1609.34) / (durationSeconds / 3600) : 0
+        let speedMph = durationSeconds > 0
+            ? (distance / 1609.34) / (durationSeconds / 3600) : 0
 
         // Stair climbing: flights > 0 with active stepping
         if flightsClimbed >= 1 && cadence >= 40 {
+            return .stairClimbing
+        }
+
+        // Stair climbing heuristic: high cadence but very low speed
+        // (stairs produce many steps with minimal horizontal distance)
+        if cadence >= 80 && speedMph < 2.5 && durationSeconds > 30 {
+            return .stairClimbing
+        }
+
+        // Chest placement heuristic: moderate+ cadence with low speed
+        // is likely stair climbing in clinical mobility assessments
+        if wearLocation == "chest" && cadence >= 60 && speedMph < 3.0 {
             return .stairClimbing
         }
 

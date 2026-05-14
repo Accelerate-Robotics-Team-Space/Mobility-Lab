@@ -79,7 +79,7 @@ final class ActivitySessionDriver: ObservableObject {
         // Set sample rate for accelerometer (used for location detection + fallback steps)
         deviceMotionManager.sampleRate = 25.0
 
-        workoutSession.startWorkout()
+        workoutSession.startWorkout(placement: placement.rawValue)
         locationService.startLocationUpdate()
         deviceMotionManager.initaliseDatasources()
         WKInterfaceDevice.current().play(.start)

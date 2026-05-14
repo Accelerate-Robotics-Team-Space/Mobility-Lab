@@ -11,7 +11,7 @@ import HealthKit
 import WatchKit
 
 protocol WorkoutSessionProtocol: AnyObject {
-    func startWorkout()
+    func startWorkout(placement: String)
     func stopWorkout()
     var healthStoreAuth: Bool { get }
     var stepCount: Double { get }
@@ -39,6 +39,7 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
     }
     private(set) var heartRate: Double = 0
     private var heartRateSamples: [Double] = []
+    private var currentPlacement: String = "wrist"
 
     var heartRateAvg: Double {
         guard !heartRateSamples.isEmpty else { return 0 }
@@ -147,11 +148,12 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
         ]
     }
 
-    func startWorkout() {
+    func startWorkout(placement: String = "wrist") {
         guard session?.state != .running else {
             return
         }
-		logger.info("⌚️ startworkout, prepare to init")
+		logger.info("⌚️ startworkout, prepare to init, placement: \(placement)")
+        currentPlacement = placement
 
         // Reset metrics
         stepCount = 0
@@ -202,8 +204,16 @@ final class WorkoutSession: NSObject, WorkoutSessionProtocol {
 private extension WorkoutSession {
     func initWorkout() {
         let config = HKWorkoutConfiguration()
-        config.activityType = .walking
-        config.locationType = .outdoor
+        // Use .other + .indoor for non-wrist placements — .walking may reduce
+        // HR sampling when the watch detects non-wrist orientation.
+        // .other triggers high-frequency HR monitoring regardless of placement.
+        if currentPlacement != "wrist" {
+            config.activityType = .other
+            config.locationType = .indoor
+        } else {
+            config.activityType = .walking
+            config.locationType = .outdoor
+        }
         
         do {
             session = try HKWorkoutSession(healthStore: healthStore, configuration: config)

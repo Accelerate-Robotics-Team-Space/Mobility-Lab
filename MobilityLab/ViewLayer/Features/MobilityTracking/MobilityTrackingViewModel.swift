@@ -34,6 +34,12 @@ final class MobilityTrackingViewModel: ObservableObject {
     private var observerQueries: [HKObserverQuery] = []
     private var cancellables: Set<AnyCancellable> = []
 
+    // HealthKit day totals (authoritative source for dashboard)
+    private var hkSteps: Double = 0
+    private var hkDistance: Double = 0
+    private var hkCalories: Double = 0
+    private var hkFloors: Double = 0
+
     // MARK: - Formatted Values
 
     var formattedSteps: String {
@@ -89,11 +95,21 @@ final class MobilityTrackingViewModel: ObservableObject {
     }
 
     private func handleWatchData(_ data: [String: Any]) {
-        if let val = data["stepCount"] as? Double { steps = max(steps, val) }
+        // Watch sends session-only values; HealthKit has full day totals.
+        // Always prefer the higher of HealthKit day total vs watch session.
+        if let val = data["stepCount"] as? Double {
+            steps = max(hkSteps, val)
+        }
         if let val = data["heartRate"] as? Double, val > 0 { heartRate = val }
-        if let val = data["distance"] as? Double { distance = max(distance, val) }
-        if let val = data["activeCalories"] as? Double { calories = max(calories, val) }
-        if let val = data["flightsClimbed"] as? Double { floorsClimbed = max(floorsClimbed, val) }
+        if let val = data["distance"] as? Double {
+            distance = max(hkDistance, val)
+        }
+        if let val = data["activeCalories"] as? Double {
+            calories = max(hkCalories, val)
+        }
+        if let val = data["flightsClimbed"] as? Double {
+            floorsClimbed = max(hkFloors, val)
+        }
         if let val = data["wearLocation"] as? String { wearLocation = val }
         if let val = data["isMoving"] as? Bool { isMoving = val }
         isWatchConnected = true
@@ -130,7 +146,8 @@ final class MobilityTrackingViewModel: ObservableObject {
             cadence: cadenceVal,
             flightsClimbed: flights,
             durationSeconds: durationSeconds,
-            distance: distanceVal
+            distance: distanceVal,
+            wearLocation: location
         )
 
         let record = ActivityRecord(
@@ -237,16 +254,24 @@ final class MobilityTrackingViewModel: ObservableObject {
         isWatchConnected = connectivityService.isWatchReachable
 
         fetchTodayCumulativeStat(.stepCount, unit: .count()) { [weak self] value in
-            self?.steps = max(self?.steps ?? 0, value)
+            guard let self else { return }
+            self.hkSteps = value
+            self.steps = max(self.steps, value)
         }
         fetchTodayCumulativeStat(.distanceWalkingRunning, unit: .meter()) { [weak self] value in
-            self?.distance = max(self?.distance ?? 0, value)
+            guard let self else { return }
+            self.hkDistance = value
+            self.distance = max(self.distance, value)
         }
         fetchTodayCumulativeStat(.activeEnergyBurned, unit: .kilocalorie()) { [weak self] value in
-            self?.calories = max(self?.calories ?? 0, value)
+            guard let self else { return }
+            self.hkCalories = value
+            self.calories = max(self.calories, value)
         }
         fetchTodayCumulativeStat(.flightsClimbed, unit: .count()) { [weak self] value in
-            self?.floorsClimbed = value
+            guard let self else { return }
+            self.hkFloors = value
+            self.floorsClimbed = max(self.floorsClimbed, value)
         }
         fetchTodayCumulativeStat(.appleExerciseTime, unit: .minute()) { [weak self] value in
             self?.activeMinutes = value
