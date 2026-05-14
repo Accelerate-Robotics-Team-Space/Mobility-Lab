@@ -89,7 +89,8 @@ extension WorkoutRecord {
             calories: calories,
             flightsClimbed: flightsClimbed,
             cadence: cadence,
-            spO2: spO2
+            spO2: spO2,
+            wearLocation: wearLocation
         )
     }
 }

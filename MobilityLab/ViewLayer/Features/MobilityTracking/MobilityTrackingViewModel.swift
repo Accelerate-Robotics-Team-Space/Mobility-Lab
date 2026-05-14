@@ -168,7 +168,8 @@ final class MobilityTrackingViewModel: ObservableObject {
             calories: cals,
             flightsClimbed: flights,
             cadence: cadenceVal,
-            spO2: 0
+            spO2: 0,
+            wearLocation: location
         )
 
         // Avoid duplicates — don't add if an activity with the same start time exists
@@ -479,7 +480,8 @@ final class MobilityTrackingViewModel: ObservableObject {
                 calories: calories,
                 flightsClimbed: flights,
                 cadence: cadence,
-                spO2: spO2Value
+                spO2: spO2Value,
+                wearLocation: "wrist"
             )
             completion(record)
         }
