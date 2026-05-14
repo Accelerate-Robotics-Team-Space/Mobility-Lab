@@ -367,26 +367,24 @@ enum ActivityClassification: String {
         let speedMph = durationSeconds > 0
             ? (distance / 1609.34) / (durationSeconds / 3600) : 0
 
-        // Stair climbing: multiple flights = definite stair climbing
-        if flightsClimbed >= 2 && cadence >= 40 {
-            return .stairClimbing
-        }
+        // Floor rate: floors per minute (distinguishes stair climbing from incline walks)
+        let durationMin = durationSeconds / 60.0
+        let floorRate = durationMin > 0 ? flightsClimbed / durationMin : 0
 
-        // Stair climbing: 1 flight but must also have low speed
-        // (rules out inclines during normal walks)
-        if flightsClimbed >= 1 && cadence >= 60 && speedMph < 2.0 {
+        // Stair climbing: high floor rate (>= 0.5 floors/min) + low speed
+        // e.g., 2 floors in 2 min = 1.0/min (stairs), vs 2 floors in 10 min = 0.2/min (incline)
+        if flightsClimbed >= 1 && floorRate >= 0.5 && speedMph < 2.5 {
             return .stairClimbing
         }
 
         // Stair climbing heuristic: high cadence but very low speed
         // (stairs produce many steps with minimal horizontal distance)
-        if cadence >= 80 && speedMph < 2.0 && durationSeconds > 30 {
+        if cadence >= 80 && speedMph < 1.5 && durationSeconds > 30 {
             return .stairClimbing
         }
 
-        // Chest placement heuristic: moderate+ cadence with low speed
-        // is likely stair climbing in clinical mobility assessments
-        if wearLocation == "chest" && cadence >= 60 && speedMph < 2.5 {
+        // Chest placement heuristic: high floor rate or low speed with moderate cadence
+        if wearLocation == "chest" && floorRate >= 0.3 && cadence >= 60 {
             return .stairClimbing
         }
 
