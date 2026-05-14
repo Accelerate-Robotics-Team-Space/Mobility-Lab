@@ -176,10 +176,10 @@ final class MotionActivityDetector {
                     let gain = altitude - last
                     if gain > 0 {
                         self.totalAltitudeGain += gain
-                        // 1 floor ≈ 3 meters elevation
-                        self.altimeterFloorsAscended = floor(
-                            self.totalAltitudeGain / 3.0
-                        )
+                        // 1 floor ≈ 2.16 meters (12 stairs × 0.18m)
+                        self.altimeterFloorsAscended = (
+                            self.totalAltitudeGain / 2.16
+                        ).rounded()
                     }
                 }
                 self.lastAltitude = altitude
