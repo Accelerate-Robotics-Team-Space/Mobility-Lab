@@ -34,11 +34,17 @@ final class MobilityTrackingViewModel: ObservableObject {
     private var observerQueries: [HKObserverQuery] = []
     private var cancellables: Set<AnyCancellable> = []
 
-    // HealthKit day totals (authoritative source for dashboard)
+    // HealthKit day totals (full day from all sources)
     private var hkSteps: Double = 0
     private var hkDistance: Double = 0
     private var hkCalories: Double = 0
     private var hkFloors: Double = 0
+
+    // Current watch session values (active session, not yet a completed workout)
+    private var watchSessionSteps: Double = 0
+    private var watchSessionDistance: Double = 0
+    private var watchSessionCalories: Double = 0
+    private var watchSessionFloors: Double = 0
 
     // MARK: - Formatted Values
 
@@ -95,28 +101,27 @@ final class MobilityTrackingViewModel: ObservableObject {
     }
 
     private func handleWatchData(_ data: [String: Any]) {
-        // Watch sends session-only values; HealthKit has full day totals.
-        // Always prefer the higher of HealthKit day total vs watch session.
-        if let val = data["stepCount"] as? Double {
-            steps = max(hkSteps, val)
-        }
+        // Track current watch session values
+        if let val = data["stepCount"] as? Double { watchSessionSteps = val }
+        if let val = data["distance"] as? Double { watchSessionDistance = val }
+        if let val = data["activeCalories"] as? Double { watchSessionCalories = val }
+        if let val = data["flightsClimbed"] as? Double { watchSessionFloors = val }
         if let val = data["heartRate"] as? Double, val > 0 { heartRate = val }
-        if let val = data["distance"] as? Double {
-            distance = max(hkDistance, val)
-        }
-        if let val = data["activeCalories"] as? Double {
-            calories = max(hkCalories, val)
-        }
-        if let val = data["flightsClimbed"] as? Double {
-            floorsClimbed = max(hkFloors, val)
-        }
         if let val = data["wearLocation"] as? String { wearLocation = val }
         if let val = data["isMoving"] as? Bool { isMoving = val }
         isWatchConnected = true
 
-        // When watch sends a completed activity, add it immediately and refresh from HealthKit
+        // Update dashboard: best of HealthKit day total, activities sum, or watch session
+        updateDashboardTotals()
+
+        // When watch sends a completed activity, add it and refresh
         if data["activityCompleted"] as? Bool == true {
             addActivityFromWatchData(data)
+            // Reset session counters — session ended
+            watchSessionSteps = 0
+            watchSessionDistance = 0
+            watchSessionCalories = 0
+            watchSessionFloors = 0
             // Delayed refresh to pick up the HealthKit-saved workout
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
                 self?.fetchTodayWorkouts()
@@ -202,6 +207,7 @@ final class MobilityTrackingViewModel: ObservableObject {
             let mapped = records.map { $0.toActivityRecord() }
             await MainActor.run {
                 self.activities = mapped.sorted { $0.startTime < $1.startTime }
+                self.updateDashboardTotals()
             }
         }
     }
@@ -256,22 +262,22 @@ final class MobilityTrackingViewModel: ObservableObject {
         fetchTodayCumulativeStat(.stepCount, unit: .count()) { [weak self] value in
             guard let self else { return }
             self.hkSteps = value
-            self.steps = max(self.steps, value)
+            self.updateDashboardTotals()
         }
         fetchTodayCumulativeStat(.distanceWalkingRunning, unit: .meter()) { [weak self] value in
             guard let self else { return }
             self.hkDistance = value
-            self.distance = max(self.distance, value)
+            self.updateDashboardTotals()
         }
         fetchTodayCumulativeStat(.activeEnergyBurned, unit: .kilocalorie()) { [weak self] value in
             guard let self else { return }
             self.hkCalories = value
-            self.calories = max(self.calories, value)
+            self.updateDashboardTotals()
         }
         fetchTodayCumulativeStat(.flightsClimbed, unit: .count()) { [weak self] value in
             guard let self else { return }
             self.hkFloors = value
-            self.floorsClimbed = max(self.floorsClimbed, value)
+            self.updateDashboardTotals()
         }
         fetchTodayCumulativeStat(.appleExerciseTime, unit: .minute()) { [weak self] value in
             self?.activeMinutes = value
@@ -282,6 +288,32 @@ final class MobilityTrackingViewModel: ObservableObject {
         fetchLatestSample(.oxygenSaturation, unit: .percent()) { [weak self] value in
             if value > 0 { self?.spO2 = value * 100 }
         }
+    }
+
+    /// Merges three data sources for dashboard totals:
+    /// 1. HealthKit day cumulative stats (full day from all sources)
+    /// 2. Sum of all recorded activities today (fallback if HK auth limited)
+    /// 3. Current watch session values
+    /// Takes the max of all three to ensure the dashboard always shows
+    /// the most complete picture.
+    private func updateDashboardTotals() {
+        // Sum of all completed activities today
+        let actSteps = activities.reduce(0.0) { $0 + $1.steps }
+        let actDistance = activities.reduce(0.0) { $0 + $1.distance }
+        let actCalories = activities.reduce(0.0) { $0 + $1.calories }
+        let actFloors = activities.reduce(0.0) { $0 + $1.flightsClimbed }
+
+        // Activities sum + current active session (not yet completed)
+        let totalSteps = actSteps + watchSessionSteps
+        let totalDistance = actDistance + watchSessionDistance
+        let totalCalories = actCalories + watchSessionCalories
+        let totalFloors = actFloors + watchSessionFloors
+
+        // Best of: HealthKit day total vs (activities + current session)
+        steps = max(hkSteps, totalSteps)
+        distance = max(hkDistance, totalDistance)
+        calories = max(hkCalories, totalCalories)
+        floorsClimbed = max(hkFloors, totalFloors)
     }
 
     // MARK: - Periodic Refresh
@@ -330,6 +362,7 @@ final class MobilityTrackingViewModel: ObservableObject {
 
             group.notify(queue: .main) {
                 self.activities = records.sorted { $0.startTime < $1.startTime }
+                self.updateDashboardTotals()
             }
         }
 
