@@ -123,7 +123,7 @@ final class ActivitySessionDriver: ObservableObject {
         completedData["duration"] = elapsedSeconds
         completedData["flightsClimbed"] = flightsClimbed
         completedData["cadence"] = cadence
-        completedData["wearLocation"] = motionDetector.detectedLocation.rawValue
+        completedData["wearLocation"] = motionDetector.effectivePlacement.rawValue
         connectivityService.sendHealthData(completedData)
     }
 
