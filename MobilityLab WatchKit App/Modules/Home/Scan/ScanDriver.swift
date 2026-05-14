@@ -55,7 +55,7 @@ private extension ScanDriver {
                 if self?.connectionDriver.pairedPeripheral != nil {
                     self?.connectionDriver.declineUnpairedConnections()
                 }
-                self?.workoutSession.startWorkout()
+                self?.workoutSession.startWorkout(placement: "wrist")
                 self?.locationService.startLocationUpdate()
             }
         }

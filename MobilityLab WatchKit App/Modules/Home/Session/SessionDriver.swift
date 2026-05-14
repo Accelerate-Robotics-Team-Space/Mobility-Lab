@@ -148,7 +148,7 @@ private extension SessionDriver {
                         batteryLvl: UInt8(WatchConstants.watchBatteryPercentage),
                         wearableId: userDefaults.wearableId))
                     )
-                workoutSession.startWorkout()
+                workoutSession.startWorkout(placement: "wrist")
                 locationService.startLocationUpdate()
             default: break
             }
