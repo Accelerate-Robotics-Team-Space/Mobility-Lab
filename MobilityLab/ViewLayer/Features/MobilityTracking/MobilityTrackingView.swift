@@ -14,6 +14,7 @@ struct MobilityTrackingView: View {
     @StateObject private var viewModel = MobilityTrackingViewModel()
     @State private var selectedTab = 0
     @State private var showExportSheet = false
+    @State private var selectedDashboardActivity: ActivityRecord?
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -201,13 +202,19 @@ struct MobilityTrackingView: View {
                     .padding(.bottom, 4)
 
                     LazyVStack(spacing: 10) {
-                        ForEach(viewModel.activities) { activity in
+                        ForEach(viewModel.activities.reversed()) { activity in
                             ActivityListItem(activity: activity)
+                                .onTapGesture {
+                                    selectedDashboardActivity = activity
+                                }
                         }
                     }
                     .padding(.horizontal, 16)
                     .padding(.bottom, 32)
                 }
+            }
+            .sheet(item: $selectedDashboardActivity) { activity in
+                ActivityDetailView(activity: activity, viewModel: viewModel)
             }
         }
     }
