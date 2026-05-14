@@ -1,0 +1,21 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/NIOFoundationEssentialsCompat-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationEssentialsCompat/ByteBuffer-foundation.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/ByteBuffer-foundation.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/ByteBuffer-foundation.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/ByteBuffer-foundation.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationEssentialsCompat/Codable+ByteBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/Codable+ByteBuffer.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/Codable+ByteBuffer.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Dev-iphoneos/NIOFoundationEssentialsCompat.build/Objects-normal/arm64/Codable+ByteBuffer.o"
+  }
+}

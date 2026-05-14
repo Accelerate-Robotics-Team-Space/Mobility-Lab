@@ -13,6 +13,7 @@ import SwiftUI
 struct MobilityTrackingView: View {
     @StateObject private var viewModel = MobilityTrackingViewModel()
     @State private var selectedTab = 0
+    @State private var showExportSheet = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -23,10 +24,13 @@ struct MobilityTrackingView: View {
                     VStack(spacing: 0) {
                         header
                         todaySummaryStrip
-                        Spacer()
+                        todayActivitiesList
                     }
                 }
                 .navigationBarHidden(true)
+                .sheet(isPresented: $showExportSheet) {
+                    ExportActivitiesSheet(viewModel: viewModel)
+                }
             }
             .navigationViewStyle(.stack)
             .tabItem {
@@ -122,21 +126,91 @@ struct MobilityTrackingView: View {
 
     @ViewBuilder
     private var todaySummaryStrip: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-                SummaryChip(icon: "figure.walk", value: viewModel.formattedSteps, label: "Steps", color: .indigo1)
-                SummaryChip(icon: "heart.fill", value: viewModel.formattedHeartRate, label: "BPM", color: .red1)
-                SummaryChip(icon: "flame.fill", value: viewModel.formattedCalories, label: "Cal", color: .tangerine)
-                SummaryChip(icon: "point.topleft.down.to.point.bottomright.curvepath", value: viewModel.formattedDistance, label: "km", color: .green1)
-                SummaryChip(icon: "figure.stairs", value: viewModel.formattedFloors, label: "Floors", color: .tangerine)
-                SummaryChip(icon: "lungs.fill", value: viewModel.formattedSpO2, label: "SpO2", color: .cornflower)
-            }
-            .padding(.horizontal, 16)
+        let columns = [
+            GridItem(.flexible(), spacing: 12),
+            GridItem(.flexible(), spacing: 12),
+            GridItem(.flexible(), spacing: 12),
+        ]
+        LazyVGrid(columns: columns, spacing: 12) {
+            SummaryChip(icon: "figure.walk", value: viewModel.formattedSteps, label: "Steps", color: .indigo1)
+            SummaryChip(icon: "heart.fill", value: viewModel.formattedHeartRate, label: "BPM", color: .red1)
+            SummaryChip(icon: "flame.fill", value: viewModel.formattedCalories, label: "Cal", color: .tangerine)
+            SummaryChip(icon: "point.topleft.down.to.point.bottomright.curvepath", value: viewModel.formattedDistance, label: "km", color: .green1)
+            SummaryChip(icon: "figure.stairs", value: viewModel.formattedFloors, label: "Floors", color: .tangerine)
+            SummaryChip(icon: "lungs.fill", value: viewModel.formattedSpO2, label: "SpO2", color: .cornflower)
         }
+        .padding(.horizontal, 16)
         .padding(.bottom, 12)
     }
 
-    // (Activities list moved to WorkoutHistoryView in Activities tab)
+    // MARK: - Today's Activities (Dashboard)
+
+    @ViewBuilder
+    private var todayActivitiesList: some View {
+        if viewModel.activities.isEmpty {
+            VStack(spacing: 12) {
+                Image(systemName: "figure.walk.motion")
+                    .font(.system(size: 36))
+                    .foregroundColor(.charcoal3.opacity(0.4))
+                Text("No activities yet today")
+                    .font(.custom("Avenir", size: 15))
+                    .foregroundColor(.charcoal3)
+                Button {
+                    showExportSheet = true
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.system(size: 13))
+                        Text("Export Past Activities")
+                            .font(.custom("Avenir", size: 13))
+                    }
+                    .foregroundColor(.indigo1)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 8)
+                    .background(Color.indigo1.opacity(0.1))
+                    .cornerRadius(10)
+                }
+                .padding(.top, 8)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        } else {
+            ScrollView {
+                VStack(spacing: 4) {
+                    HStack {
+                        Text("Today's Activities")
+                            .font(.custom("Avenir-Heavy", size: 16))
+                            .foregroundColor(.charcoal1)
+                        Spacer()
+                        Button {
+                            showExportSheet = true
+                        } label: {
+                            HStack(spacing: 4) {
+                                Image(systemName: "square.and.arrow.up")
+                                    .font(.system(size: 12))
+                                Text("Export")
+                                    .font(.custom("Avenir", size: 12))
+                            }
+                            .foregroundColor(.indigo1)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 5)
+                            .background(Color.indigo1.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 4)
+
+                    LazyVStack(spacing: 10) {
+                        ForEach(viewModel.activities) { activity in
+                            ActivityListItem(activity: activity)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 32)
+                }
+            }
+        }
+    }
 
     // MARK: - Helpers
 
@@ -156,22 +230,22 @@ struct SummaryChip: View {
     let color: Color
 
     var body: some View {
-        VStack(spacing: 4) {
+        VStack(spacing: 6) {
             Image(systemName: icon)
-                .font(.system(size: 14))
+                .font(.system(size: 20))
                 .foregroundColor(color)
             Text(value)
-                .font(.custom("Avenir-Heavy", size: 16))
+                .font(.custom("Avenir-Heavy", size: 22))
                 .foregroundColor(.charcoal1)
                 .lineLimit(1)
             Text(label)
-                .font(.custom("Avenir", size: 10))
+                .font(.custom("Avenir", size: 12))
                 .foregroundColor(.charcoal3)
         }
-        .frame(width: 65)
-        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 14)
         .background(Color.white)
-        .cornerRadius(12)
+        .cornerRadius(14)
         .shadow(color: Color.black.opacity(0.04), radius: 2, x: 0, y: 1)
     }
 }
@@ -413,11 +487,20 @@ struct ActivityDetailView: View {
                     // Metrics Grid
                     LazyVGrid(columns: [GridItem(.flexible(), spacing: 16), GridItem(.flexible(), spacing: 16)], spacing: 16) {
                         MetricCardView(icon: "figure.walk", title: "Steps", value: activity.formattedSteps, color: .indigo1)
-                        MetricCardView(icon: "point.topleft.down.to.point.bottomright.curvepath", title: "Distance", value: activity.formattedDistance, color: .green1)
+                        MetricCardView(
+                            icon: "point.topleft.down.to.point.bottomright.curvepath",
+                            title: "Distance", value: activity.formattedDistance, color: .green1
+                        )
                         MetricCardView(icon: "heart.fill", title: "Avg Heart Rate", value: activity.formattedHeartRateAvg, unit: "bpm", color: .red1)
-                        MetricCardView(icon: "heart.circle", title: "Max Heart Rate", value: activity.formattedHeartRateMax, unit: "bpm", color: .vermillion)
+                        MetricCardView(
+                            icon: "heart.circle", title: "Max Heart Rate",
+                            value: activity.formattedHeartRateMax, unit: "bpm", color: .vermillion
+                        )
                         MetricCardView(icon: "flame.fill", title: "Calories", value: activity.formattedCalories, color: .tangerine)
-                        MetricCardView(icon: "figure.stairs", title: "Flights Climbed", value: activity.formattedFlightsClimbed, unit: "floors", color: .tangerine)
+                        MetricCardView(
+                            icon: "figure.stairs", title: "Flights Climbed",
+                            value: activity.formattedFlightsClimbed, unit: "floors", color: .tangerine
+                        )
                         MetricCardView(icon: "metronome", title: "Cadence", value: activity.formattedCadence, unit: "spm", color: .indigo1)
                         MetricCardView(icon: "lungs.fill", title: "SpO2", value: activity.formattedSpO2, color: .cornflower)
                     }
@@ -491,6 +574,114 @@ struct ActivityRowView: View {
             }
         }
     }
+}
+
+// MARK: - Export Activities Sheet
+
+struct ExportActivitiesSheet: View {
+    @ObservedObject var viewModel: MobilityTrackingViewModel
+    @Environment(\.dismiss) private var dismiss
+    @State private var showShareSheet = false
+
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color.aqua5.ignoresSafeArea()
+
+                VStack(spacing: 20) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Select Date Range")
+                            .font(.custom("Avenir-Heavy", size: 18))
+                            .foregroundColor(.charcoal1)
+
+                        DatePicker(
+                            "From",
+                            selection: $viewModel.exportStartDate,
+                            in: ...viewModel.exportEndDate,
+                            displayedComponents: .date
+                        )
+                        .font(.custom("Avenir", size: 15))
+
+                        DatePicker(
+                            "To",
+                            selection: $viewModel.exportEndDate,
+                            in: viewModel.exportStartDate...Date(),
+                            displayedComponents: .date
+                        )
+                        .font(.custom("Avenir", size: 15))
+                    }
+                    .padding(16)
+                    .background(Color.white)
+                    .cornerRadius(16)
+                    .shadow(
+                        color: Color.black.opacity(0.06),
+                        radius: 4, x: 0, y: 2
+                    )
+
+                    Button {
+                        viewModel.exportActivitiesCSV()
+                    } label: {
+                        HStack {
+                            if viewModel.isExporting {
+                                ProgressView()
+                                    .tint(.white)
+                            } else {
+                                Image(systemName: "square.and.arrow.up")
+                            }
+                            Text("Export CSV")
+                                .font(.custom("Avenir-Heavy", size: 16))
+                        }
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(Color.indigo1)
+                        .cornerRadius(14)
+                    }
+                    .disabled(viewModel.isExporting)
+
+                    Spacer()
+                }
+                .padding(16)
+            }
+            .navigationTitle("Export Activities")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+            }
+            .onChange(of: viewModel.exportCSVURL) { url in
+                if url != nil { showShareSheet = true }
+            }
+            .sheet(isPresented: $showShareSheet, onDismiss: {
+                viewModel.exportCSVURL = nil
+            }) {
+                if let url = viewModel.exportCSVURL {
+                    ShareSheet(activityItems: [url])
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Share Sheet (UIKit wrapper)
+
+struct ShareSheet: UIViewControllerRepresentable {
+    let activityItems: [Any]
+
+    func makeUIViewController(
+        context: Context
+    ) -> UIActivityViewController {
+        UIActivityViewController(
+            activityItems: activityItems,
+            applicationActivities: nil
+        )
+    }
+
+    func updateUIViewController(
+        _ uiViewController: UIActivityViewController,
+        context: Context
+    ) {}
 }
 
 // MARK: - Preview

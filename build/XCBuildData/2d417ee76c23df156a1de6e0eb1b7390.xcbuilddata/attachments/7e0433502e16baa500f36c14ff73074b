@@ -1,0 +1,4 @@
+module CryptorECC {
+header "CryptorECC-Swift.h"
+export *
+}

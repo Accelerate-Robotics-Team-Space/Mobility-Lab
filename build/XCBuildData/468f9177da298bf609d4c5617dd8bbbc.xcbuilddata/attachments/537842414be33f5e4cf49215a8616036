@@ -1,0 +1,4 @@
+module CryptorRSA {
+header "CryptorRSA-Swift.h"
+export *
+}

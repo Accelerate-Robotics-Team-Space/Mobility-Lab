@@ -52,6 +52,7 @@ final class MQTTService: MQTTServiceProtocol {
     private var executeOnConnectionList: [Block] = []
     @Published private(set) var subscriptions: [String: Int] = [:] {
         didSet {
+            // swiftlint:disable:next todo
             // TODO: Replace Notification Center use with Combine Publisher
             notificationCenter.post(name: MQTTService.subscriptionNote, object: nil, userInfo: subscriptions)
         }

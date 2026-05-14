@@ -1,0 +1,76 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/FactoryKit-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Containers.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Containers.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Containers.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Containers.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Contexts.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Contexts.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Contexts.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Contexts.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Factory.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Factory.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Factory.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Factory.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Globals.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Globals.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Globals.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Globals.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Injections.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Injections.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Injections.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Injections.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Key.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Key.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Key.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Key.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Locking.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Locking.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Locking.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Locking.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Modifiers.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Modifiers.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Modifiers.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Modifiers.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Registrations.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Registrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Registrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Registrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Resolutions.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolutions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolutions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolutions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Resolver.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolver.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolver.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Resolver.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/Sources/FactoryKit/FactoryKit/Scopes.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Scopes.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Scopes.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/Scopes.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/Factory/build/Factory.build/Dev-watchos/FactoryKit.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  }
+}

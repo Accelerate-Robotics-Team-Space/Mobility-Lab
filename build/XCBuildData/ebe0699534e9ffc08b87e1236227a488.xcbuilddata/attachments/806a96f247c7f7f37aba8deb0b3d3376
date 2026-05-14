@@ -1,0 +1,176 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/RswiftResources-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/AssetCatalog.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/AssetCatalog.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/AssetCatalog.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/AssetCatalog.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/ColorResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/DataResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/FileResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/FontResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/ImageResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/Bundle+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Bundle+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Bundle+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Bundle+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/ColorResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ColorResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/DataResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DataResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/FileResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FileResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/FontResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/FontResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/ImageResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ImageResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/NibReference+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibReference+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibReference+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibReference+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/ReuseIdentifier+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ReuseIdentifier+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ReuseIdentifier+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ReuseIdentifier+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/SegueIdentifier+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/SegueIdentifier+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/SegueIdentifier+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/SegueIdentifier+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/StoryboardReference+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Integrations/StringResource+Integrations.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource+Integrations.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource+Integrations.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource+Integrations.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/NibResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NibResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/PropertyListResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/PropertyListResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/PropertyListResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/PropertyListResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/DeploymentTarget.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DeploymentTarget.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DeploymentTarget.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/DeploymentTarget.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/LocaleReference.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/LocaleReference.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/LocaleReference.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/LocaleReference.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/ModuleReference.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ModuleReference.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ModuleReference.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ModuleReference.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/NameCatalog.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NameCatalog.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NameCatalog.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/NameCatalog.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/Reusable.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Reusable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Reusable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Reusable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/StoryboardReference.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardReference.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/StringParam+Extensions.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam+Extensions.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam+Extensions.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/StringParam.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringParam.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/StringsTable.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringsTable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringsTable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringsTable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/TypeReference.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/TypeReference.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/TypeReference.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/TypeReference.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/Unifiable.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Unifiable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Unifiable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/Unifiable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/Shared/ValidationError.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ValidationError.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ValidationError.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/ValidationError.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/StoryboardResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StoryboardResource.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/Sources/RswiftResources/StringResource.swift" : {
+    "index-unit-output-path" : "/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/R.swift/build/Rswift.build/Dev-watchos/RswiftResources.build/Objects-normal/armv7k/StringResource.o"
+  }
+}

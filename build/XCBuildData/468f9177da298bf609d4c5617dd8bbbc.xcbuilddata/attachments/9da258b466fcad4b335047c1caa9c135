@@ -1,0 +1,131 @@
+{
+  "" : {
+    "const-values" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary.d",
+    "diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTNIO-primary.swiftdeps"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/AsyncAwaitSupport/MQTTClient+async.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient+async.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient+async.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient+async.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/AsyncAwaitSupport/MQTTClientV5+async.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5+async.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5+async.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5+async.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/AsyncAwaitSupport/Sendable.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/Sendable.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/Sendable.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/Sendable.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/MQTTMessageDecoder.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageDecoder.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageDecoder.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageDecoder.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/MQTTMessageHandler.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageHandler.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageHandler.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTMessageHandler.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/MQTTTaskHandler.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTaskHandler.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTaskHandler.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTaskHandler.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/PingreqHandler.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/PingreqHandler.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/PingreqHandler.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/PingreqHandler.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/WebSocketHandler.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketHandler.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketHandler.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketHandler.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/ChannelHandlers/WebSocketInitialRequest.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketInitialRequest.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketInitialRequest.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/WebSocketInitialRequest.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTClient.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClient.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTClientV5.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTClientV5.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTConfiguration.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConfiguration.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConfiguration.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConfiguration.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTConnection.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConnection.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConnection.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTConnection.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTCoreTypes.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypes.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypes.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypes.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTCoreTypesV5.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypesV5.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypesV5.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTCoreTypesV5.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTError.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTError.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTError.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTError.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTInflight.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTInflight.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTInflight.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTInflight.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTListeners.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTListeners.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTListeners.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTListeners.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTPacket.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTPacket.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTPacket.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTPacket.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTProperties.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTProperties.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTProperties.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTProperties.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTReason.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTReason.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTReason.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTReason.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTSerializer.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTSerializer.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTSerializer.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTSerializer.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/MQTTTask.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTask.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTask.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/MQTTTask.o"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/Sources/MQTTNIO/TSTLSConfiguration.swift" : {
+    "index-unit-output-path" : "/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/TSTLSConfiguration.o",
+    "llvm-bc" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/TSTLSConfiguration.bc",
+    "object" : "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/SourcePackages/checkouts/mqtt-nio/build/mqtt-nio.build/Dev-iphoneos/MQTTNIO.build/Objects-normal/arm64/TSTLSConfiguration.o"
+  }
+}

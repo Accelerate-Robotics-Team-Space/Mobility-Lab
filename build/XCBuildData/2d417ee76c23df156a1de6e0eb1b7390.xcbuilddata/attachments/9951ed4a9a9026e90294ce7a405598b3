@@ -1,0 +1,4 @@
+module LoggerAPI {
+header "LoggerAPI-Swift.h"
+export *
+}

@@ -1,0 +1,4 @@
+module RswiftGenerators {
+header "RswiftGenerators-Swift.h"
+export *
+}

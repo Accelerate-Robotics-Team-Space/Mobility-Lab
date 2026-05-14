@@ -232,9 +232,10 @@ private extension WorkoutSession {
     func startHeartRateQuery(from startDate: Date) {
         guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
 
-        let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
-        let datePredicate = HKQuery.predicateForSamples(withStart: startDate, end: nil, options: .strictStartDate)
-        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [datePredicate, devicePredicate])
+        // Removed HKDevice.local() filter — during active HKWorkoutSession, HR samples
+        // from the optical sensor may be tagged with the workout builder's device rather
+        // than HKDevice.local(), causing valid HR readings to be silently dropped
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: nil, options: .strictStartDate)
 
         let query = HKAnchoredObjectQuery(
             type: hrType,

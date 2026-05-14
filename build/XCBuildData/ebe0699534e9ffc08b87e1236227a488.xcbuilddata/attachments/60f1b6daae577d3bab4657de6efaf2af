@@ -1,0 +1,4 @@
+module RswiftResources {
+header "RswiftResources-Swift.h"
+export *
+}

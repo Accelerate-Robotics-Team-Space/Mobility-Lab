@@ -1,0 +1,93 @@
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Activity/ActivitySessionView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Activity/ActivitySessionDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/WatchConnectivityService.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Result+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecTrust+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/JustRequest.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Logging/LoggingManager.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/REST/Models/WearableRegistration.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/LocationService.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Session/SessionView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/TimeInterval+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Int+Extension.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedInitAnswer.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BatteryLevelData.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/DispatchQueue+Extension.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Color+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/TerminateConfirmation.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/WaterMark.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Router/BleDataFeedRouter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/SecurityConstants.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/HomeDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/String+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Views/TrainView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/BLE/BLEDataTransmitter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/Features/Dashboard/Cells/ActiveWearables/WearableLocation.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/DevMenu/DevMenuContentView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedConfirmation.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Views/NotificationView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Scan/ScanDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/SecurityError.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecCertificate+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/HomeView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/LogStore.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/Performance.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/SentryLogWriter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/FileLogWriter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Controllers/HostingController.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/Common/NetworkingError.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/Common/Serializable.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/LocalSensorDataBuffer.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/DataPoint.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Extensions/UserDefaults+Watch+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/UInt8+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/ClosedRange+Extension.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/SensorSuiteWatchKitApp.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Router/BleRoutable.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/Toast.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/ALTRevoker.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/DevMenu/DevSensorDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/UUID+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/BLE/BLEPeripheralDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/FirebaseLogWriter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/DeviceMotionManager.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecIdentity+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/NotificationCenterService.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Scan/ScanView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/RswiftResources+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedRequest.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BleCharacteristic.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/HealthKit/WorkoutSession.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/ViewModifiers/WearableButtonStyle.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/BarLoadingView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BLEIDs.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/DevMenu/DevMenuView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BlePacket.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Bool+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/ViewModifiers/TextStyle.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Data+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/WatchConstants.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Controllers/NotificationController.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/BLE/BLECentralManagerDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/SensorSuiteWatchKitAppDelegate.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BleService.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Date+Extension.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/DevMenu/DevMenuSensorView.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Extensions/UIImage+Extensions.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/Keychain.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Logging/LoggingProxy.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/ALTEnvironment.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogWriter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/Logger.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/CPULoadModifier.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Collection+Extension.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogLevel.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogMessage.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogFilter.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogModifier.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/Modules/Home/Session/SessionDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/SendBuffer.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite\ WatchKit\ App/ServiceLayer/BLE/BLEConnectionDriver.swift
+/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BleSendObj.swift
+/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/Build/Intermediates.noindex/BuildToolPluginIntermediates/SensorSuite.output/SensorSuite_WatchKit_App/RswiftGenerateInternalResources/SensorSuite\ WatchKit\ App/Resources/R.generated.swift
+/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite\ WatchKit\ App.build/DerivedSources/GeneratedAssetSymbols.swift

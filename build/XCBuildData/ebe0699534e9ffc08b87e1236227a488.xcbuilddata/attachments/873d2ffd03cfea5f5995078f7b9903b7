@@ -1,0 +1,939 @@
+{
+  "" : {
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuite WatchKit App-primary.dia",
+    "emit-module-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuite WatchKit App-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuite WatchKit App-primary-emit-module.dia",
+    "pch" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuite WatchKit App-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuite WatchKit App-primary.swiftdeps"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Extensions/UIImage+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UIImage+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Extensions/UserDefaults+Watch+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UserDefaults+Watch+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Controllers/HostingController.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HostingController~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Controllers/NotificationController.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationController~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Activity/ActivitySessionDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Activity/ActivitySessionView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ActivitySessionView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/DevMenu/DevMenuContentView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuContentView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/DevMenu/DevMenuSensorView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuSensorView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/DevMenu/DevMenuView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevMenuView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/DevMenu/DevSensorDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DevSensorDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/HomeDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/HomeView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Scan/ScanDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Scan/ScanView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ScanView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Session/SessionDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/Session/SessionView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SessionView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Home/ViewModifiers/WearableButtonStyle.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableButtonStyle~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Views/NotificationView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/Modules/Views/TrainView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TrainView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/SensorSuiteWatchKitApp.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitApp~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/SensorSuiteWatchKitAppDelegate.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SensorSuiteWatchKitAppDelegate~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/BLE/BLECentralManagerDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLECentralManagerDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/BLE/BLEConnectionDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEConnectionDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/BLE/BLEDataTransmitter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEDataTransmitter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/BLE/BLEPeripheralDriver.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEPeripheralDriver~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/DeviceMotionManager.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DeviceMotionManager~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/HealthKit/WorkoutSession.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WorkoutSession~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/LocalSensorDataBuffer.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocalSensorDataBuffer~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/LocationService.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LocationService~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/LogStore.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogStore~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/ServiceLayer/WatchConnectivityService.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConnectivityService~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite WatchKit App/WatchConstants.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WatchConstants~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/CPULoadModifier.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/CPULoadModifier~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/FileLogWriter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FileLogWriter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/FirebaseLogWriter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/FirebaseLogWriter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/Performance.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Performance~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/AppWideModels/SentryLogWriter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SentryLogWriter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/ALTEnvironment.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTEnvironment~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/DataPoint.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataPoint~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/BMM+UMMModels/RswiftResources+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/RswiftResources+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Bool+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Bool+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/ClosedRange+Extension.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ClosedRange+Extension~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Collection+Extension.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Collection+Extension~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Color+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Color+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Data+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Data+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Date+Extension.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Date+Extension~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/DispatchQueue+Extension.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DispatchQueue+Extension~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Int+Extension.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Int+Extension~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/Result+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Result+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecCertificate+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecCertificate+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecIdentity+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecIdentity+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/SecTrust+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecTrust+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/String+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/String+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/TimeInterval+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TimeInterval+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/UInt8+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UInt8+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Extensions/UUID+Extensions.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/UUID+Extensions~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BLEIDs.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BLEIDs~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BleCharacteristic.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleCharacteristic~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Attributes/BleService.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleService~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/ALTRevoker.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/ALTRevoker~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BatteryLevelData.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BatteryLevelData~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BlePacket.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BlePacket~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/BleSendObj.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleSendObj~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedConfirmation.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedConfirmation~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedInitAnswer.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedInitAnswer~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/DataFeedRequest.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/DataFeedRequest~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/JustRequest.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/JustRequest~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/SendBuffer.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SendBuffer~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/TerminateConfirmation.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TerminateConfirmation~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Models/WaterMark.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WaterMark~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Router/BleDataFeedRouter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleDataFeedRouter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/BluetoothLowEnergy/Router/BleRoutable.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BleRoutable~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/Common/NetworkingError.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NetworkingError~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/Common/Serializable.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Serializable~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/NetworkingLayer/REST/Models/WearableRegistration.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableRegistration~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Logging/LoggingManager.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingManager~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Logging/LoggingProxy.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LoggingProxy~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/NotificationCenterService.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/NotificationCenterService~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/Keychain.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Keychain~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/SecurityConstants.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityConstants~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ServiceLayer/Security/SecurityError.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/SecurityError~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogFilter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogFilter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogLevel.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogLevel~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogMessage.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogMessage~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogModifier.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogModifier~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/LogWriter.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/LogWriter~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/Vendor/Willow/Logger.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Logger~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/BarLoadingView.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/BarLoadingView~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/Features/Dashboard/Cells/ActiveWearables/WearableLocation.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/WearableLocation~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/Toast.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/Toast~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/SensorSuite/ViewLayer/ViewModifiers/TextStyle.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/TextStyle~partial.swiftmodule"
+  },
+  "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/richahussain/Library/Developer/Xcode/DerivedData/SensorSuite-cxfziznyqgllhzepecxjnjzursft/Build/Intermediates.noindex/BuildToolPluginIntermediates/SensorSuite.output/SensorSuite_WatchKit_App/RswiftGenerateInternalResources/SensorSuite WatchKit App/Resources/R.generated.swift" : {
+    "const-values" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.swiftconstvalues",
+    "dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.d",
+    "diagnostics" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.dia",
+    "index-unit-output-path" : "/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.o",
+    "llvm-bc" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.bc",
+    "object" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.o",
+    "swift-dependencies" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated.swiftdeps",
+    "swiftmodule" : "/Users/richahussain/Code/Mobility-Lab/build/SensorSuite.build/Dev-watchos/SensorSuite WatchKit App.build/Objects-normal/arm64/R.generated~partial.swiftmodule"
+  }
+}
